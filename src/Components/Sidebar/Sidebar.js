@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from '../../Media/Logo/logo.png';
 
 const Sidebar = () => {
     return (
@@ -7,10 +8,10 @@ const Sidebar = () => {
                 <a href="#!">
                     <div class="flex items-center">
                         <div class="shrink-0">
-                            <img src="https://mdbcdn.b-cdn.net/img/new/avatars/8.webp" class="rounded-full w-10" alt="Avatar" />
+                            <img src={logo} class="w-6" alt="POSDash logo" />
                         </div>
                         <div class="grow ml-3">
-                            <p class="text-sm font-semibold text-blue-600">Jason McCoel</p>
+                            <p style={{ color: '#110A57' }} class="text-xl font-semibold">POSDash</p>
                         </div>
                     </div>
                 </a>
