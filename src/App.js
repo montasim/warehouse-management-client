@@ -1,3 +1,4 @@
+import 'tw-elements';
 import { Route, Routes } from 'react-router-dom';
 import Dashboard from './Pages/Dashboard/Dashboard';
 import Home from './Pages/Home/Home';
