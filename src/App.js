@@ -4,7 +4,7 @@ import Home from './Pages/Home/Home';
 import Login from './Pages/Login/Login';
 import NotFound from './Pages/NotFound/NotFound';
 import Products from './Pages/Products/Products/Products';
-import AddProducts from './Pages/AddProducts/AddProducts/AddProducts';
+import AddProducts from './Pages/Products/AddProducts/AddProducts';
 import Register from './Pages/Register/Register';
 import Categories from './Pages/Categories/Categories/Categories';
 import AddCategories from './Pages/Categories/AddCategories/AddCategories';
