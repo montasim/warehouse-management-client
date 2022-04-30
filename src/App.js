@@ -4,16 +4,16 @@ import Dashboard from './Pages/Dashboard/Dashboard';
 import Home from './Pages/Home/Home';
 import Login from './Pages/Login/Login';
 import NotFound from './Pages/NotFound/NotFound';
-import Products from './Pages/Products/Products/Products';
+import Products from './Pages/Products/ListProducts/ListProducts';
 import AddProducts from './Pages/Products/AddProducts/AddProducts';
 import Register from './Pages/Register/Register';
-import Categories from './Pages/Categories/Categories/Categories';
+import Categories from './Pages/Categories/ListCategories/ListCategories';
 import AddCategories from './Pages/Categories/AddCategories/AddCategories';
-import Sale from './Pages/Sale/Sale/Sale';
+import Sale from './Pages/Sale/ListSale/ListSale';
 import AddSale from './Pages/Sale/AddSale/AddSale';
-import Purchases from './Pages/Purchases/Purchases/Purchases';
+import Purchases from './Pages/Purchases/ListPurchases/ListPurchases';
 import AddPurchases from './Pages/Purchases/AddPurchases/AddPurchases';
-import Returns from './Pages/Returns/Returns/Returns';
+import Returns from './Pages/Returns/ListReturns/ListReturns';
 import AddReturns from './Pages/Returns/AddReturns/AddReturns';
 import Customers from './Pages/People/Customers/Customers/Customers';
 import AddCustomers from './Pages/People/Customers/AddCustomers/AddCustomers';
@@ -31,22 +31,22 @@ function App() {
         <Route path='/login' element={<Login />} />
         <Route path='/register' element={<Register />} />
         <Route path='/dashboard' element={<Dashboard />} />
-        <Route path='/products' element={<Products />} />
-        <Route path='/add-products' element={<AddProducts />} />
-        <Route path='/categories' element={<Categories />} />
-        <Route path='/add-categories' element={<AddCategories />} />
-        <Route path='/sale' element={<Sale />} />
+        <Route path='/list-products' element={<Products />} />
+        <Route path='/add-product' element={<AddProducts />} />
+        <Route path='/list-categories' element={<Categories />} />
+        <Route path='/add-category' element={<AddCategories />} />
+        <Route path='/list-sale' element={<Sale />} />
         <Route path='/add-sale' element={<AddSale />} />
-        <Route path='/purchases' element={<Purchases />} />
-        <Route path='/add-purchases' element={<AddPurchases />} />
-        <Route path='/returns' element={<Returns />} />
-        <Route path='/add-returns' element={<AddReturns />} />
+        <Route path='/list-purchases' element={<Purchases />} />
+        <Route path='/add-purchase' element={<AddPurchases />} />
+        <Route path='/list-returns' element={<Returns />} />
+        <Route path='/add-return' element={<AddReturns />} />
         <Route path='/customers' element={<Customers />} />
-        <Route path='/add-customers' element={<AddCustomers />} />
+        <Route path='/add-customer' element={<AddCustomers />} />
         <Route path='/users' element={<Users />} />
-        <Route path='/add-users' element={<AddUsers />} />
+        <Route path='/add-user' element={<AddUsers />} />
         <Route path='/suppliers' element={<Suppliers />} />
-        <Route path='/add-suppliers' element={<AddSuppliers />} />
+        <Route path='/add-supplier' element={<AddSuppliers />} />
         <Route path='/reports' element={<Reports />} />
         <Route path='*' element={<NotFound />} />
       </Routes>

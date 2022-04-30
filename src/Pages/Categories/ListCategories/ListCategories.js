@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Categories = () => {
+const ListCategories = () => {
     return (
         <div>
             <h2>Categories</h2>
@@ -8,4 +8,4 @@ const Categories = () => {
     );
 };
 
-export default Categories;
+export default ListCategories;
