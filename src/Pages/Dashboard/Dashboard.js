@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../../Components/Header/Header';
+import DashHeader from '../../Components/DashHeader/DashHeader';
 import Sidebar from '../../Components/Sidebar/Sidebar';
 
 const Dashboard = () => {
@@ -7,7 +7,7 @@ const Dashboard = () => {
         <div className='grid'>
             <Sidebar />
             <div className='ml-60'>
-                <Header />
+                <DashHeader />
             </div>
         </div>
     );
