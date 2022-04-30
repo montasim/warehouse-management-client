@@ -2,7 +2,7 @@ import React from 'react';
 
 const Offer = () => {
     return (
-        <div className="container my-24 mx-auto">
+        <div className="container mb-24 mx-auto">
             <section className="mb-12">
                 <div className="bg-blue-600 alert alert-dismissible fade show fixed top-0 right-0 left-0 z-[1030] w-full py-4 px-6 text-white md:flex justify-between items-center text-center md:text-left">
                     <div className="mb-4 md:mb-0 flex items-center flex-wrap justify-center md:justify-start">

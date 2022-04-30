@@ -1,5 +1,6 @@
 import 'tw-elements';
 import { Route, Routes } from 'react-router-dom';
+import Header from './Components/Header/Header';
 import Dashboard from './Pages/Dashboard/Dashboard';
 import Home from './Pages/Home/Home/Home';
 import Login from './Pages/Login/Login';
@@ -22,14 +23,28 @@ import AddUsers from './Pages/People/Users/AddUsers/AddUsers';
 import Suppliers from './Pages/People/Suppliers/Suppliers/Suppliers';
 import AddSuppliers from './Pages/People/Suppliers/AddSuppliers/AddSuppliers';
 import Reports from './Pages/Reports/Reports';
+import AddItem from './Pages/User/AddItem/AddItem';
+import ManageItems from './Pages/User/ManageItems/ManageItems';
+import MyItems from './Pages/User/MyItems/MyItems';
+import Blog from './Pages/Blog/Blog';
+import Profile from './Pages/Profile/Profile';
+import Settings from './Pages/Settings/Settings';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
     <div>
+      <Header />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/login' element={<Login />} />
+        <Route path='/add-item' element={<AddItem />} />
+        <Route path='/manage-items' element={<ManageItems />} />
+        <Route path='/my-items' element={<MyItems />} />
+        <Route path='/blog' element={<Blog />} />
         <Route path='/register' element={<Register />} />
+        <Route path='/profile' element={<Profile />} />
+        <Route path='/settings' element={<Settings />} />
         <Route path='/dashboard' element={<Dashboard />} />
         <Route path='/list-products' element={<Products />} />
         <Route path='/add-product' element={<AddProducts />} />
@@ -50,6 +65,7 @@ function App() {
         <Route path='/reports' element={<Reports />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
