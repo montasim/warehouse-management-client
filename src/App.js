@@ -30,6 +30,7 @@ import Blog from './Pages/Blog/Blog';
 import Profile from './Pages/Profile/Profile';
 import Settings from './Pages/Settings/Settings';
 import Footer from './Components/Footer/Footer';
+import ForgotPassword from './Pages/ForgotPassword/ForgotPassword';
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/login' element={<Login />} />
+        <Route path='/forgot-password' element={<ForgotPassword />} />
         <Route path='/add-item' element={<AddItem />} />
         <Route path='/manage-items' element={<ManageItems />} />
         <Route path='/my-items' element={<MyItems />} />
