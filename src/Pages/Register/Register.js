@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useCreateUserWithEmailAndPassword, useSendEmailVerification } from 'react-firebase-hooks/auth';
 import auth from '../../Hooks/Firebase.Init';
 import { toast } from 'react-toastify';
 
@@ -14,8 +14,13 @@ const Register = () => {
         registerLoading,
         registerError,
     ] = useCreateUserWithEmailAndPassword(auth);
+    const [
+        sendEmailVerification,
+        verificationSending,
+        verificationError
+    ] = useSendEmailVerification(auth);
 
-    const register = event => {
+    const register = async event => {
         event.preventDefault();
 
         const firstName = event.target.firstName.value;
@@ -32,6 +37,7 @@ const Register = () => {
         }
         else {
             createUserWithEmailAndPassword(email, password);
+            await sendEmailVerification();
             toast('Email Verification Sent');
             navigate('/');
         }
@@ -45,6 +51,13 @@ const Register = () => {
     }
     if (user) {
         navigate('/');
+    }
+
+    if (verificationError) {
+        setFormError(verificationError?.error);
+    }
+    if (verificationSending) {
+        return <p>Sending...</p>;
     }
 
     return (
