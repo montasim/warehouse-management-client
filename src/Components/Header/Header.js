@@ -111,7 +111,14 @@ const Header = () => {
                     <div className="dropdown relative">
                         <Link className="dropdown-toggle flex items-center hidden-arrow" to="#" id="dropdownMenuButton2" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="https://mdbootstrap.com/img/new/avatars/2.jpg" className="rounded-full w-12 ml-4" alt="" loading="lazy" />
+                            <span
+                                class="rounded-full text-gray-500 bg-gray-200 font-semibold text-sm flex align-center cursor-pointer active:bg-gray-300 transition duration-300 ease w-max">
+                                <img class="rounded-full w-9 h-9 max-w-none" alt="A"
+                                    src="https://mdbootstrap.com/img/Photos/Avatars/avatar-6.jpg" />
+                                <span class="flex items-center px-3 py-2">
+                                    John Doe
+                                </span>
+                            </span>
                         </Link>
                         <ul className="
     dropdown-menu
