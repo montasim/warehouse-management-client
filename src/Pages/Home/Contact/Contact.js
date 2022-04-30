@@ -2,7 +2,7 @@ import React from 'react';
 
 const Contact = () => {
     return (
-        <div className="container my-24 px-6 mx-auto">
+        <div id='contact' className="container my-24 px-6 mx-auto">
             <section className="mb-32 text-gray-800">
 
                 <div className="relative overflow-hidden bg-no-repeat bg-cover"

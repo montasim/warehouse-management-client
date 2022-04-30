@@ -6,9 +6,7 @@ const Testimonial = () => {
             <div class="text-center max-w-3xl mx-auto">
                 <h3 class="text-3xl font-bold mb-6 text-gray-800">Testimonials</h3>
                 <p class="mb-6 pb-2 md:mb-12">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam
-                    iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum
-                    porro a pariatur veniam.
+                    POSData is a world class inventory management system. We provide live support to all of our user. Hear more from our honorable users.
                 </p>
             </div>
 
@@ -21,8 +19,7 @@ const Testimonial = () => {
                         />
                     </div>
                     <p class="text-xl my-4 text-gray-500">
-                        "Lorem ipsum dolor sit amet eos adipisci, consectetur adipisicing elit sed ut
-                        perspiciatis unde omnis."
+                        The best inventory management system you will find. It's easy to use, customizable. Give it a try to find more.
                     </p>
                     <p class="italic">- Anna Morian</p>
                 </div>
@@ -34,10 +31,9 @@ const Testimonial = () => {
                         />
                     </div>
                     <p class="text-xl my-4 text-gray-500">
-                        "Lorem ipsum dolor sit amet eos adipisci, consectetur adipisicing elit sed ut
-                        perspiciatis unde omnis."
+                        I love this inventory management system. It's really satisfying to work with. You can always give it a try.
                     </p>
-                    <p class="italic">- Anna Morian</p>
+                    <p class="italic">- Eva Johnson</p>
                 </div>
                 <div class="mb-0">
                     <div class="flex justify-center mb-6">
@@ -47,8 +43,7 @@ const Testimonial = () => {
                         />
                     </div>
                     <p class="text-xl my-4 text-gray-500">
-                        "Neque cupiditate assumenda in maiores repudiandae mollitia architecto elit sed
-                        adipiscing elit."
+                        Simply the best inventory management system I know. I like it's design. Simple interface & user friendly.
                     </p>
                     <p class="italic">- Teresa May</p>
                 </div>

@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import logo from '../../Media/Logo/logo.png';
 
 const Footer = () => {
     const date = new Date();
@@ -11,7 +13,7 @@ const Footer = () => {
                     <span>Get connected with us on social networks:</span>
                 </div>
                 <div class="flex justify-center">
-                    <a href="#!" class="mr-6 text-gray-600">
+                    <a href="https://www.facebook.com/montasimmamun/" class="mr-6 text-gray-600">
                         <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f"
                             class="w-2.5" role="img" xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 320 512">
@@ -20,7 +22,7 @@ const Footer = () => {
                             </path>
                         </svg>
                     </a>
-                    <a href="#!" class="mr-6 text-gray-600">
+                    <a href="https://twitter.com/montasimmamun" class="mr-6 text-gray-600">
                         <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter"
                             class="w-4" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path fill="currentColor"
@@ -28,7 +30,7 @@ const Footer = () => {
                             </path>
                         </svg>
                     </a>
-                    <a href="#!" class="mr-6 text-gray-600">
+                    <a href="mailto:montasimmamun@gmail.com" class="mr-6 text-gray-600">
                         <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="google"
                             class="w-3.5" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512">
                             <path fill="currentColor"
@@ -36,7 +38,7 @@ const Footer = () => {
                             </path>
                         </svg>
                     </a>
-                    <a href="#!" class="mr-6 text-gray-600">
+                    <a href="https://www.instagram.com/montasim/" class="mr-6 text-gray-600">
                         <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram"
                             class="w-3.5" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                             <path fill="currentColor"
@@ -44,7 +46,7 @@ const Footer = () => {
                             </path>
                         </svg>
                     </a>
-                    <a href="#!" class="mr-6 text-gray-600">
+                    <a href="https://www.linkedin.com/in/montasim" class="mr-6 text-gray-600">
                         <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin-in"
                             class="w-3.5" role="img" xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 448 512">
@@ -53,7 +55,7 @@ const Footer = () => {
                             </path>
                         </svg>
                     </a>
-                    <a href="#!" class="text-gray-600">
+                    <a href="https://github.com/montasim" class="text-gray-600">
                         <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github"
                             class="w-4" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
                             <path fill="currentColor"
@@ -75,18 +77,11 @@ const Footer = () => {
             justify-center
             md:justify-start
           ">
-                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="cubes"
-                                class="w-4 mr-3" role="img" xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 512 512">
-                                <path fill="currentColor"
-                                    d="M488.6 250.2L392 214V105.5c0-15-9.3-28.4-23.4-33.7l-100-37.5c-8.1-3.1-17.1-3.1-25.3 0l-100 37.5c-14.1 5.3-23.4 18.7-23.4 33.7V214l-96.6 36.2C9.3 255.5 0 268.9 0 283.9V394c0 13.6 7.7 26.1 19.9 32.2l100 50c10.1 5.1 22.1 5.1 32.2 0l103.9-52 103.9 52c10.1 5.1 22.1 5.1 32.2 0l100-50c12.2-6.1 19.9-18.6 19.9-32.2V283.9c0-15-9.3-28.4-23.4-33.7zM358 214.8l-85 31.9v-68.2l85-37v73.3zM154 104.1l102-38.2 102 38.2v.6l-102 41.4-102-41.4v-.6zm84 291.1l-85 42.5v-79.1l85-38.8v75.4zm0-112l-102 41.4-102-41.4v-.6l102-38.2 102 38.2v.6zm240 112l-85 42.5v-79.1l85-38.8v75.4zm0-112l-102 41.4-102-41.4v-.6l102-38.2 102 38.2v.6z">
-                                </path>
-                            </svg>
-                            Tailwind ELEMENTS
+                            <img className='w-4 mr-8' src={logo} alt="" />
+                            POSData Inventory/Warehouse Management System
                         </h6>
                         <p>
-                            Here you can use rows and columns to organize your footer content. Lorem ipsum dolor
-                            sit amet, consectetur adipisicing elit.
+                            Manage your inventory from a dashboard. Manage, add, delete items from this dashboard. Sign in using social media.
                         </p>
                     </div>
                     <div class="">
@@ -94,16 +89,16 @@ const Footer = () => {
                             Products
                         </h6>
                         <p class="mb-4">
-                            <a href="#!" class="text-gray-600">Angular</a>
+                            <a target="_blank" href="https://github.com/montasim/genius-car-services" class="text-gray-600">Genius Car</a>
                         </p>
                         <p class="mb-4">
-                            <a href="#!" class="text-gray-600">React</a>
+                            <a target="_blank" href="https://github.com/montasim/ema-john-simple" class="text-gray-600">Ema John</a>
                         </p>
                         <p class="mb-4">
-                            <a href="#!" class="text-gray-600">Vue</a>
+                            <a target="_blank" href="https://github.com/montasim/phone-hunter" class="text-gray-600">Phone Hunter</a>
                         </p>
                         <p>
-                            <a href="#!" class="text-gray-600">Laravel</a>
+                            <a target="_blank" href="https://github.com/montasim/convention-center" class="text-gray-600">Convention Center</a>
                         </p>
                     </div>
                     <div class="">
@@ -111,16 +106,16 @@ const Footer = () => {
                             Useful links
                         </h6>
                         <p class="mb-4">
-                            <a href="#!" class="text-gray-600">Pricing</a>
+                            <Link to="/add-item" class="text-gray-600">Add Item</Link>
                         </p>
                         <p class="mb-4">
-                            <a href="#!" class="text-gray-600">Settings</a>
+                            <Link to="/manage-items" class="text-gray-600">Manage Items</Link>
                         </p>
                         <p class="mb-4">
-                            <a href="#!" class="text-gray-600">Orders</a>
+                            <Link to="/my-items" class="text-gray-600">My Items</Link>
                         </p>
                         <p>
-                            <a href="#!" class="text-gray-600">Help</a>
+                            <Link to="/blog" class="text-gray-600">Blog</Link>
                         </p>
                     </div>
                     <div class="">
@@ -171,7 +166,7 @@ const Footer = () => {
             </div>
             <div class="text-center p-6 bg-gray-200">
                 <span>&copy; {year} Copyright: </span>
-                <a class="text-gray-600 font-semibold" href="https://github.com/montasim">POSDash</a>
+                <Link class="text-gray-600 font-semibold" to="https://github.com/montasim">POSDash</Link>
             </div>
         </footer>
     );

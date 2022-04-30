@@ -2,13 +2,13 @@ import React from 'react';
 
 const Pricing = () => {
     return (
-        <div className="container my-24 px-6 mx-auto">
+        <div id='pricing' className="container my-24 px-6 mx-auto">
 
             <section className="mb-32 text-gray-800">
                 <h2 className="text-3xl font-bold text-center mb-6">Pricing</h2>
 
                 <p className="text-center mb-12 text-gray-500">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, amet.
+                    POSDash provide an optimum solution for your inventory. Find the best deal to get started.
                 </p>
 
                 <div className="grid lg:grid-cols-4 gap-6 xl:gap-x-12">
