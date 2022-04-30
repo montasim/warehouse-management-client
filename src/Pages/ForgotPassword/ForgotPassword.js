@@ -1,14 +1,45 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useSendPasswordResetEmail } from 'react-firebase-hooks/auth';
+import { useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
+import auth from '../../Hooks/Firebase.Init';
 import logo from '../../Media/Logo/logo.png';
 
 const ForgotPassword = () => {
+    const navigate = useNavigate();
+
+    const [formError, setFormError] = useState('');
+
+    const [
+        sendPasswordResetEmail,
+        resetSending,
+        resetError
+    ] = useSendPasswordResetEmail(auth);
+
+    const resetPassword = async (event) => {
+        event.preventDefault();
+        const email = event.target.email.value;
+
+        await sendPasswordResetEmail(email);
+
+        toast('Password Reset Link Send');
+    }
+
+    if (resetError) {
+        setFormError(resetError?.message);
+    }
+
+    if (resetSending) {
+        return <p>Sending...</p>;
+    }
+
     return (
         <div class="block p-6 rounded-lg shadow-lg bg-white max-w-sm mx-auto my-32">
             <h2 className='text-center my-8 text-2xl flex items-center'>
                 <img className='w-8 mr-4' src={logo} alt="" />
                 Reset Your Password
             </h2>
-            <form>
+            <form onSubmit={resetPassword}>
                 <div class="form-group mb-6">
                     <input type="email" class="form-control block
         w-full
@@ -23,9 +54,11 @@ const ForgotPassword = () => {
         transition
         ease-in-out
         m-0
-        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInput91"
-                        placeholder="Email address" />
+        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="formEmail" name='email' placeholder="Email address" />
                 </div>
+
+                <p className='mb-4 text-red-600'>{formError}</p>
+
                 <button type="submit" class="
       w-full
       px-6
@@ -44,7 +77,8 @@ const ForgotPassword = () => {
       transition
       duration-150
       ease-in-out">Reset Password</button>
-                <button type="submit" class="
+
+                <button onClick={() => navigate('/')} class="
       w-full
       px-6
       py-2.5
