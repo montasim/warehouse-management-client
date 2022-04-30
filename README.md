@@ -1,6 +1,6 @@
 # POSDash - An Inventory/Warehouse Management System
 
-### Client Side Link:
+### Client Side Link: https://posdash-37746.web.app/
 
 ### Server Side Link:
 
