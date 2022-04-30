@@ -3,6 +3,10 @@ import React from 'react';
 const Contact = () => {
     return (
         <div id='contact' className="container my-24 px-6 mx-auto">
+            <h2 className="text-3xl font-bold text-center mb-6">Contact</h2>
+            <p className="text-center mb-12 text-gray-500">
+                POSDash offers various options for your inventory managements. Contact to get started with POSDash.
+            </p>
             <section className="mb-32 text-gray-800">
 
                 <div className="relative overflow-hidden bg-no-repeat bg-cover"
