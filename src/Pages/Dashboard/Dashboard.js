@@ -1,9 +1,14 @@
 import React from 'react';
+import Header from '../../Components/Header/Header';
+import Sidebar from '../../Components/Sidebar/Sidebar';
 
 const Dashboard = () => {
     return (
-        <div>
-            <h2>Dashboard</h2>
+        <div className='grid'>
+            <Sidebar />
+            <div className='ml-60'>
+                <Header />
+            </div>
         </div>
     );
 };
