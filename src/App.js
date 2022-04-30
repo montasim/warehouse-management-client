@@ -31,6 +31,8 @@ import Profile from './Pages/Profile/Profile';
 import Settings from './Pages/Settings/Settings';
 import Footer from './Components/Footer/Footer';
 import ForgotPassword from './Pages/ForgotPassword/ForgotPassword';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
@@ -68,6 +70,7 @@ function App() {
         <Route path='*' element={<NotFound />} />
       </Routes>
       <Footer />
+      <ToastContainer />
     </div>
   );
 }

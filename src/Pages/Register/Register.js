@@ -1,8 +1,19 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import auth from '../../Hooks/Firebase.Init';
+import { toast } from 'react-toastify';
 
 const Register = () => {
+    const navigate = useNavigate();
     const [agree, setAgree] = useState(false);
+    const [formError, setFormError] = useState('');
+    const [
+        createUserWithEmailAndPassword,
+        user,
+        registerLoading,
+        registerError,
+    ] = useCreateUserWithEmailAndPassword(auth);
 
     const register = event => {
         event.preventDefault();
@@ -13,10 +24,29 @@ const Register = () => {
         const password = event.target.password.value;
         const confirmPassword = event.target.confirmPassword.value;
 
-        if (password === confirmPassword && agree) {
-            console.log(firstName, lastName, email, password, confirmPassword, agree);
+        if (password !== confirmPassword) {
+            setFormError('Password Do Not Match!');
+        }
+        else if (!agree) {
+            setFormError('Agree to our Terms & Condition');
+        }
+        else {
+            createUserWithEmailAndPassword(email, password);
+            toast('Email Verification Sent');
+            navigate('/');
         }
     }
+
+    if (registerError) {
+        setFormError(registerError?.message);
+    }
+    if (registerLoading) {
+        return <p>Loading...</p>;
+    }
+    if (user) {
+        navigate('/');
+    }
+
     return (
         <section class="h-screen m-24">
             <div class="px-6 h-full text-gray-800">
@@ -139,7 +169,7 @@ const Register = () => {
                                         class="form-check-input appearance-none h-4 w-4 border border-red-600 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
                                         id="exampleCheck2" name='terms'
                                     />
-                                    <label class={`form-check-label inline-block ${agree ? 'text-gray-800' : 'text-red-600'}`} for="exampleCheck2"
+                                    <label class={`form-check-label inline-block ${!agree ? 'text-red-600' : 'text-grey-800'}`} for="exampleCheck2"
                                     >Agree to our terms & condition</label
                                     >
                                 </div>
@@ -147,6 +177,7 @@ const Register = () => {
                             </div>
 
                             <div class="text-center lg:text-left">
+                                <p className='mb-4 text-red-600'>{formError}</p>
                                 <button
                                     type="submit"
                                     class="button inline-block px-7 py-3 bg-blue-600 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
