@@ -14,7 +14,9 @@ const Items = () => {
     }, []);
 
     return (
-        <div className="container my-24 px-6 mx-auto">
+        <div data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500" className="container my-24 px-6 mx-auto">
 
             <section className="mb-32 text-gray-800 text-center">
 

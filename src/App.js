@@ -17,10 +17,15 @@ import ForgotPassword from './Pages/User/ForgotPassword/ForgotPassword';
 import Inventory from './Pages/Inventory/Inventory/Inventory';
 import ManageInventory from './Pages/Inventory/ManageInventory/ManageInventory/ManageInventory';
 import RequireAuth from './Hooks/RequireAuth';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
 function App() {
   return (
-    <div>
+    <div data-aos="fade-down"
+      data-aos-easing="linear"
+      data-aos-duration="1500">
       <Header />
       <Routes>
         <Route path='/' element={<Home />} />
