@@ -5,7 +5,7 @@ import Dashboard from './Pages/Dashboard/Dashboard';
 import Home from './Pages/Home/Home/Home';
 import Login from './Pages/Login/Login';
 import NotFound from './Pages/NotFound/NotFound';
-import Products from './Pages/Products/ListProducts/ListProducts';
+import Products from './Pages/Products/ListProducts/ListProducts/ListProducts';
 import AddProducts from './Pages/Products/AddProducts/AddProducts';
 import Register from './Pages/Register/Register';
 import Categories from './Pages/Categories/ListCategories/ListCategories';
