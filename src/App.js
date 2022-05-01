@@ -53,6 +53,7 @@ function App() {
         <Route path='/settings' element={<Settings />} />
         <Route path='/dashboard' element={<Dashboard />} />
         <Route path='/list-products' element={<Products />} />
+        <Route path='/manage-inventory' element={<Products />} />
         <Route path='/add-product' element={<AddProducts />} />
         <Route path='/list-categories' element={<Categories />} />
         <Route path='/add-category' element={<AddCategories />} />

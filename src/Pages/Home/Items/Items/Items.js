@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Item from '../Item/Item';
 
 const Items = () => {
     const [items, setItems] = useState([]);
+    const navigate = useNavigate();
 
     useEffect(() => {
         fetch('https://posdash-server.herokuapp.com/products')
@@ -28,6 +30,8 @@ const Items = () => {
                         items.slice(21, 23).map((item, index) => <Item key={index} item={item} />)
                     }
                 </div>
+
+                <button onClick={() => navigate('/manage-inventory')} type="button" class="inline-block mt-20 px-6 py-2.5 bg-orange-200 text-gray-600 font-semibold text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:text-white hover:shadow-lg focus:bg-blue-700 focus:text-white focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-700 active:shadow-lg transition duration-150 ease-in-out">Manage Inventories</button>
             </section>
         </div>
     );
