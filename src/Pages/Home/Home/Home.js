@@ -4,7 +4,7 @@ import Items from '../Items/Items';
 import Pricing from '../Pricing/Pricing';
 import Offer from '../Offer/Offer';
 import Contact from '../Contact/Contact';
-import Testimonial from '../Testimonial/Testimonial';
+import Testimonials from '../Testimonials/Testimonials/Testimonials';
 import BackToTop from '../../../Components/BackToTop/BackToTop';
 
 const Home = () => {
@@ -13,7 +13,7 @@ const Home = () => {
             <BackToTop />
             <Offer />
             <Banner />
-            <Testimonial />
+            <Testimonials />
             <Items />
             <Pricing />
             <Contact />

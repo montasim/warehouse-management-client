@@ -1,0 +1,20 @@
+[
+    {
+        "name": "- Anna Morian",
+        "image": "https://phero-web.nyc3.cdn.digitaloceanspaces.com/website-prod-images/public/files/1607516351748.jpg",
+        "review": "The best inventory management system you will find. It's easy to use, customizable. Give it a try to find more.",
+        "rating": "5/5"
+    },
+    {
+        "name": "- Eva Johnson",
+        "image": "https://phero-web.nyc3.cdn.digitaloceanspaces.com/website-prod-images/public/files/1629096846802.jpeg",
+        "review": "I love this inventory management system. It's really satisfying to work with. You can always give it a try.",
+        "rating": "4/5"
+    },
+    {
+        "name": "- Teresa May",
+        "image": "https://phero-web.nyc3.cdn.digitaloceanspaces.com/website-prod-images/public/files/1607516912860.png",
+        "review": "Simply the best inventory management system I know. I like it's design. Simple interface & user friendly.",
+        "rating": "5/5"
+    }
+]
