@@ -12,19 +12,27 @@ import { BiUserPlus } from 'react-icons/bi';
 import { getAuth, signOut } from 'firebase/auth';
 import { toast } from 'react-toastify';
 import { useAuthState } from 'react-firebase-hooks/auth';
+import maleUser from '../../Media/Image/maleUser.png';
 
 const Header = () => {
     const navigate = useNavigate();
     const auth = getAuth();
     const [user] = useAuthState(auth);
 
+    let userEmail, userImage;
+
     if (user !== null) {
         user.providerData.forEach((profile) => {
             console.log("Sign-in provider: " + profile.providerId);
-            console.log("  Provider-specific UID: " + profile.uid);
+
+            const splitEmail = profile?.uid.split('@');
+
+            userEmail = splitEmail[0];
+
+            userImage = profile?.photoURL;
+
             console.log("  Name: " + profile.displayName);
             console.log("  Email: " + profile.email);
-            console.log("  Photo URL: " + profile.photoURL);
         });
     }
 
@@ -106,9 +114,9 @@ const Header = () => {
                                             <span
                                                 className="rounded-full text-gray-600 bg-orange-200 font-semibold text-sm flex align-center cursor-pointer hover:bg-blue-700 hover:text-white hover:shadow-lg focus:bg-blue-700 focus:text-white focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:text-white active:shadow-lg transition duration-300 ease w-max">
                                                 <img className="rounded-full w-9 h-9 max-w-none" alt="A"
-                                                    src="https://mdbootstrap.com/img/Photos/Avatars/avatar-6.jpg" />
+                                                    src={userImage || maleUser} />
                                                 <span className="flex items-center px-3 py-2">
-                                                    John Doe
+                                                    {userEmail}
                                                 </span>
                                             </span>
                                         </Link>
