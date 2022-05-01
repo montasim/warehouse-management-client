@@ -20,7 +20,7 @@ const AddItem = () => {
         const item = { name, category, supplierName, img, description, price, stock };
 
         // send data to server
-        fetch('http://localhost:5000/add-item', {
+        fetch('https://posdash-server.herokuapp.com/add-item', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

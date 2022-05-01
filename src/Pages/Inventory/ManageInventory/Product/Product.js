@@ -12,7 +12,7 @@ const Product = ({ index, product }) => {
 
         if (confirm) {
             console.log(_id);
-            const url = `http://localhost:5000/inventory/${_id}`;
+            const url = `https://posdash-server.herokuapp.com/inventory/${_id}`;
             fetch(url, {
                 method: 'DELETE'
             })
