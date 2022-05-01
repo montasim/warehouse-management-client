@@ -16,6 +16,7 @@ import Footer from './Components/Footer/Footer';
 import ForgotPassword from './Pages/User/ForgotPassword/ForgotPassword';
 import Inventory from './Pages/Inventory/Inventory/Inventory';
 import ManageInventory from './Pages/Inventory/ManageInventory/ManageInventory/ManageInventory';
+import RequireAuth from './Hooks/RequireAuth';
 
 function App() {
   return (
@@ -25,7 +26,10 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/login' element={<Login />} />
         <Route path='/forgot-password' element={<ForgotPassword />} />
-        <Route path='/inventory/:id' element={<Inventory />} />
+        <Route path='/inventory/:id' element={
+          <RequireAuth>
+            <Inventory />
+          </RequireAuth>} />
         <Route path='/inventory' element={<ManageInventory />} />
         <Route path='/add-item' element={<AddItem />} />
         <Route path='/my-items' element={<MyItems />} />
