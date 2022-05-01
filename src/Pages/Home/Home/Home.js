@@ -5,7 +5,6 @@ import Pricing from '../Pricing/Pricing';
 import Offer from '../Offer/Offer';
 import Contact from '../Contact/Contact';
 import Testimonials from '../Testimonials/Testimonials/Testimonials';
-import BackToTop from '../../../Components/BackToTop/BackToTop';
 
 const Home = () => {
     return (

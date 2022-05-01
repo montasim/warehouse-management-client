@@ -2,7 +2,7 @@ import React from 'react';
 import { useSignInWithFacebook, useSignInWithGithub, useSignInWithGoogle, useSignInWithTwitter } from 'react-firebase-hooks/auth';
 import { toast } from 'react-toastify';
 import auth from '../../Hooks/Firebase.Init';
-import { BsGoogle, BsLinkedin, BsFacebook, BsGithub, BsTwitter, BsInstagram } from 'react-icons/bs';
+import { BsGoogle, BsFacebook, BsGithub, BsTwitter } from 'react-icons/bs';
 import { useNavigate } from 'react-router-dom';
 import Loading from '../Loading/Loading';
 
