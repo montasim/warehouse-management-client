@@ -14,113 +14,91 @@ const Header = () => {
     const navigate = useNavigate();
 
     return (
+        <div className="bg-gray-800 font-sans leading-normal tracking-normal" data-new-gr-c-s-check-loaded="14.1058.0" data-gr-ext-installed="">
 
-        <nav className="
-  relative
-  w-full
-  flex flex-wrap
-  items-center
-  justify-between
-  py-4
-  bg-gray-100
-  text-gray-500
-  hover:text-gray-700
-  focus:text-gray-700
-  shadow-lg
-  navbar navbar-expand-lg navbar-light
-  ">
-            <div className="container-fluid w-full flex flex-wrap items-center justify-between px-6">
-                <button className="
-      navbar-toggler
-      text-gray-500
-      border-0
-      hover:shadow-none hover:no-underline
-      py-2
-      px-2.5
-      bg-transparent
-      focus:outline-none focus:ring-0 focus:shadow-none focus:no-underline
-    " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars"
-                        className="w-6" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                        <path fill="currentColor"
-                            d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
-                        </path>
-                    </svg>
-                </button>
-                <div className="collapse navbar-collapse flex-grow items-center" id="navbarSupportedContent">
-                    <div className="pt-4 pb-2 px-6">
-                        <Link to="/">
-                            <div className="flex items-center">
-                                <div className="shrink-0">
-                                    <img src={logo} className="w-6" alt="POSDash logo" />
-                                </div>
-                                <div className="grow ml-3">
-                                    <p style={{ color: '#110A57' }} className="text-xl font-semibold">POSDash</p>
-                                </div>
+            <nav className="flex items-center justify-between flex-wrap bg-gray-100 p-6 fixed w-full z-10 top-0">
+                <div className="flex items-center flex-shrink-0 text-white mr-6">
+                    <Link to="/">
+                        <div className="flex items-center">
+                            <div className="shrink-0">
+                                <img src={logo} className="w-6" alt="POSDash logo" />
                             </div>
-                        </Link>
-                    </div>
+                            <div className="grow ml-3">
+                                <p style={{ color: '#110A57' }} className="text-xl font-semibold">POSDash</p>
+                            </div>
+                        </div>
+                    </Link>
                 </div>
 
-                <div className="flex items-center relative">
-                    <ul class="navbar-nav flex flex-col pl-0 list-style-none items-center">
-                        <li class="nav-item p-2">
-                            <Link class="nav-link text-gray-500 hover:text-gray-700 focus:text-gray-700 p-0 flex items-center" to="/">
+                <div className="block lg:hidden">
+                    <button onClick={() => {
+                        document.getElementById("nav-content").classList.toggle("hidden")
+                    }} id="nav-toggle" className="flex items-center px-3 py-2 border rounded text-gray-800 border-gray-800 hover:text-orange-500 hover:border-orange-500">
+                        <svg className="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <title>Menu</title>
+                            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <div className="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block pt-6 lg:pt-0" id="nav-content">
+                    <ul className="list-reset lg:flex justify-end flex-1 items-center">
+                        <li className="m-3">
+                            <Link className="nav-link text-gray-500 hover:text-gray-700 focus:text-gray-700 p-0 flex items-center" to="/">
                                 <AiOutlineHome className='mr-2 text-xl text-blue-600' />
                                 Home
                             </Link>
                         </li>
-                        <li class="nav-item p-2">
-                            <Link class="nav-link text-gray-500 hover:text-gray-700 focus:text-gray-700 p-0 flex items-center" to="/add-item">
+                        <li className="m-3">
+                            <Link className="nav-link text-gray-500 hover:text-gray-700 focus:text-gray-700 p-0 flex items-center" to="/add-item">
                                 <BsPlusSquare className='mr-2 text-xl text-blue-600' />
                                 Add Item
                             </Link>
                         </li>
-                        <li class="nav-item p-2">
-                            <Link class="nav-link text-gray-500 hover:text-gray-700 focus:text-gray-700 p-0 flex items-center" to="/manage-items">
+                        <li className="m-3">
+                            <Link className="nav-link text-gray-500 hover:text-gray-700 focus:text-gray-700 p-0 flex items-center" to="/manage-items">
                                 <RiCheckboxMultipleBlankLine className='mr-2 text-xl text-blue-600' />
                                 Manage Items
                             </Link>
                         </li>
-                        <li class="nav-item p-2">
-                            <Link class="nav-link text-gray-500 hover:text-gray-700 focus:text-gray-700 p-0 flex items-center" to="/my-items">
+                        <li className="m-3">
+                            <Link className="nav-link text-gray-500 hover:text-gray-700 focus:text-gray-700 p-0 flex items-center" to="/my-items">
                                 <RiProductHuntLine className='mr-2 text-xl text-blue-600' />
                                 My Items
                             </Link>
                         </li>
-                        <li class="nav-item p-2">
-                            <Link class="nav-link text-gray-500 hover:text-gray-700 focus:text-gray-700 p-0 flex items-center" to="/blog">
+                        <li className="m-3">
+                            <Link className="nav-link text-gray-500 hover:text-gray-700 focus:text-gray-700 p-0 flex items-center" to="/blog">
                                 <SiMicrodotblog className='mr-2 text-xl text-blue-600' />
                                 Blog
                             </Link>
                         </li>
-                        <li class="nav-item p-2">
-                            <Link class="nav-link text-gray-500 hover:text-gray-700 focus:text-gray-700 p-0 flex items-center" to="/register">
-                                <BiUserPlus className='mr-2 text-xl text-blue-600' />
-                                Register
-                            </Link>
-                        </li>
-                        <li class="nav-item p-2" onClick={() => navigate('/login')}>
-                            <button type="button" class="inline-block px-6 pt-2.5 pb-2 bg-blue-600 text-white font-medium text-xs leading-normal uppercase shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out flex align-center rounded-full items-center">
+                        <li className="m-3" onClick={() => navigate('/login')}>
+                            <button type="button" className="inline-block px-6 pt-2.5 pb-2 bg-orange-200 text-grey-600 font-semibold text-xs leading-normal uppercase shadow-md hover:bg-blue-700 hover:text-white hover:shadow-lg focus:bg-blue-700 focus:text-white focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:text-white active:shadow-lg transition duration-150 ease-in-out flex align-center rounded-full items-center">
                                 <AiOutlineUser className='mr-2' />
                                 Login
                             </button>
                         </li>
-                    </ul>
-                    <div className="dropdown relative">
-                        <Link className="dropdown-toggle flex items-center hidden-arrow" to="#" id="dropdownMenuButton2" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            <span
-                                class="rounded-full text-gray-500 bg-gray-200 font-semibold text-sm flex align-center cursor-pointer active:bg-gray-300 transition duration-300 ease w-max">
-                                <img class="rounded-full w-9 h-9 max-w-none" alt="A"
-                                    src="https://mdbootstrap.com/img/Photos/Avatars/avatar-6.jpg" />
-                                <span class="flex items-center px-3 py-2">
-                                    John Doe
-                                </span>
-                            </span>
-                        </Link>
-                        <ul className="
+                        <li className="m-3">
+                            <Link className="nav-link text-gray-500 hover:text-gray-700 focus:text-gray-700 p-0 flex items-center" to="/register">
+                                <BiUserPlus className='mr-2 text-xl text-blue-600' />
+                                Register
+                            </Link>
+                        </li>
+                        <li className="m-3">
+                            <div className="dropdown relative">
+                                <Link className="dropdown-toggle flex items-center hidden-arrow" to="#" id="dropdownMenuButton2" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span
+                                        className="rounded-full text-gray-600 bg-orange-200 font-semibold text-sm flex align-center cursor-pointer hover:bg-blue-700 hover:text-white hover:shadow-lg focus:bg-blue-700 focus:text-white focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:text-white active:shadow-lg transition duration-300 ease w-max">
+                                        <img className="rounded-full w-9 h-9 max-w-none" alt="A"
+                                            src="https://mdbootstrap.com/img/Photos/Avatars/avatar-6.jpg" />
+                                        <span className="flex items-center px-3 py-2">
+                                            John Doe
+                                        </span>
+                                    </span>
+                                </Link>
+                                <ul className="
     dropdown-menu
     min-w-max
     absolute
@@ -142,8 +120,8 @@ const Header = () => {
     left-auto
     right-0
   " aria-labelledby="dropdownMenuButton2">
-                            <li>
-                                <Link className="
+                                    <li>
+                                        <Link className="
         dropdown-item
         text-sm
         py-2
@@ -156,12 +134,12 @@ const Header = () => {
         text-gray-700
         hover:bg-gray-100 flex items-center
       " to="/profile">
-                                    <CgProfile className='mr-2' />
-                                    Profile
-                                </Link>
-                            </li>
-                            <li>
-                                <Link className="
+                                            <CgProfile className='mr-2' />
+                                            Profile
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link className="
         dropdown-item
         text-sm
         py-2
@@ -174,12 +152,12 @@ const Header = () => {
         text-gray-700
         hover:bg-gray-100 flex items-center
       " to="/settings">
-                                    <FiSettings className='mr-2' />
-                                    Settings
-                                </Link>
-                            </li>
-                            <li>
-                                <Link className="
+                                            <FiSettings className='mr-2' />
+                                            Settings
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link className="
         dropdown-item
         text-sm
         py-2
@@ -192,15 +170,22 @@ const Header = () => {
         text-gray-700
         hover:bg-gray-100 flex items-center
       " to="#">
-                                    <IoIosLogOut className='mr-2' />
-                                    Logout
-                                </Link>
-                            </li>
-                        </ul>
-                    </div>
+                                            <IoIosLogOut className='mr-2' />
+                                            Logout
+                                        </Link>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
+            </nav>
+
+            <div className="container shadow-lg mx-auto bg-white mt-24 md:mt-18">
+
             </div>
-        </nav>
+
+        </div>
     );
 };
 
