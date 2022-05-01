@@ -15,12 +15,7 @@ const Register = () => {
         user,
         registerLoading,
         registerError,
-    ] = useCreateUserWithEmailAndPassword(auth);
-    const [
-        sendEmailVerification,
-        verificationSending,
-        verificationError
-    ] = useSendEmailVerification(auth);
+    ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
 
     const register = async event => {
         event.preventDefault();
@@ -39,9 +34,8 @@ const Register = () => {
         }
         else {
             createUserWithEmailAndPassword(email, password);
-            await sendEmailVerification();
             toast('Email Verification Sent');
-            navigate('/');
+            navigate('/login');
         }
     }
 
@@ -53,13 +47,6 @@ const Register = () => {
     }
     if (user) {
         navigate('/');
-    }
-
-    if (verificationError) {
-        setFormError(verificationError?.error);
-    }
-    if (verificationSending) {
-        return <p>Sending...</p>;
     }
 
     return (
