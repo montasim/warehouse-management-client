@@ -1,7 +1,7 @@
 import React from 'react';
-import { RiCheckboxMultipleBlankLine } from 'react-icons/ri';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
+import { RiCheckboxMultipleBlankLine } from 'react-icons/ri';
 
 const AddItem = () => {
     const navigate = useNavigate();
