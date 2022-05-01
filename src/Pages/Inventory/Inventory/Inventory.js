@@ -24,9 +24,9 @@ const Inventory = () => {
     const { category, name, description, supplierName, price, stock, ratings, ratingsCount, img, shipping, quantity } = product;
 
     const update = (event) => {
+        event.preventDefault();
 
         const stock = event.target.stock.value;
-
         const newStock = { stock };
 
         // update data to server
