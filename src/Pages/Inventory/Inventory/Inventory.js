@@ -5,6 +5,7 @@ import { FcRating } from 'react-icons/fc';
 import { AiOutlineDollar, AiOutlineStock } from 'react-icons/ai';
 import { ImPriceTag } from 'react-icons/im';
 import { RiCheckboxMultipleBlankLine } from 'react-icons/ri';
+import { toast } from 'react-toastify';
 
 const Inventory = () => {
     const _id = useParams();
@@ -18,9 +19,30 @@ const Inventory = () => {
         fetch(`https://posdash-server.herokuapp.com/inventory/${_id?.id}`)
             .then(res => res.json())
             .then(data => setProduct(data));
-    }, []);
+    }, [product]);
 
     const { category, name, description, supplierName, price, stock, ratings, ratingsCount, img, shipping, quantity } = product;
+
+    const update = event => {
+        event.preventDefault();
+
+        const stock = event.target.stock.value;
+
+        const newStock = { stock };
+
+        // update data to server
+        fetch(`http://localhost:5000/inventory/${_id?.id}`, {
+            method: 'PUT',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(newStock)
+        })
+            .then(res => res.json())
+            .then(data => {
+                toast(`${name}'s Stock Updated Successfully`);
+            });
+    }
 
     return (
         <div className='d-block mx-auto p-12'>
@@ -96,7 +118,7 @@ const Inventory = () => {
 
             <div class="block mx-auto mt-20 p-6 rounded-lg shadow-lg bg-white max-w-md">
                 <h2 className='text-2xl text-gray-800 mb-4'>Update The Item Stock Quantity</h2>
-                <form>
+                <form onSubmit={update}>
                     <div class="form-group mb-6">
                         <input type="number" class="form-control block
         w-full
@@ -114,7 +136,7 @@ const Inventory = () => {
         focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="stock"
                             placeholder="Add Stock Quantity" name='stock' />
                     </div>
-                    <button class="
+                    <button type='submit' class="
       w-full
       px-6
       py-2.5
