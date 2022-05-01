@@ -37,7 +37,7 @@ const Header = () => {
     return (
         <div className="bg-gray-800 font-sans leading-normal tracking-normal" data-new-gr-c-s-check-loaded="14.1058.0" data-gr-ext-installed="">
 
-            <nav className="flex items-center justify-between flex-wrap bg-gray-100 px-8 py-2 fixed w-full z-10 top-0">
+            <nav className="flex items-center justify-between flex-wrap bg-gray-100 px-8 py-6 fixed w-full z-10 top-0">
                 <div className="flex items-center flex-shrink-0 text-white mr-6">
                     <Link to="/">
                         <div className="flex items-center">
