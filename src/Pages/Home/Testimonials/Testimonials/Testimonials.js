@@ -5,7 +5,7 @@ const Testimonials = () => {
     const [testimonials, setTestimonials] = useState([]);
 
     useEffect(() => {
-        fetch('testimonials.json')
+        fetch('https://posdash-server.herokuapp.com/testimonials')
             .then(res => res.json())
             .then(data => setTestimonials(data));
     }, []);

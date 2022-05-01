@@ -5,7 +5,7 @@ const Items = () => {
     const [items, setItems] = useState([]);
 
     useEffect(() => {
-        fetch('products.json')
+        fetch('http://localhost:5000/products')
             .then(res => res.json())
             .then(data => setItems(data));
     }, []);
@@ -17,15 +17,15 @@ const Items = () => {
 
                 <h2 className="text-3xl font-bold mb-12 pb-4 text-center">Latest Items</h2>
 
-                <div className="grid lg:grid-cols-5 gap-6 xl:gap-12">
+                <div className="grid lg:grid-cols-4 gap-6 xl:gap-12">
                     {
-                        items.slice(0, 3).map((item, index) => <Item key={index} item={item} />)
+                        items.slice(0, 2).map((item, index) => <Item key={index} item={item} />)
                     }
                     {
-                        items.slice(15, 18).map((item, index) => <Item key={index} item={item} />)
+                        items.slice(15, 17).map((item, index) => <Item key={index} item={item} />)
                     }
                     {
-                        items.slice(21, 25).map((item, index) => <Item key={index} item={item} />)
+                        items.slice(21, 23).map((item, index) => <Item key={index} item={item} />)
                     }
                 </div>
             </section>

@@ -33,6 +33,7 @@ import Footer from './Components/Footer/Footer';
 import ForgotPassword from './Pages/ForgotPassword/ForgotPassword';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import RequireAuth from './Hooks/RequireAuth';
 
 function App() {
   return (
@@ -44,6 +45,7 @@ function App() {
         <Route path='/forgot-password' element={<ForgotPassword />} />
         <Route path='/add-item' element={<AddItem />} />
         <Route path='/manage-items' element={<ManageItems />} />
+        <Route path='/inventory/:id' element={<ManageItems />}></Route>
         <Route path='/my-items' element={<MyItems />} />
         <Route path='/blog' element={<Blog />} />
         <Route path='/register' element={<Register />} />

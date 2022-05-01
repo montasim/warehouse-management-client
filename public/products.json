@@ -1,9 +1,9 @@
 [
     {
-        "id": "124e13b9-2d54-4b2f-a74d-a77b362d6ead",
         "category": "Men's Sneaker",
         "name": "ULTRABOOST 22 SHOES",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 420,
         "stock": 20,
         "ratings": 4,
@@ -13,10 +13,10 @@
         "quantity": 0
     },
     {
-        "id": "13cbc7ed-a61b-4883-9d42-82d7d8642b86",
         "category": "Men's Sneaker",
         "name": "LUNAR NEW YEAR ULTRABOOST DNA SHOES",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 196,
         "stock": 19,
         "ratings": 5,
@@ -26,10 +26,10 @@
         "quantity": 0
     },
     {
-        "id": "307f166f-1d04-4573-bc37-2f461ea9d4f7",
         "category": "Men's Sneaker",
         "name": "SUPERNOVA SHOES",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 245,
         "stock": 20,
         "ratings": 4,
@@ -39,10 +39,10 @@
         "quantity": 0
     },
     {
-        "id": "4bf9798f-63bc-4a83-b0c6-6a3b816fe922",
         "category": "Men's Sneaker",
         "name": "LITE RACER ADAPT 3.0 SHOES",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 229,
         "stock": 10,
         "ratings": 5,
@@ -52,10 +52,10 @@
         "quantity": 0
     },
     {
-        "id": "9496d72b-04ec-41f8-9bc3-0a7c9697be8e",
         "category": "Men's Sneaker",
         "name": "4DFWD SHOES",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 287,
         "stock": 11,
         "ratings": 4,
@@ -65,10 +65,10 @@
         "quantity": 0
     },
     {
-        "id": "6e5593d3-557b-43cf-8dab-a5140faedfb0",
         "category": "Men's Sneaker",
         "name": "KAPTIR 2.0 SHOES",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 138,
         "stock": 19,
         "ratings": 3,
@@ -78,10 +78,10 @@
         "quantity": 0
     },
     {
-        "id": "9c0c13c2-54e4-4001-809b-afbd9d84037d",
         "category": "Men's Sneaker",
         "name": "4DFWD PULSE SHOES",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 226,
         "stock": 1,
         "ratings": 4,
@@ -91,10 +91,10 @@
         "quantity": 0
     },
     {
-        "id": "c9d1f410-d28f-49d9-9b01-d759b5acbeea",
         "category": "Men's Sneaker",
         "name": "ZX 1K BOOST SHOES",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 319,
         "stock": 7,
         "ratings": 4,
@@ -104,10 +104,10 @@
         "quantity": 0
     },
     {
-        "id": "1564a06b-692f-4f2e-8413-9c8a1cc2da77",
         "category": "Men's Sneaker",
         "name": "NMD_R1 V2 SHOES",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 260,
         "stock": 4,
         "ratings": 5,
@@ -117,10 +117,10 @@
         "quantity": 0
     },
     {
-        "id": "ac44095f-230e-4502-8816-dea3eaae8320",
         "category": "Men's Sneaker",
         "name": "NMD_R1 PRIMEBLUE SHOES",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 437,
         "stock": 1,
         "ratings": 4,
@@ -130,10 +130,10 @@
         "quantity": 0
     },
     {
-        "id": "d0803f97-966f-4296-ad31-a7f70fc86fab",
         "category": "Men's Pants",
         "name": "TIRO TRACK PANTS",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 146,
         "stock": 15,
         "ratings": 5,
@@ -143,10 +143,10 @@
         "quantity": 0
     },
     {
-        "id": "8a5b4a9c-76ea-4fbb-9c70-9548de4eab01",
         "category": "Men's Pants",
         "name": "TIRO 21 TRACK PANTS",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 109,
         "stock": 6,
         "ratings": 5,
@@ -156,10 +156,10 @@
         "quantity": 0
     },
     {
-        "id": "b357e19b-4dd9-4fc7-b5c0-9ed5255464ba",
         "category": "Men's Pants",
         "name": "PRIMEBLUE SST TRACK PANTS",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 63,
         "stock": 46,
         "ratings": 4,
@@ -169,10 +169,10 @@
         "quantity": 0
     },
     {
-        "id": "e4220958-06d2-4d50-96fa-0163a563f43d",
         "category": "Men's Pants",
         "name": "TIRO 21 TRACK PANTS",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 148,
         "stock": 41,
         "ratings": 3,
@@ -182,10 +182,10 @@
         "quantity": 0
     },
     {
-        "id": "ae69f0e4-559c-4b24-8032-80b63f9b5073",
         "category": "Men's Pants",
         "name": "TIRO TRACK PANTS RED",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 122,
         "stock": 43,
         "ratings": 4,
@@ -195,10 +195,10 @@
         "quantity": 0
     },
     {
-        "id": "dbf7ab3f-b383-4d95-8ab7-f55fcf6fa5f2",
         "category": "Men's Pants",
         "name": "TIRO PANTS BLACK GOLD",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 115,
         "stock": 26,
         "ratings": 5,
@@ -208,10 +208,10 @@
         "quantity": 0
     },
     {
-        "id": "ed6a7ac3-7e67-4e3f-8461-bceb5178be42",
         "category": "Men's Pants",
         "name": "TAPERED-CUFF 3-STRIPES PANTS",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 108,
         "stock": 5,
         "ratings": 3,
@@ -221,10 +221,10 @@
         "quantity": 0
     },
     {
-        "id": "fd52819a-cb78-4510-ad2f-c5bdd888ae78",
         "category": "Men's Pants",
         "name": "FRENCH TERRY TAPERED CUFF LOGO PANTS",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 189,
         "stock": 27,
         "ratings": 3,
@@ -234,10 +234,10 @@
         "quantity": 0
     },
     {
-        "id": "c667d3ff-41eb-4cf7-a433-819d959ea768",
         "category": "Men's Pants",
         "name": "OPEN HEM 3-STRIPES TRACK PANTS",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 58,
         "stock": 41,
         "ratings": 5,
@@ -247,10 +247,10 @@
         "quantity": 0
     },
     {
-        "id": "e1dbc7fe-be17-4e0f-9e2d-6ad5dbc102fc",
         "category": "Men's Pants",
         "name": "ESSENTIALS4GAMEDAY PANTS",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 185,
         "stock": 43,
         "ratings": 5,
@@ -260,10 +260,10 @@
         "quantity": 0
     },
     {
-        "id": "0298e695-1f9b-49b1-9961-8a8460f95b1c",
         "category": "Men's Boot",
         "name": "TERREX FREE HIKER GORE-TEX HIKING SHOES",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 132,
         "stock": 1,
         "ratings": 3,
@@ -273,10 +273,10 @@
         "quantity": 0
     },
     {
-        "id": "3cfe9adc-c27f-4be4-a859-a5c98ce88a27",
         "category": "Men's Boot",
         "name": "TERREX AX4 MID GORE-TEX HIKING SHOES",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 111,
         "stock": 19,
         "ratings": 4,
@@ -286,10 +286,10 @@
         "quantity": 0
     },
     {
-        "id": "6602468a-a3a8-4c2c-9d3a-fd54e2c5daf7",
         "category": "Men's Boot",
         "name": "RESPONSE 3MC ADV BOOTS",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 104,
         "stock": 6,
         "ratings": 5,
@@ -299,10 +299,10 @@
         "quantity": 0
     },
     {
-        "id": "5db3ee2f-2eb7-4764-942d-894f72198e86",
         "category": "Men's Boot",
         "name": "TACTICAL LEXICON ADV BOOTS",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 151,
         "stock": 3,
         "ratings": 4,
@@ -312,10 +312,10 @@
         "quantity": 0
     },
     {
-        "id": "9b169efb-0966-40f3-b9c2-79b16cb96388",
         "category": "Men's Boot",
         "name": "Superstar Boots",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 151,
         "stock": 13,
         "ratings": 3,
@@ -325,10 +325,10 @@
         "quantity": 0
     },
     {
-        "id": "fb1f9913-d903-498c-9e4a-16d363aa2eba",
         "category": "Men's Boot",
         "name": "TACTICAL LEXICON ADV BOOTS",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 199,
         "stock": 14,
         "ratings": 4,
@@ -338,10 +338,10 @@
         "quantity": 0
     },
     {
-        "id": "fe48e340-4dc9-44b3-911b-9308b4f530b3",
         "category": "Men's Boot",
         "name": "TERREX TRAILMAKER MID COLD.RDY HIKING SHOES",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 110,
         "stock": 16,
         "ratings": 3,
@@ -351,10 +351,10 @@
         "quantity": 0
     },
     {
-        "id": "2e06fa90-2961-4867-8322-6fdcca2f086a",
         "category": "Men's Boot",
         "name": "TERREX FREE HIKER GORE-TEX HIKING SHOES",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 155,
         "stock": 4,
         "ratings": 5,
@@ -364,10 +364,10 @@
         "quantity": 0
     },
     {
-        "id": "008c06dd-04e4-4923-b840-927bd6b4c2de",
         "category": "Men's Boot",
         "name": "TERREX AGRAVIC TECH PRO TRAIL RUNNING SHOES",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 118,
         "stock": 8,
         "ratings": 3,
@@ -377,10 +377,10 @@
         "quantity": 0
     },
     {
-        "id": "b4d83415-d20a-4bba-8629-22b2780b6e93",
         "category": "Men's Boot",
         "name": "TERREX FREE HIKER COLD.RDY HIKING BOOTS",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 169,
         "stock": 17,
         "ratings": 5,
@@ -390,10 +390,10 @@
         "quantity": 0
     },
     {
-        "id": "1d54fd83-83df-42f8-ae2b-f5ef9d4987ea",
         "category": "Men's Sneaker",
         "name": "MOVE FEELREADY SPORT TEE",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 14,
         "stock": 19,
         "ratings": 3,
@@ -403,10 +403,10 @@
         "quantity": 0
     },
     {
-        "id": "1ce97e0e-3611-4406-8788-7b413640f59e",
         "category": "Men's Sneaker",
         "name": "ADIDAS CAMO BOX GRAPHIC TEE",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 16,
         "stock": 10,
         "ratings": 3,
@@ -416,10 +416,10 @@
         "quantity": 0
     },
     {
-        "id": "f088beb8-d664-4166-99f8-6995c2f08465",
         "category": "Men's Sneaker",
         "name": "ADICOLOR CLASSICS TREFOIL TEE",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 20,
         "stock": 12,
         "ratings": 4,
@@ -429,10 +429,10 @@
         "quantity": 0
     },
     {
-        "id": "26dd7da8-c854-4bab-aaf5-32cc964da2ec",
         "category": "Men's Sneaker",
         "name": "LNY TREFOIL FILL TEE",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 16,
         "stock": 17,
         "ratings": 4,
@@ -442,10 +442,10 @@
         "quantity": 0
     },
     {
-        "id": "a2615943-7eeb-4d6a-ab1b-78fb51ce39da",
         "category": "Men's Sneaker",
         "name": "CREATOR 365 TEE",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 34,
         "stock": 20,
         "ratings": 3,
@@ -455,10 +455,10 @@
         "quantity": 0
     },
     {
-        "id": "27cf3efa-7352-4889-85c4-44a4de2aa93a",
         "category": "Men's Sneaker",
         "name": "OWN THE RUN LONG SLEEVE TEE",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 23,
         "stock": 17,
         "ratings": 3,
@@ -468,10 +468,10 @@
         "quantity": 0
     },
     {
-        "id": "6add9d60-1339-4115-b2ac-00d4886f4ad7",
         "category": "Men's Sneaker",
         "name": "NYC BADGE OF SPORT LOGO GRAPHIC TEE",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 29,
         "stock": 6,
         "ratings": 3,
@@ -481,10 +481,10 @@
         "quantity": 0
     },
     {
-        "id": "1b6f1af1-2103-4838-932d-2b98dfdb6c1f",
         "category": "Men's Sneaker",
         "name": "RUNNER TEE",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 20,
         "stock": 7,
         "ratings": 5,
@@ -494,10 +494,10 @@
         "quantity": 0
     },
     {
-        "id": "c6cb80a7-3542-4270-bd2b-920efd5f3f85",
         "category": "Men's Sneaker",
         "name": "V-DAY TEE (GENDER NEUTRAL)",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 18,
         "stock": 2,
         "ratings": 4,
@@ -507,10 +507,10 @@
         "quantity": 0
     },
     {
-        "id": "f54a4763-b8c2-4922-ba8d-80652a64f5bc",
         "category": "Men's Sneaker",
         "name": "ESSENTIALS COLORBLOCK TEE",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 35,
         "stock": 6,
         "ratings": 3,
@@ -520,10 +520,10 @@
         "quantity": 0
     },
     {
-        "id": "4a0090e7-b65d-4f6e-a42b-5603a3f51883",
         "category": "Bag",
         "name": "3-Stripes Backpack 2.0",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 74,
         "stock": 7,
         "ratings": 5,
@@ -533,10 +533,10 @@
         "quantity": 0
     },
     {
-        "id": "0ac76ee7-53f1-45ba-b5ca-81ff6063bc1a",
         "category": "Bag",
         "name": "Trefoil Backpack",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 65,
         "stock": 3,
         "ratings": 4,
@@ -546,10 +546,10 @@
         "quantity": 0
     },
     {
-        "id": "1770549a-571b-4baf-bc58-7bae7a228dcb",
         "category": "Bag",
         "name": "Santiago Lunch Bag",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 63,
         "stock": 10,
         "ratings": 3,
@@ -559,10 +559,10 @@
         "quantity": 0
     },
     {
-        "id": "24b20ba6-9024-4b0a-b8a9-cf937521cede",
         "category": "Bag",
         "name": "Blue Version Backpack",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 87,
         "stock": 15,
         "ratings": 5,
@@ -572,10 +572,10 @@
         "quantity": 0
     },
     {
-        "id": "a7231186-0316-4cc0-94bf-4f496a382346",
         "category": "Bag",
         "name": "Defender Backpack",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 96,
         "stock": 10,
         "ratings": 4,
@@ -585,10 +585,10 @@
         "quantity": 0
     },
     {
-        "id": "35ac57f9-870a-4299-aac8-e5d8d2716b31",
         "category": "Bag",
         "name": "Excel Backpack",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 62,
         "stock": 18,
         "ratings": 5,
@@ -598,10 +598,10 @@
         "quantity": 0
     },
     {
-        "id": "c50bebaf-2633-4674-aba2-25be34bfdbba",
         "category": "Bag",
         "name": "Alliance Sackpack",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 99,
         "stock": 16,
         "ratings": 3,
@@ -611,10 +611,10 @@
         "quantity": 0
     },
     {
-        "id": "ff5bf372-7ed1-4904-aac5-7a2ce98e70ef",
         "category": "Bag",
         "name": "R.Y.V. Toploader Backpack",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 56,
         "stock": 19,
         "ratings": 3,
@@ -624,10 +624,10 @@
         "quantity": 0
     },
     {
-        "id": "83ef9902-0224-48d3-ba7c-eeff3e678d13",
         "category": "Bag",
         "name": "Adicolor Archive Backpack",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 84,
         "stock": 5,
         "ratings": 4,
@@ -637,10 +637,10 @@
         "quantity": 0
     },
     {
-        "id": "7490b4c8-8242-4de5-b161-b8ac96ea0e0b",
         "category": "Bag",
         "name": "R.Y.V. Backpack",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 67,
         "stock": 10,
         "ratings": 5,
@@ -650,10 +650,10 @@
         "quantity": 0
     },
     {
-        "id": "b1872b25-ba91-48ed-9468-1822df0637b9",
         "category": "Cap",
         "name": "Relaxed Strap-Back Hat",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 30,
         "stock": 6,
         "ratings": 4,
@@ -663,10 +663,10 @@
         "quantity": 0
     },
     {
-        "id": "ea028038-4e9d-42bf-b033-88aa5e6cc477",
         "category": "Cap",
         "name": "Icon Snapback Hat",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 21,
         "stock": 13,
         "ratings": 4,
@@ -676,10 +676,10 @@
         "quantity": 0
     },
     {
-        "id": "d48e0fcb-904c-499e-93a0-312d77e6dbf9",
         "category": "Cap",
         "name": "Superlite Hat",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 11,
         "stock": 18,
         "ratings": 3,
@@ -689,10 +689,10 @@
         "quantity": 0
     },
     {
-        "id": "71dfc7f9-844b-4be7-816f-891a5cbaa0f1",
         "category": "Cap",
         "name": "Superlite Hat",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 10,
         "stock": 10,
         "ratings": 5,
@@ -702,10 +702,10 @@
         "quantity": 0
     },
     {
-        "id": "a9d89eac-7418-4bca-a484-c8238c356270",
         "category": "Cap",
         "name": "Tee Time 5-Panel Hat",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 24,
         "stock": 1,
         "ratings": 4,
@@ -715,10 +715,10 @@
         "quantity": 0
     },
     {
-        "id": "f6a5e6c0-5aec-4f10-84d7-bde9b6199045",
         "category": "Cap",
         "name": "Baseball Cap",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 17,
         "stock": 7,
         "ratings": 5,
@@ -728,10 +728,10 @@
         "quantity": 0
     },
     {
-        "id": "625b4b60-611c-490c-ac0a-f3c2d2afd05c",
         "category": "Cap",
         "name": "Relaxed Strap-Back Hat",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 24,
         "stock": 9,
         "ratings": 5,
@@ -741,10 +741,10 @@
         "quantity": 0
     },
     {
-        "id": "5960bf40-9603-4a39-9ff6-6cf9f1ce4815",
         "category": "Cap",
         "name": "UNISEX ORIGINALS WASHED BUCKET",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 27,
         "stock": 14,
         "ratings": 4,
@@ -754,10 +754,10 @@
         "quantity": 0
     },
     {
-        "id": "5991add1-f4ba-4fb9-9b6b-ec59aa2dda60",
         "category": "Cap",
         "name": "SST Plus Strap-Back Hat",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 23,
         "stock": 14,
         "ratings": 4,
@@ -767,10 +767,10 @@
         "quantity": 0
     },
     {
-        "id": "5690e579-a943-4b42-9ffe-dfc65b71c560",
         "category": "Cap",
         "name": "Dispatch Trucker Hat",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 28,
         "stock": 16,
         "ratings": 4,
@@ -780,10 +780,10 @@
         "quantity": 0
     },
     {
-        "id": "be7a4d0a-c681-416c-ab8d-f9be28223f4e",
         "category": "Earphones",
         "name": "adidas Z.N.E. 01 True Wireless Earbuds",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 142,
         "stock": 11,
         "ratings": 5,
@@ -793,10 +793,10 @@
         "quantity": 0
     },
     {
-        "id": "b278e667-ca17-465c-b603-af1af4319b7b",
         "category": "Earphones",
         "name": "adidas Z.N.E. 01 ANC True Wireless Earbuds",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 135,
         "stock": 16,
         "ratings": 5,
@@ -806,10 +806,10 @@
         "quantity": 0
     },
     {
-        "id": "1f56c0e5-4407-44bf-9225-90f592d2924a",
         "category": "Earphones",
         "name": "FWD-01 Sport In-Ear Headphones",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 185,
         "stock": 8,
         "ratings": 4,
@@ -819,10 +819,10 @@
         "quantity": 0
     },
     {
-        "id": "4ead4708-68e8-4a93-b28e-5e99ccc4d75c",
         "category": "Earphones",
         "name": "adidas FWD-02 Sport True Wireless Earbuds",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 162,
         "stock": 14,
         "ratings": 4,
@@ -832,10 +832,10 @@
         "quantity": 0
     },
     {
-        "id": "d1116075-10f2-49c4-985e-0d41e19ce1b3",
         "category": "Earphones",
         "name": "adidas Z.N.E. 01 ANC True Wireless Earbuds",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 110,
         "stock": 15,
         "ratings": 5,
@@ -845,10 +845,10 @@
         "quantity": 0
     },
     {
-        "id": "d1116075-10f2-49c4-985e-fg41e19dc1b8",
         "category": "Earphones",
         "name": "RPT-01 Sport On-Ear Headphones",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 170,
         "stock": 15,
         "ratings": 5,
@@ -858,10 +858,10 @@
         "quantity": 0
     },
     {
-        "id": "9e7cda87-8160-458f-bd32-ecf253a2d86a",
         "category": "Bottle",
         "name": "Steel Metal Bottle 1L",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 33,
         "stock": 7,
         "ratings": 4,
@@ -871,10 +871,10 @@
         "quantity": 0
     },
     {
-        "id": "eaff8921-f7eb-446f-b072-d96559685de0",
         "category": "Bottle",
         "name": "Steel Metal Bottle 1L",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 40,
         "stock": 14,
         "ratings": 5,
@@ -884,10 +884,10 @@
         "quantity": 0
     },
     {
-        "id": "96fd22a5-f22f-4ad8-b7b5-f1cfd0852553",
         "category": "Bottle",
         "name": "Steel Metal Bottle 1 L",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 46,
         "stock": 2,
         "ratings": 5,
@@ -897,10 +897,10 @@
         "quantity": 0
     },
     {
-        "id": "e1a7c529-f91b-4ef5-a661-c2317c5c314e",
         "category": "Bottle",
         "name": "Steel Metal Bottle 1L",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 20,
         "stock": 14,
         "ratings": 5,
@@ -910,10 +910,10 @@
         "quantity": 0
     },
     {
-        "id": "e912ad01-2551-48dc-a709-4054cbfbcbbc",
         "category": "Bottle",
         "name": "Steel Metal Bottle 600 ML",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 43,
         "stock": 19,
         "ratings": 4,
@@ -923,10 +923,10 @@
         "quantity": 0
     },
     {
-        "id": "afc5d640-9943-437a-b644-ba1f6f12baa9",
         "category": "Bottle",
         "name": "Steel Straw Metal Bottle 600 ML",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 43,
         "stock": 10,
         "ratings": 3,
@@ -936,10 +936,10 @@
         "quantity": 0
     },
     {
-        "id": "5b5c43d9-950d-4b9a-b7d9-ca489224a7b2",
         "category": "Bottle",
         "name": "Steel Metal Bottle 600 ML",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 26,
         "stock": 20,
         "ratings": 5,
@@ -949,10 +949,10 @@
         "quantity": 0
     },
     {
-        "id": "96239c09-8b1c-4c81-99f9-f43e7613eab3",
         "category": "Bottle",
         "name": "Squad Glass Bottle 720 ML",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 39,
         "stock": 20,
         "ratings": 3,
@@ -962,10 +962,10 @@
         "quantity": 0
     },
     {
-        "id": "30698483-f7aa-49ba-9de9-9070f64dc263",
         "category": "Bottle",
         "name": "Steel Bottle 600 ML",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 23,
         "stock": 11,
         "ratings": 5,
@@ -975,10 +975,10 @@
         "quantity": 0
     },
     {
-        "id": "02871edc-272b-4e20-bcc2-b32681213b3c",
         "category": "Bottle",
         "name": "Steel Metal Bottle 2L",
-        "seller": "Addidas",
+        "description": "Trusted brand worldwide. One of the best product of its kind. Chosen by many. Dreams of everyone. Best Selling product of 2022",
+        "supplierName": "Addidas",
         "price": 37,
         "stock": 14,
         "ratings": 4,

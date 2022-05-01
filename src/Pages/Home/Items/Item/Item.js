@@ -1,7 +1,13 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Item = ({ item }) => {
-    const { category, name, seller, price, stock, ratings, ratingsCount, img, shipping, quantity } = item;
+    const { _id, category, name, description, supplierName, price, stock, ratings, ratingsCount, img, shipping, quantity } = item;
+    const navigate = useNavigate();
+
+    const naviagateToItems = _id => {
+        navigate(`/inventory/${_id}`);
+    }
 
     return (
         <div className="mb-6 lg:mb-0">
@@ -26,16 +32,14 @@ const Item = ({ item }) => {
                     </div>
                     <p className="text-gray-500 mb-4">
                         <small>
-                            <a href="" className="text-gray-900"><span className='font-semibold'>Supplier:</span> {seller}</a>
+                            <a href="" className="text-gray-900"><span className='font-semibold'>Supplier:</span> {supplierName}</a>
                         </small>
                     </p>
                     <p className="mb-4 pb-2">
-                        Ut pretium ultricies dignissim. Sed sit amet mi eget urna
-                        placerat vulputate. Ut vulputate est non quam dignissim
-                        elementum. Donec a ullamcorper diam.
+                        {description}
                     </p>
-                    <a href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light"
-                        className="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Manage Stock</a>
+                    <button onClick={() => naviagateToItems(_id)} data-mdb-ripple="true" data-mdb-ripple-color="light"
+                        className="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Update Stock</button>
                     <p className="text-gray-500 mt-4">
                         <small>Added <u>13.01.2022</u></small>
                     </p>

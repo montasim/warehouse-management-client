@@ -10,7 +10,6 @@ import BackToTop from '../../../Components/BackToTop/BackToTop';
 const Home = () => {
     return (
         <div>
-            <BackToTop />
             <Offer />
             <Banner />
             <Testimonials />
