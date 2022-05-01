@@ -23,11 +23,27 @@ const Inventory = () => {
 
     const { category, name, description, supplierName, price, stock, ratings, ratingsCount, img, shipping, quantity } = product;
 
-    const update = event => {
-        event.preventDefault();
+    const update = (event) => {
 
         const stock = event.target.stock.value;
 
+        const newStock = { stock };
+
+        // update data to server
+        fetch(`http://localhost:5000/inventory/${_id?.id}`, {
+            method: 'PUT',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(newStock)
+        })
+            .then(res => res.json())
+            .then(data => {
+                toast(`${name}'s Stock Updated Successfully`);
+            });
+    }
+
+    const deliver = (stock) => {
         const newStock = { stock };
 
         // update data to server
@@ -105,7 +121,7 @@ const Inventory = () => {
                                             </p>
                                         </div>
                                     </div>
-                                    <button type="button"
+                                    <button onClick={() => deliver(stock - 1)} type="button"
                                         className="inline-block px-7 py-3 bg-gray-800 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-gray-900 hover:shadow-lg focus:bg-gray-900 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-900 active:shadow-lg transition duration-150 ease-in-out">
                                         Delivered
                                     </button>
@@ -116,11 +132,11 @@ const Inventory = () => {
                 </section>
             </div >
 
-            <div class="block mx-auto mt-20 p-6 rounded-lg shadow-lg bg-white max-w-md">
+            <div className="block mx-auto mt-20 p-6 rounded-lg shadow-lg bg-white max-w-md">
                 <h2 className='text-2xl text-gray-800 mb-4'>Update The Item Stock Quantity</h2>
                 <form onSubmit={update}>
-                    <div class="form-group mb-6">
-                        <input type="number" class="form-control block
+                    <div className="form-group mb-6">
+                        <input type="number" className="form-control block
         w-full
         px-3
         py-1.5
@@ -136,7 +152,7 @@ const Inventory = () => {
         focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="stock"
                             placeholder="Add Stock Quantity" name='stock' />
                     </div>
-                    <button type='submit' class="
+                    <button type='submit' className="
       w-full
       px-6
       py-2.5
