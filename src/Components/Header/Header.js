@@ -48,7 +48,7 @@ const Header = () => {
                                 <img src={logo} className="w-6" alt="POSDash logo" />
                             </div>
                             <div className="grow ml-3">
-                                <p style={{ color: '#110A57' }} className="text-xl font-semibold">POSDash</p>
+                                <p className="text-xl text-blue-600 font-semibold">POSDash</p>
                             </div>
                         </div>
                     </Link>
