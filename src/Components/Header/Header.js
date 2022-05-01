@@ -11,11 +11,12 @@ import { SiMicrodotblog } from 'react-icons/si';
 import { BiUserPlus } from 'react-icons/bi';
 import { getAuth, signOut } from 'firebase/auth';
 import { toast } from 'react-toastify';
+import { useAuthState } from 'react-firebase-hooks/auth';
 
 const Header = () => {
     const navigate = useNavigate();
     const auth = getAuth();
-    const user = auth.currentUser;
+    const [user] = useAuthState(auth);
 
     if (user !== null) {
         user.providerData.forEach((profile) => {
@@ -28,16 +29,18 @@ const Header = () => {
     }
 
     const logOut = () => {
-        signOut(auth).then(() => {
+        if (window.confirm("Are You Sure?") === true) {
+            signOut(auth);
             toast('See You Soon');
-        }).catch((error) => {
-        });
+        } else {
+
+        }
     }
 
     return (
         <div className="bg-gray-800 font-sans leading-normal tracking-normal" data-new-gr-c-s-check-loaded="14.1058.0" data-gr-ext-installed="">
 
-            <nav className="flex items-center justify-between flex-wrap bg-gray-100 px-8 py-6 fixed w-full z-10 top-0">
+            <nav className="flex items-center justify-between flex-wrap bg-gray-100 px-8 py-5 fixed w-full z-10 top-0">
                 <div className="flex items-center flex-shrink-0 text-white mr-6">
                     <Link to="/">
                         <div className="flex items-center">
@@ -77,7 +80,7 @@ const Header = () => {
                             </Link>
                         </li>
                         {
-                            user !== null ? <>
+                            user ? <>
                                 <li className="m-3">
                                     <Link className="nav-link text-gray-500 hover:text-gray-700 focus:text-gray-700 p-0 flex items-center" to="/add-item">
                                         <BsPlusSquare className='mr-2 text-xl text-blue-600' />
