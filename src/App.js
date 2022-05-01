@@ -19,6 +19,7 @@ import ManageInventory from './Pages/Inventory/ManageInventory/ManageInventory/M
 import RequireAuth from './Hooks/RequireAuth';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import ManageItems from './Pages/Items/ManageItems/ManageItems';
 AOS.init();
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
             <ManageInventory />
           </RequireAuth>
         } />
+        <Route path='/manage-items' element={<ManageItems />} />
         <Route path='/add-item' element={<AddItem />} />
         <Route path='/my-items' element={<MyItems />} />
         <Route path='/blog' element={<Blog />} />

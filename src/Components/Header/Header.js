@@ -90,7 +90,7 @@ const Header = () => {
                         {
                             user ? <>
                                 <li className="m-3">
-                                    <Link className="nav-link text-gray-500 hover:text-gray-700 focus:text-gray-700 p-0 flex items-center" to="/add-item">
+                                    <Link className="nav-link text-gray-500 hover:text-gray-700 focus:text-gray-700 p-0 flex items-center" to="/inventory">
                                         <BsPlusSquare className='mr-2 text-xl text-blue-600' />
                                         Add Item
                                     </Link>
