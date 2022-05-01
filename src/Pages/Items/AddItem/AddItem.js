@@ -1,9 +1,38 @@
 import React from 'react';
 import { RiCheckboxMultipleBlankLine } from 'react-icons/ri';
 import { useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
 const AddItem = () => {
     const navigate = useNavigate();
+
+    const addItem = event => {
+        event.preventDefault();
+
+        const name = event.target.productName.value;
+        const category = event.target.category.value;
+        const supplierName = event.target.sellerName.value;
+        const img = event.target.imageLink.value;
+        const description = event.target.description.value;
+        const price = event.target.unitPrice.value;
+        const stock = event.target.quantity.value;
+
+        const item = { name, category, supplierName, img, description, price, stock };
+
+        // send data to server
+        fetch('http://localhost:5000/add-item', {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(item)
+        })
+            .then(res => res.json())
+            .then(data => {
+                toast(`${name} Added Successfully`);
+            });
+
+    }
 
     return (
         <div className='mx-10 mt-32 mb-20'>
@@ -40,7 +69,7 @@ const AddItem = () => {
 
             <div className="block p-6 rounded-lg shadow-lg bg-white max-w-md mx-auto">
                 <h2 className='my-8 text-2xl text-gray-600'>Add Item To Inventory</h2>
-                <form>
+                <form onSubmit={addItem}>
                     <div className="form-group mb-6">
                         <input type="text" className="form-control block
         w-full
@@ -57,6 +86,23 @@ const AddItem = () => {
         m-0
         focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInput125"
                             placeholder="Product Name" name='productName' />
+                    </div>
+                    <div className="form-group mb-6">
+                        <input type="text" className="form-control block
+        w-full
+        px-3
+        py-1.5
+        text-base
+        font-normal
+        text-gray-700
+        bg-white bg-clip-padding
+        border border-solid border-gray-300
+        rounded
+        transition
+        ease-in-out
+        m-0
+        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInput129"
+                            placeholder="Category" name='category' />
                     </div>
                     <div className="form-group mb-6">
                         <input type="text" className="form-control block

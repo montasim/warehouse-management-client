@@ -11,7 +11,7 @@ const ManageInventory = () => {
         fetch('https://posdash-server.herokuapp.com/inventory')
             .then(res => res.json())
             .then(data => setProducts(data));
-    }, []);
+    }, [products]);
 
     return (
         <div className='mx-10 mt-32 mb-10'>

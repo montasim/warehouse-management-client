@@ -30,7 +30,7 @@ function RequireAuth({ children }) {
     }
 
     if (user?.providerData[0]?.providerId === 'password' && !user.emailVerified) {
-        return <div className='my-10'>
+        return <div className='mt-32 mb-10'>
             <h3 className='text-2xl text-gray-700 text-center'>Your Email Is Not Verified</h3>
             <p className='text-red-500 text-center mt-5'>{error?.message}</p>
             <button onClick={async () => {

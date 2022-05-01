@@ -35,7 +35,7 @@ const Register = () => {
         else {
             createUserWithEmailAndPassword(email, password);
             toast('Email Verification Sent');
-            navigate('/login');
+            navigate('/');
         }
     }
 

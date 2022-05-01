@@ -1,13 +1,28 @@
 import React, { useEffect, useState } from 'react';
 import { AiFillDelete, AiFillEdit } from 'react-icons/ai';
 import { useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
 const Product = ({ index, product }) => {
     const { _id, name, supplierName, price, stock } = product;
     const navigate = useNavigate();
 
-    const edit = _id => {
-        console.log(_id);
+    const itemDelete = _id => {
+        const confirm = window.confirm('Are You Sure?');
+
+        if (confirm) {
+            console.log(_id);
+            const url = `http://localhost:5000/inventory/${_id}`;
+            fetch(url, {
+                method: 'DELETE'
+            })
+                .then(res => res.json())
+                .then(data => {
+                    if (data.deletedCount > 0) {
+                        toast(`Deleted Successfully: ${_id}`);
+                    }
+                })
+        }
     }
 
     return (
@@ -30,7 +45,7 @@ const Product = ({ index, product }) => {
             </td>
             <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap flex">
                 <AiFillEdit onClick={() => navigate(`/inventory/${_id}`)} className='text-2xl text-blue-400 mr-3' />
-                <AiFillDelete className='text-2xl text-red-400' />
+                <AiFillDelete onClick={() => itemDelete(_id)} className='text-2xl text-red-400' />
             </td>
         </tr>
     );

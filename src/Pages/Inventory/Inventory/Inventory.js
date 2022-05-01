@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
+import { Navigate, useLocation, useNavigate, useParams } from 'react-router-dom';
 import { MdOutlineBrandingWatermark, MdOutlineLocalShipping } from 'react-icons/md';
 import { FcRating } from 'react-icons/fc';
 import { AiOutlineDollar, AiOutlineStock } from 'react-icons/ai';
@@ -9,6 +9,9 @@ const Inventory = () => {
     const _id = useParams();
     const [product, setProduct] = useState([]);
     const navigate = useNavigate();
+    let location = useLocation();
+
+    <Navigate state={{ from: location }} replace />
 
     useEffect(() => {
         fetch(`https://posdash-server.herokuapp.com/inventory/${_id?.id}`)
@@ -20,7 +23,42 @@ const Inventory = () => {
 
     return (
         <div className='d-block mx-auto p-12'>
-            <h2 className="text-3xl font-bold uppercase">Details Of {name}</h2>
+            <div className='flex justify-between'>
+                <h2 className="text-3xl font-bold uppercase">Details Of {name}</h2>
+                <div className="mb-3 xl:w-96">
+                    <label
+                        for="exampleFormControlInput2"
+                        className="form-label inline-block mb-2 text-gray-700 text-xl uppercase"
+                    >Restock the items </label
+                    >
+                    <input
+                        type="number"
+                        className="
+          form-control
+          block
+          w-full
+          px-4
+          py-2
+          text-xl
+          font-normal
+          text-gray-700
+          bg-white bg-clip-padding
+          border border-solid border-gray-300
+          rounded
+          transition
+          ease-in-out
+          m-0
+          focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
+        "
+                        id="exampleFormControlInput2"
+                        placeholder="Enter Stock Number"
+                    />
+                    <button type="button"
+                        className="px-7 py-3 mt-4 bg-gray-800 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-gray-900 hover:shadow-lg focus:bg-gray-900 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-900 active:shadow-lg transition duration-150 ease-in-out">
+                        Update Stock
+                    </button>
+                </div>
+            </div>
             <div className="container my-24 px-6 mx-auto">
                 <section className="mb-32 text-gray-800 text-center md:text-left">
                     <div className="block rounded-lg shadow-lg bg-white">
