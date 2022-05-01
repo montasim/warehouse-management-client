@@ -17,8 +17,6 @@ const BackToTop = () => {
             myButton.style.display = "none";
         }
     }
-    // When the user clicks on the button, scroll to the top of the document
-    myButton.addEventListener("click", backToTop);
 
     function backToTop() {
         document.body.scrollTop = 0;
@@ -26,7 +24,7 @@ const BackToTop = () => {
     }
 
     return (
-        <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" className="inline-block p-3 bg-red-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out bottom-5 right-5" id="btn-back-to-top" style={{
+        <button onClick={backToTop} type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" className="inline-block p-3 bg-red-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out bottom-5 right-5" id="btn-back-to-top" style={{
             position: "fixed",
             display: "none"
         }}>
