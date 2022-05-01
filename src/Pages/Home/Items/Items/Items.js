@@ -20,7 +20,7 @@ const Items = () => {
 
                 <h2 className="text-3xl font-bold mb-12 pb-4 text-center">Inventory Items</h2>
 
-                <div className="grid lg:grid-cols-4 gap-6 xl:gap-12">
+                <div className="grid lg:grid-cols-4 md:grid-cols-3 gap-6 xl:gap-12">
                     {
                         items.slice(0, 2).map((item, index) => <Item key={index} item={item} />)
                     }
