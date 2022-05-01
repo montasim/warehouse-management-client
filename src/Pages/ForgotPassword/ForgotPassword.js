@@ -34,14 +34,14 @@ const ForgotPassword = () => {
     }
 
     return (
-        <div class="block p-6 rounded-lg shadow-lg bg-white max-w-sm mx-auto my-32">
+        <div className="block p-6 rounded-lg shadow-lg bg-white max-w-sm mx-auto my-32">
             <h2 className='text-center my-8 text-2xl flex items-center'>
                 <img className='w-8 mr-4' src={logo} alt="" />
                 Reset Your Password
             </h2>
             <form onSubmit={resetPassword}>
-                <div class="form-group mb-6">
-                    <input type="email" class="form-control block
+                <div className="form-group mb-6">
+                    <input type="email" className="form-control block
         w-full
         px-3
         py-1.5
@@ -59,7 +59,7 @@ const ForgotPassword = () => {
 
                 <p className='mb-4 text-red-600'>{formError}</p>
 
-                <button type="submit" class="
+                <button type="submit" className="
       w-full
       px-6
       py-2.5
@@ -78,7 +78,7 @@ const ForgotPassword = () => {
       duration-150
       ease-in-out">Reset Password</button>
 
-                <button onClick={() => navigate('/')} class="
+                <button onClick={() => navigate('/')} className="
       w-full
       px-6
       py-2.5
