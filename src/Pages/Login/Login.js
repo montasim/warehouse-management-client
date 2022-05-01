@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
+import Loading from '../../Components/Loading/Loading';
 import SocialMediaLogin from '../../Components/SocialMediaLogin/SocialMediaLogin';
 import auth from '../../Hooks/Firebase.Init';
 
@@ -30,7 +31,7 @@ const Login = () => {
         setFormError(loginError?.message);
     }
     if (loginLoading) {
-        return <p>Loading...</p>;
+        return <Loading />;
     }
     if (user) {
         navigate('/');

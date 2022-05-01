@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useSendPasswordResetEmail } from 'react-firebase-hooks/auth';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
+import Loading from '../../Components/Loading/Loading';
 import auth from '../../Hooks/Firebase.Init';
 import logo from '../../Media/Logo/logo.png';
 
@@ -30,7 +31,7 @@ const ForgotPassword = () => {
     }
 
     if (resetSending) {
-        return <p>Sending...</p>;
+        return <Loading />;
     }
 
     return (

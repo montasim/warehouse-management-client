@@ -4,6 +4,7 @@ import { toast } from 'react-toastify';
 import auth from '../../Hooks/Firebase.Init';
 import { BsGoogle, BsLinkedin, BsFacebook, BsGithub, BsTwitter, BsInstagram } from 'react-icons/bs';
 import { useNavigate } from 'react-router-dom';
+import Loading from '../Loading/Loading';
 
 const SocialMediaLogin = () => {
     const navigate = useNavigate();
@@ -39,7 +40,7 @@ const SocialMediaLogin = () => {
         toast(googleError?.message);
     }
     if (googleLoading || githubLoading || facebookLoading || twitterLoading) {
-        return <p>Loading...</p>;
+        return <Loading />;
     }
     if (googleUser || githubUser || facebookUser || twitterUser) {
         toast('Welcome Back');

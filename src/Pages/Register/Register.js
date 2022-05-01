@@ -4,6 +4,7 @@ import { useCreateUserWithEmailAndPassword, useSendEmailVerification } from 'rea
 import auth from '../../Hooks/Firebase.Init';
 import { toast } from 'react-toastify';
 import SocialMediaLogin from '../../Components/SocialMediaLogin/SocialMediaLogin';
+import Loading from '../../Components/Loading/Loading';
 
 const Register = () => {
     const navigate = useNavigate();
@@ -48,7 +49,7 @@ const Register = () => {
         setFormError(registerError?.message);
     }
     if (registerLoading) {
-        return <p>Loading...</p>;
+        return <Loading />;
     }
     if (user) {
         navigate('/');
