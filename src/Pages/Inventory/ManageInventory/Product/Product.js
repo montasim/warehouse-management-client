@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 
 const Product = ({ index, product }) => {
-    const { _id, name, supplierName, price, stock } = product;
+    const { _id, name, category, supplierName, img, description, price, stock } = product;
     const navigate = useNavigate();
 
     const itemDelete = _id => {
@@ -23,6 +23,25 @@ const Product = ({ index, product }) => {
                     }
                 })
         }
+    }
+
+    const addUserItems = () => {
+
+        const item = { name, category, supplierName, img, description, price, stock };
+
+        // send data to server
+        fetch('https://posdash-server.herokuapp.com/add-user-items', {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(item)
+        })
+            .then(res => res.json())
+            .then(data => {
+                toast(`${name} Added Successfully`);
+            });
+
     }
 
     return (
@@ -46,7 +65,7 @@ const Product = ({ index, product }) => {
             <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap flex">
                 <AiFillEdit onClick={() => navigate(`/inventory/${_id}`)} className='text-2xl text-blue-400 mr-3' />
                 <AiFillDelete onClick={() => itemDelete(_id)} className='text-2xl text-red-400 mr-3' />
-                <AiFillPlusSquare onClick={() => itemDelete(_id)} className='text-2xl text-orange-400 mr-3' />
+                <AiFillPlusSquare onClick={() => addUserItems(_id)} className='text-2xl text-orange-400 mr-3' />
             </td>
         </tr>
     );
