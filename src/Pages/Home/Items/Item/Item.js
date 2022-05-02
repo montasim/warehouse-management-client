@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { AiOutlineStock } from 'react-icons/ai';
 
 const Item = ({ item }) => {
     const { _id, category, name, description, supplierName, price, stock, ratings, ratingsCount, img, shipping, quantity } = item;
@@ -28,7 +29,7 @@ const Item = ({ item }) => {
                     <h5 className="font-bold text-lg mb-3">{name}</h5>
                     <div className="text-gray-500 mb-4 flex justify-between">
                         <p className='text-lg text-black'><span className='text-2xl'>$</span>{price}</p>
-                        <p className='text-xl'> <span className='text-black mr-1'>Qty:</span>{stock}</p>
+                        <p className='text-xl text-black'> <span className='text-black mr-1'>Qty:</span>{stock}</p>
                     </div>
                     <p className="text-gray-500 mb-4">
                         <small>
@@ -39,7 +40,10 @@ const Item = ({ item }) => {
                         {description}
                     </p>
                     <button onClick={() => naviagateToItems(_id)} data-mdb-ripple="true" data-mdb-ripple-color="light"
-                        className="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Update Stock</button>
+                        className="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out flex items-center">
+                        <AiOutlineStock className='mr-3 text-lg' />
+                        Update Stock
+                    </button>
                     <p className="text-gray-500 mt-4">
                         <small>Added <u>13.01.2022</u></small>
                     </p>
