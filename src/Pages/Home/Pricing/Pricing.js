@@ -1,11 +1,15 @@
 import React from 'react';
+import { ImPriceTag } from 'react-icons/im';
 
 const Pricing = () => {
     return (
         <div id='pricing' className="container my-24 px-6 mx-auto">
 
             <section className="mb-32 text-gray-800">
-                <h2 className="text-3xl font-bold text-center mb-6">Pricing</h2>
+                <h2 className="text-3xl font-bold text-center mb-6 flex justify-center items-center ">
+                    <ImPriceTag className='mr-3' />
+                    Pricing
+                </h2>
 
                 <p className="text-center mb-12 text-gray-500">
                     POSDash provide an optimum solution for your inventory. Find the best deal to get started.
