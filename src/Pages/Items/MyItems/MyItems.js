@@ -24,7 +24,11 @@ const MyItems = () => {
     useEffect(() => {
         const getProducts = async () => {
             const url = `https://posdash-server.herokuapp.com/my-items?userEmail=${currentUserEmail}`
-            const { data } = await axios.get(url);
+            const { data } = await axios.get(url, {
+                headers: {
+                    authorization: `Bearer ${localStorage.getItem('accessToken')}`
+                }
+            });
             setProducts(data);
         }
         getProducts();
