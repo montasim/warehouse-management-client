@@ -1,18 +1,17 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
-import { AiFillDelete, AiFillEdit, AiFillPlusSquare } from 'react-icons/ai';
+import { AiFillDelete } from 'react-icons/ai';
 
 const MyProducts = ({ index, product }) => {
     const { _id, name, category, supplierName, img, description, price, stock } = product;
     const navigate = useNavigate();
 
-    const itemDelete = _id => {
+    const deleteMyItems = _id => {
         const confirm = window.confirm('Are You Sure?');
 
         if (confirm) {
-            console.log(_id);
-            const url = `https://posdash-server.herokuapp.com/inventory/${_id}`;
+            const url = `https://posdash-server.herokuapp.com/my-items/${_id}`;
             fetch(url, {
                 method: 'DELETE'
             })
@@ -23,25 +22,6 @@ const MyProducts = ({ index, product }) => {
                     }
                 })
         }
-    }
-
-    const addUserItems = () => {
-
-        const item = { name, category, supplierName, img, description, price, stock };
-
-        // send data to server
-        fetch('https://posdash-server.herokuapp.com/add-user-items', {
-            method: 'POST',
-            headers: {
-                'content-type': 'application/json'
-            },
-            body: JSON.stringify(item)
-        })
-            .then(res => res.json())
-            .then(data => {
-                toast(`${name} Added Successfully`);
-            });
-
     }
 
     return (
@@ -63,9 +43,7 @@ const MyProducts = ({ index, product }) => {
                 $ {stock * price}
             </td>
             <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap flex">
-                <AiFillEdit onClick={() => navigate(`/inventory/${_id}`)} className='text-2xl text-blue-400 mr-3' />
-                <AiFillDelete onClick={() => itemDelete(_id)} className='text-2xl text-red-400 mr-3' />
-                <AiFillPlusSquare onClick={() => addUserItems(_id)} className='text-2xl text-orange-400 mr-3' />
+                <AiFillDelete onClick={() => deleteMyItems(_id)} className='text-2xl text-red-400 mr-3' />
             </td>
         </tr>
     );
