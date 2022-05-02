@@ -11,7 +11,6 @@ const Product = ({ index, product }) => {
         const confirm = window.confirm('Are You Sure?');
 
         if (confirm) {
-            console.log(_id);
             const url = `https://posdash-server.herokuapp.com/inventory/${_id}`;
             fetch(url, {
                 method: 'DELETE'
