@@ -3,11 +3,13 @@ import { useSignInWithFacebook, useSignInWithGithub, useSignInWithGoogle, useSig
 import { toast } from 'react-toastify';
 import auth from '../../Hooks/Firebase.Init';
 import { BsGoogle, BsFacebook, BsGithub, BsTwitter } from 'react-icons/bs';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import Loading from '../Loading/Loading';
 
 const SocialMediaLogin = () => {
     const navigate = useNavigate();
+    const location = useLocation();
+    const from = location.state?.from?.pathname || "/";
     const [
         signInWithGoogle,
         googleUser,
@@ -44,7 +46,7 @@ const SocialMediaLogin = () => {
     }
     if (googleUser || githubUser || facebookUser || twitterUser) {
         toast('Welcome Back');
-        navigate('/');
+        navigate(from, { replace: true });
     }
 
     return (
