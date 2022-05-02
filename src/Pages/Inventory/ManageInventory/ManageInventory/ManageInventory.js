@@ -20,11 +20,10 @@ const ManageInventory = () => {
                     <RiAddBoxFill className='mr-3 text-xl' />
                     Add New Item
                 </button>
-                <div className="">
-                    <div className="mb-3 xl:w-96">
-                        <input
-                            type="search"
-                            className="
+                <div className="xl:w-96">
+                    <input
+                        type="search"
+                        className="
         form-control
         block
         w-full
@@ -41,10 +40,9 @@ const ManageInventory = () => {
         m-0
         focus:text-gray-700 focus:bg-white focus:border-blue-400 focus:outline-none
       "
-                            id="exampleSearch"
-                            placeholder="Search here..."
-                        />
-                    </div>
+                        id="exampleSearch"
+                        placeholder="Search here..."
+                    />
                 </div>
             </div>
             <div className="flex flex-col">
@@ -52,7 +50,7 @@ const ManageInventory = () => {
                     <div className="py-2 inline-block min-w-full sm:px-6 lg:px-8">
                         <div className="overflow-hidden">
                             <table className="min-w-full">
-                                <thead className="bg-blue-400 text-white rounded-lg">
+                                <thead className="bg-blue-200 text-white rounded-lg">
                                     <tr>
                                         <th scope="col" className="text-md font-medium text-gray-900 px-6 py-4 text-left">
                                             Serial
@@ -61,13 +59,13 @@ const ManageInventory = () => {
                                             Product Name
                                         </th>
                                         <th scope="col" className="text-md font-medium text-gray-900 px-6 py-4 text-left">
-                                            Supplier Name
+                                            Supplier
                                         </th>
                                         <th scope="col" className="text-md font-medium text-gray-900 px-6 py-4 text-left">
                                             Unit Price
                                         </th>
                                         <th scope="col" className="text-md font-medium text-gray-900 px-6 py-4 text-left">
-                                            Available Quantity
+                                            Available Items
                                         </th>
                                         <th scope="col" className="text-md font-medium text-gray-900 px-6 py-4 text-left">
                                             Total Price
