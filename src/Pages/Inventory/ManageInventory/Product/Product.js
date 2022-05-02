@@ -2,10 +2,16 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { AiFillDelete, AiFillEdit, AiFillPlusSquare } from 'react-icons/ai';
+import { getAuth } from 'firebase/auth';
+import { useAuthState } from 'react-firebase-hooks/auth';
 
 const Product = ({ index, product }) => {
     const { _id, name, category, supplierName, img, description, price, stock } = product;
     const navigate = useNavigate();
+    const auth = getAuth();
+    const [user] = useAuthState(auth);
+
+    let userEmail;
 
     const itemDelete = _id => {
         const confirm = window.confirm('Are You Sure?');
@@ -25,9 +31,19 @@ const Product = ({ index, product }) => {
         }
     }
 
+    if (user !== null) {
+        user.providerData.forEach((profile) => {
+            console.log("Sign-in provider: " + profile.providerId);
+
+            const splitEmail = profile?.uid.split('@');
+
+            userEmail = splitEmail[0];
+        });
+    }
+
     const addMyItems = () => {
 
-        const item = { name, category, supplierName, img, description, price, stock };
+        const item = { name, category, supplierName, img, description, price, stock, userEmail };
 
         // send data to server
         fetch('https://posdash-server.herokuapp.com/add-my-items', {
