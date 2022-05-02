@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Item from '../Item/Item';
 import { RiCheckboxMultipleBlankLine } from 'react-icons/ri';
+import { MdOutlineInventory2 } from 'react-icons/md';
 
 const Items = () => {
     const [items, setItems] = useState([]);
@@ -20,7 +21,10 @@ const Items = () => {
 
             <section className="mb-32 text-gray-800 text-center">
 
-                <h2 className="text-3xl font-bold mb-12 pb-4 text-center">Inventory Items</h2>
+                <h2 className="text-3xl font-bold mb-12 pb-4 text-center flex items-center justify-center">
+                    <MdOutlineInventory2 className='mr-3' />
+                    Inventory Items
+                </h2>
 
                 <div className="grid lg:grid-cols-4 md:grid-cols-3 gap-6 xl:gap-12">
                     {
