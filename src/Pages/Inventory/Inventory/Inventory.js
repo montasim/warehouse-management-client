@@ -30,7 +30,7 @@ const Inventory = () => {
         const newStock = { stock };
 
         // update data to server
-        fetch(`http://localhost:5000/inventory/${_id?.id}`, {
+        fetch(`https://posdash-server.herokuapp.com/inventory/${_id?.id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'
@@ -47,7 +47,7 @@ const Inventory = () => {
         const newStock = { stock };
 
         // update data to server
-        fetch(`http://localhost:5000/inventory/${_id?.id}`, {
+        fetch(`https://posdash-server.herokuapp.com/inventory/${_id?.id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'
