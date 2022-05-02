@@ -90,7 +90,7 @@ const Header = () => {
                                     </Link>
                                 </li>
                                 <li className="m-3">
-                                    <Link className="nav-link text-gray-500 hover:text-gray-700 focus:text-gray-700 p-0 flex items-center" to="/manage-items">
+                                    <Link className="nav-link text-gray-500 hover:text-gray-700 focus:text-gray-700 p-0 flex items-center" to="/inventory">
                                         <RiCheckboxMultipleBlankLine className='mr-2 text-xl text-blue-600' />
                                         Manage Items
                                     </Link>
