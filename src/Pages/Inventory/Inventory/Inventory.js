@@ -41,6 +41,8 @@ const Inventory = () => {
             .then(data => {
                 toast(`${name}'s Stock Updated Successfully`);
             });
+
+        event.target.reset();
     }
 
     const deliver = (stock) => {
