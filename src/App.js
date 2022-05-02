@@ -43,11 +43,7 @@ function App() {
         } />
         <Route path='/manage-items' element={<ManageItems />} />
         <Route path='/add-item' element={<AddItem />} />
-        <Route path='/my-items' element={
-          <RequireAuth>
-            <MyItems />
-          </RequireAuth>
-        } />
+        <Route path='/my-items' element={<MyItems />} />
         <Route path='/blog' element={<Blog />} />
         <Route path='/register' element={<Register />} />
         <Route path='/profile' element={<Profile />} />
