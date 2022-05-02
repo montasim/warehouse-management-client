@@ -26,7 +26,7 @@ const Items = () => {
                     Inventory Items
                 </h2>
 
-                <div className="grid lg:grid-cols-4 md:grid-cols-3 gap-6 xl:gap-12">
+                <div className="grid lg:grid-cols-3 md:grid-cols-3 gap-6 xl:gap-12">
                     {
                         items.slice(0, 6).map((item, index) => <Item key={index} item={item} />)
                     }
