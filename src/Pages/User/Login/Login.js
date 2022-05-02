@@ -16,19 +16,13 @@ const Login = () => {
         loginError,
     ] = useSignInWithEmailAndPassword(auth);
 
-    const axios = require('axios').default;
-
-    const login = async event => {
+    const login = event => {
         event.preventDefault();
 
         const email = event.target.email.value;
         const password = event.target.password.value;
 
-        await signInWithEmailAndPassword(email, password);
-
-        const { data } = await axios.post('https://posdash-server.herokuapp.com/login', { email });
-
-        localStorage.setItem('accessToken', data.accessToken)
+        signInWithEmailAndPassword(email, password);
 
         toast('Welcome Back');
     }

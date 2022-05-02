@@ -1,9 +1,11 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { AiFillDelete } from 'react-icons/ai';
 
 const MyProducts = ({ index, product }) => {
-    const { _id, name, category, supplierName, img, description, price, stock, userEmail } = product;
+    const { _id, name, category, supplierName, img, description, price, stock } = product;
+    const navigate = useNavigate();
 
     const deleteMyItems = _id => {
         const confirm = window.confirm('Are You Sure?');
