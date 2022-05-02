@@ -70,13 +70,13 @@ const Header = () => {
                 <div className="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block pt-6 lg:pt-0" id="nav-content">
                     <ul className="list-reset lg:flex justify-end flex-1 items-center">
                         <li className="m-3">
-                            <Link className="nav-link text-gray-500 hover:text-gray-700 focus:text-gray-700 p-0 flex items-center" to="/">
+                            <Link className="nav-link text-gray-500 hover:bg-blue-200 hover:px-4 hover:py-1.5 hover:rounded-full hover:text-gray-700 focus:text-gray-700 p-0 flex items-center" to="/">
                                 <AiOutlineHome className='mr-2 text-xl text-blue-600' />
                                 Home
                             </Link>
                         </li>
                         <li className="m-3">
-                            <Link className="nav-link text-gray-500 hover:text-gray-700 focus:text-gray-700 p-0 flex items-center" to="/blog">
+                            <Link className="nav-link text-gray-500 hover:bg-blue-200 hover:px-4 hover:py-1.5 hover:rounded-full hover:text-gray-700 focus:text-gray-700 p-0 flex items-center" to="/blog">
                                 <SiMicrodotblog className='mr-2 text-xl text-blue-600' />
                                 Blog
                             </Link>
@@ -84,19 +84,19 @@ const Header = () => {
                         {
                             user ? <>
                                 <li className="m-3">
-                                    <Link className="nav-link text-gray-500 hover:text-gray-700 focus:text-gray-700 p-0 flex items-center" to="/inventory">
+                                    <Link className="nav-link text-gray-500 hover:bg-blue-200 hover:px-4 hover:py-1.5 hover:rounded-full hover:text-gray-700 focus:text-gray-700 p-0 flex items-center" to="/inventory">
                                         <BsPlusSquare className='mr-2 text-xl text-blue-600' />
                                         Add Item
                                     </Link>
                                 </li>
                                 <li className="m-3">
-                                    <Link className="nav-link text-gray-500 hover:text-gray-700 focus:text-gray-700 p-0 flex items-center" to="/inventory">
+                                    <Link className="nav-link text-gray-500 hover:bg-blue-200 hover:px-4 hover:py-1.5 hover:rounded-full hover:text-gray-700 focus:text-gray-700 p-0 flex items-center" to="/inventory">
                                         <RiCheckboxMultipleBlankLine className='mr-2 text-xl text-blue-600' />
                                         Manage Items
                                     </Link>
                                 </li>
                                 <li className="m-3">
-                                    <Link className="nav-link text-gray-500 hover:text-gray-700 focus:text-gray-700 p-0 flex items-center" to="/my-items">
+                                    <Link className="nav-link text-gray-500 hover:bg-blue-200 hover:px-4 hover:py-1.5 hover:rounded-full hover:text-gray-700 focus:text-gray-700 p-0 flex items-center" to="/my-items">
                                         <RiProductHuntLine className='mr-2 text-xl text-blue-600' />
                                         My Items
                                     </Link>
@@ -106,7 +106,7 @@ const Header = () => {
                                         <Link className="dropdown-toggle flex items-center hidden-arrow" to="#" id="dropdownMenuButton2" role="button"
                                             data-bs-toggle="dropdown" aria-expanded="false">
                                             <span
-                                                className="rounded-full text-gray-600 bg-orange-200 font-semibold text-sm flex align-center cursor-pointer hover:bg-blue-700 hover:text-white hover:shadow-lg focus:bg-blue-700 focus:text-white focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:text-white active:shadow-lg transition duration-300 ease w-max">
+                                                className="rounded-full text-gray-600 bg-orange-200 font-semibold text-sm flex align-center cursor-pointer hover:bg-blue-500 hover:text-white hover:shadow-lg focus:bg-blue-700 focus:text-white focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:text-white active:shadow-lg transition duration-300 ease w-max">
                                                 <img className="rounded-full w-9 h-9 max-w-none" alt="A"
                                                     src={userImage || maleUser} />
                                                 <span className="flex items-center px-3 py-2">
@@ -146,7 +146,7 @@ const Header = () => {
         block
         w-full
         whitespace-nowrap
-        bg-transparent
+        hover:bg-blue-200
         text-gray-700
         hover:bg-gray-100 flex items-center
       " to="/profile">
@@ -164,7 +164,7 @@ const Header = () => {
         block
         w-full
         whitespace-nowrap
-        bg-transparent
+        hover:bg-blue-200
         text-gray-700
         hover:bg-gray-100 flex items-center
       " to="/settings">
@@ -182,7 +182,7 @@ const Header = () => {
         block
         w-full
         whitespace-nowrap
-        bg-transparent
+        hover:bg-blue-200
         text-gray-700
         hover:bg-gray-100 flex items-center
       " to="#">
