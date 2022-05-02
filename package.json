@@ -7,6 +7,7 @@
     "@testing-library/react": "^13.1.1",
     "@testing-library/user-event": "^13.5.0",
     "aos": "^3.0.0-beta.6",
+    "axios": "^0.27.2",
     "dotenv": "^16.0.0",
     "firebase": "^9.7.0",
     "react": "^18.1.0",

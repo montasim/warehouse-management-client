@@ -1,15 +1,37 @@
+import axios from 'axios';
+import { getAuth } from 'firebase/auth';
 import React, { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useAuthState } from 'react-firebase-hooks/auth';
 import MyProducts from './MyProducts/MyProducts';
 
 const MyItems = () => {
     const [products, setProducts] = useState([]);
-    const navigate = useNavigate();
+    const auth = getAuth();
+    const [user] = useAuthState(auth);
+
+    let currentUserEmail;
+
+    if (user !== null) {
+        user.providerData.forEach((profile) => {
+            console.log("Sign-in provider: " + profile.providerId);
+
+            const splitEmail = profile?.uid.split('@');
+
+            currentUserEmail = splitEmail[0];
+        });
+    }
 
     useEffect(() => {
-        fetch('https://posdash-server.herokuapp.com/my-items')
-            .then(res => res.json())
-            .then(data => setProducts(data));
+        const getProducts = async () => {
+            const url = `https://posdash-server.herokuapp.com/my-items?userEmail=${currentUserEmail}`
+            const { data } = await axios.get(url, {
+                headers: {
+                    authorization: `Bearer ${localStorage.getItem('accessToken')}`
+                }
+            });
+            setProducts(data);
+        }
+        getProducts();
     }, [products]);
 
     return (
