@@ -24,17 +24,11 @@ const Items = () => {
 
                 <div className="grid lg:grid-cols-4 md:grid-cols-3 gap-6 xl:gap-12">
                     {
-                        items.slice(0, 2).map((item, index) => <Item key={index} item={item} />)
-                    }
-                    {
-                        items.slice(15, 17).map((item, index) => <Item key={index} item={item} />)
-                    }
-                    {
-                        items.slice(21, 23).map((item, index) => <Item key={index} item={item} />)
+                        items.slice(0, 6).map((item, index) => <Item key={index} item={item} />)
                     }
                 </div>
 
-                <button onClick={() => navigate('/inventory')} type="button" class="flex items-center mx-auto mt-20 px-6 py-2.5 bg-orange-200 text-gray-900 font-semibold text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:text-white hover:shadow-lg focus:bg-blue-700 focus:text-white focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-700 active:shadow-lg transition duration-150 ease-in-out">
+                <button onClick={() => navigate('/inventory')} type="button" className="flex items-center mx-auto mt-20 px-6 py-2.5 bg-orange-200 text-gray-900 font-semibold text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:text-white hover:shadow-lg focus:bg-blue-700 focus:text-white focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-700 active:shadow-lg transition duration-150 ease-in-out">
                     <RiCheckboxMultipleBlankLine className='mr-3 text-xl' />
                     Manage Inventories
                 </button>
