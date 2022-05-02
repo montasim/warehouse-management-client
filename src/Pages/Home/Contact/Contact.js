@@ -1,9 +1,13 @@
 import React from 'react';
+import { AiFillContacts } from 'react-icons/ai';
 
 const Contact = () => {
     return (
         <div id='contact' className="container my-24 px-6 mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-6">Contact</h2>
+            <h2 className="text-3xl font-bold text-center mb-6 flex justify-center items-center">
+                <AiFillContacts className='mr-3' />
+                Contact
+            </h2>
             <p className="text-center mb-12 text-gray-500">
                 POSDash offers various options for your inventory managements. Contact to get started with POSDash.
             </p>
