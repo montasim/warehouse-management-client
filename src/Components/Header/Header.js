@@ -23,16 +23,10 @@ const Header = () => {
 
     if (user !== null) {
         user.providerData.forEach((profile) => {
-            console.log("Sign-in provider: " + profile.providerId);
-
             const splitEmail = profile?.uid.split('@');
 
             userEmail = splitEmail[0];
-
             userImage = profile?.photoURL;
-
-            console.log("  Name: " + profile.displayName);
-            console.log("  Email: " + profile.email);
         });
     }
 
