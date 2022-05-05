@@ -67,7 +67,7 @@ const Header = () => {
                     </button>
                 </div>
 
-                <div className="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block pt-6 lg:pt-0" id="nav-content">
+                <div className="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden pt-6 lg:pt-0" id="nav-content">
                     <ul className="list-reset lg:flex justify-end flex-1 items-center">
                         <li className="m-3">
                             <Link className="nav-link text-gray-500 hover:bg-blue-200 hover:px-4 hover:py-1.5 hover:rounded-full hover:text-gray-700 focus:text-gray-700 p-0 flex items-center" to="/">
@@ -118,7 +118,6 @@ const Header = () => {
     dropdown-menu
     min-w-max
     absolute
-    hidden
     bg-white
     text-base
     z-50
@@ -143,12 +142,10 @@ const Header = () => {
         py-2
         px-4
         font-normal
-        block
         w-full
         whitespace-nowrap
         hover:bg-blue-200
-        text-gray-700
-        hover:bg-gray-100 flex items-center
+        text-gray-700 flex items-center
       " to="/profile">
                                                     <CgProfile className='mr-2' />
                                                     Profile
@@ -161,12 +158,10 @@ const Header = () => {
         py-2
         px-4
         font-normal
-        block
         w-full
         whitespace-nowrap
         hover:bg-blue-200
-        text-gray-700
-        hover:bg-gray-100 flex items-center
+        text-gray-700 flex items-center
       " to="/settings">
                                                     <FiSettings className='mr-2' />
                                                     Settings
@@ -179,12 +174,10 @@ const Header = () => {
         py-2
         px-4
         font-normal
-        block
         w-full
         whitespace-nowrap
         hover:bg-blue-200
-        text-gray-700
-        hover:bg-gray-100 flex items-center
+        text-gray-700 flex items-center
       " to="#">
                                                     <IoIosLogOut className='mr-2' />
                                                     Logout
@@ -202,7 +195,7 @@ const Header = () => {
                                         </Link>
                                     </li>
                                     <li className="m-3" onClick={() => navigate('/login')}>
-                                        <button type="button" className="inline-block px-6 pt-2.5 pb-2 bg-orange-200 text-grey-600 font-semibold text-xs leading-normal uppercase shadow-md hover:bg-blue-700 hover:text-white hover:shadow-lg focus:bg-blue-700 focus:text-white focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800active:text-white active:shadow-lg transition duration-150 ease-in-out flex align-center rounded-full items-center">
+                                        <button type="button" className="px-6 pt-2.5 pb-2 bg-orange-200 text-grey-600 font-semibold text-xs leading-normal uppercase shadow-md hover:bg-blue-700 hover:text-white hover:shadow-lg focus:bg-blue-700 focus:text-white focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800active:text-white active:shadow-lg transition duration-150 ease-in-out flex align-center rounded-full items-center">
                                             <AiOutlineUser className='mr-2' />
                                             Login
                                         </button>
