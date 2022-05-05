@@ -195,7 +195,7 @@ const Header = () => {
                                         </Link>
                                     </li>
                                     <li className="m-3" onClick={() => navigate('/login')}>
-                                        <button type="button" className="px-6 pt-2.5 pb-2 bg-orange-200 text-grey-600 font-semibold text-xs leading-normal uppercase shadow-md hover:bg-blue-700 hover:text-white hover:shadow-lg focus:bg-blue-700 focus:text-white focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800active:text-white active:shadow-lg transition duration-150 ease-in-out flex align-center rounded-full items-center">
+                                        <button type="button" className="px-6 pt-2.5 pb-2 bg-blue-700 text-white font-semibold text-xs leading-normal uppercase shadow-md hover:bg-gray-900 hover:shadow-lg focus:bg-gray-900 focus:shadow-lg focus:outline-none focus:ring-0 transition duration-150 ease-in-out flex align-center rounded-full items-center">
                                             <AiOutlineUser className='mr-2' />
                                             Login
                                         </button>
