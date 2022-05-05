@@ -24,27 +24,13 @@ const SocialMediaLogin = () => {
         githubError
     ] = useSignInWithGithub(auth);
 
-    const [
-        signInWithFacebook,
-        facebookUser,
-        facebookLoading,
-        facebookError
-    ] = useSignInWithFacebook(auth);
-
-    const [
-        signInWithTwitter,
-        twitterUser,
-        twitterLoading,
-        twitterError
-    ] = useSignInWithTwitter(auth);
-
-    if (googleError || githubError || facebookError || twitterError) {
+    if (googleError || githubError) {
         toast(googleError?.message);
     }
-    if (googleLoading || githubLoading || facebookLoading || twitterLoading) {
+    if (googleLoading || githubLoading) {
         return <Loading />;
     }
-    if (googleUser || githubUser || facebookUser || twitterUser) {
+    if (googleUser || githubUser) {
         toast('Welcome Back');
         navigate(from, { replace: true });
     }
@@ -67,24 +53,6 @@ const SocialMediaLogin = () => {
                 className="inline-block p-3 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out mx-1"
             >
                 <BsGoogle className='text-xl' />
-            </button>
-
-            <button onClick={() => signInWithFacebook()}
-                type="button"
-                data-mdb-ripple="true"
-                data-mdb-ripple-color="light"
-                className="inline-block p-3 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out mx-1"
-            >
-                <BsFacebook className='text-xl' />
-            </button>
-
-            <button onClick={() => signInWithTwitter()}
-                type="button"
-                data-mdb-ripple="true"
-                data-mdb-ripple-color="light"
-                className="inline-block p-3 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out mx-1"
-            >
-                <BsTwitter className='text-xl' />
             </button>
         </>
     );
