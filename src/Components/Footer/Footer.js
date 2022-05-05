@@ -109,7 +109,7 @@ const Footer = () => {
                             <Link to="/add-item" className="text-gray-600">Add Item</Link>
                         </p>
                         <p className="mb-4">
-                            <Link to="/manage-items" className="text-gray-600">Manage Items</Link>
+                            <Link to="/inventory" className="text-gray-600">Manage Items</Link>
                         </p>
                         <p className="mb-4">
                             <Link to="/my-items" className="text-gray-600">My Items</Link>
