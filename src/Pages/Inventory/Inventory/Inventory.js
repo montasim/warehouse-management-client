@@ -19,9 +19,9 @@ const Inventory = () => {
         fetch(`https://posdash-server.herokuapp.com/inventory/${_id?.id}`)
             .then(res => res.json())
             .then(data => setProduct(data));
-    }, [product]);
+    }, []);
 
-    const { category, name, description, supplierName, price, stock, ratings, ratingsCount, img, shipping, quantity } = product;
+    const { category, name, description, supplierName, price, stock, ratings, img, shipping } = product;
 
     const update = (event) => {
         event.preventDefault();

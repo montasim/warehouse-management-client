@@ -13,9 +13,9 @@ const Offer = () => {
                         <strong className="mr-1">Limited offer!</strong> Get it now before it's to late
                     </div>
                     <div className="flex items-center justify-center">
-                        <a className="inline-block px-6 py-2.5 bg-white text-gray-700 font-medium text-xs font-semibold leading-tight uppercase rounded shadow-md hover:bg-orange-300 hover:shadow-lg focus:bg-gray-100 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-200 active:shadow-lg transition duration-150 ease-in-out mr-4"
+                        <a className="inline-block px-6 py-2.5 bg-white text-gray-700 text-xs font-semibold leading-tight uppercase rounded shadow-md hover:bg-orange-300 hover:shadow-lg focus:bg-gray-100 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-200 active:shadow-lg transition duration-150 ease-in-out mr-4"
                             href="#pricing" role="button" data-mdb-ripple="true" data-mdb-ripple-color="light">Claim offer</a>
-                        <a href="" className="text-white" data-bs-dismiss="alert" aria-label="Close">
+                        <a href="/" className="text-white" data-bs-dismiss="alert" aria-label="Close">
                             <svg className="w-4 h-4" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512">
                                 <path fill="currentColor"
                                     d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z">
