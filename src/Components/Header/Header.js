@@ -116,13 +116,13 @@ const Header = () => {
                                 <li className="m-3">
                                     <Link className="nav-link text-gray-500 hover:bg-indigo-200 hover:px-4 hover:py-1.5 hover:rounded-full hover:text-gray-700 focus:text-gray-700 p-0 flex items-center" to="/inventory">
                                         <RiCheckboxMultipleBlankLine className='mr-2 text-xl text-indigo-600' />
-                                        Manage Items <sup className='text-red-400 text-md text-bold'>{products.length}</sup>
+                                        Manage Items <span className='ml-2 px-1 rounded-md bg-indigo-600 text-white text-md text-bold'>{products.length}</span>
                                     </Link>
                                 </li>
                                 <li className="m-3">
                                     <Link className="nav-link text-gray-500 hover:bg-indigo-200 hover:px-4 hover:py-1.5 hover:rounded-full hover:text-gray-700 focus:text-gray-700 p-0 flex items-center" to="/my-items">
                                         <RiProductHuntLine className='mr-2 text-xl text-indigo-600' />
-                                        My Items <sup className='text-red-400 text-md text-bold'>{myItems.length}</sup>
+                                        My Items <span className='ml-2 px-1 rounded-md bg-indigo-600 text-white text-md text-bold'>{myItems.length}</span>
                                     </Link>
                                 </li>
                                 <li className="m-3">
