@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import Item from '../Item/Item';
 import { RiCheckboxMultipleBlankLine } from 'react-icons/ri';
 import { MdOutlineInventory2 } from 'react-icons/md';
+import Loading from '../../../../Components/Loading/Loading';
 
 const Items = () => {
     const [items, setItems] = useState([]);
@@ -28,7 +29,7 @@ const Items = () => {
 
                 <div className="grid lg:grid-cols-3 md:grid-cols-3 gap-6 xl:gap-12">
                     {
-                        items.slice(0, 6).map((item, index) => <Item key={index} item={item} />)
+                        items ? items.slice(0, 6).map((item, index) => <Item key={index} item={item} />) : <Loading />
                     }
                 </div>
                 <button onClick={() => navigate('/inventory')} type="button" className="flex items-center mx-auto mt-20 px-6 py-2.5 bg-gray-800 text-white font-semibold text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-600 hover:text-white hover:shadow-lg focus:bg-gray-900 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-900 active:shadow-lg transition duration-150 ease-in-out">
