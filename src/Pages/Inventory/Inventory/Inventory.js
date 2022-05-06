@@ -19,14 +19,16 @@ const Inventory = () => {
         fetch(`https://posdash-server.herokuapp.com/inventory/${_id?.id}`)
             .then(res => res.json())
             .then(data => setProduct(data));
-    }, []);
+    }, [product]);
 
     const { category, name, description, supplierName, price, stock, ratings, img, shipping } = product;
+
+    const oldStock = stock;
 
     const update = (event) => {
         event.preventDefault();
 
-        const stock = event.target.stock.value;
+        const stock = parseInt(event.target.stock.value) + parseInt(oldStock);
         const newStock = { stock };
 
         // update data to server
