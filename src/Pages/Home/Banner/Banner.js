@@ -2,27 +2,27 @@ import React from 'react';
 
 const Banner = () => {
     return (
-        <section class="text-white bg-gray-900">
-            <div class="max-w-screen-xl px-4 py-20 mx-auto lg:items-center lg:flex">
-                <div class="max-w-3xl mx-auto text-center">
-                    <h1 class="text-3xl font-extrabold text-transparent sm:text-5xl bg-clip-text bg-gradient-to-r from-green-300 via-blue-500 to-purple-600">
+        <section className="text-white bg-gray-900 mt-0">
+            <div className="max-w-screen-xl px-4 py-20 mx-auto lg:items-center lg:flex">
+                <div className="max-w-3xl mx-auto text-center">
+                    <h1 className="text-3xl font-extrabold text-transparent sm:text-5xl bg-clip-text bg-gradient-to-r from-green-300 via-indigo-600 to-orange-300">
                         Understand User Flow.
 
-                        <span class="sm:block">
+                        <span className="sm:block">
                             Increase Performance.
                         </span>
                     </h1>
 
-                    <p class="max-w-xl mx-auto mt-4 sm:leading-relaxed sm:text-xl">
+                    <p className="max-w-xl mx-auto mt-4 sm:leading-relaxed sm:text-xl">
                         Feel the key Performance. Optimized view, blazing fast performance
                     </p>
 
-                    <div class="flex flex-wrap justify-center gap-4 mt-8">
-                        <a class="block w-full px-12 py-3 text-sm font-medium text-white bg-blue-600 border border-blue-600 rounded sm:w-auto active:text-opacity-75 hover:bg-transparent hover:text-white focus:outline-none focus:ring" href="/get-started">
+                    <div className="flex flex-wrap justify-center gap-4 mt-8">
+                        <a className="block w-full px-12 py-3 text-sm font-medium text-white bg-indigo-600 border border-indigo-600 rounded sm:w-auto active:text-opacity-75 hover:bg-transparent hover:text-white focus:outline-none focus:ring" href="#pricing">
                             Get Started
                         </a>
 
-                        <a class="block w-full px-12 py-3 text-sm font-medium text-white border border-blue-600 rounded sm:w-auto hover:bg-blue-600 active:bg-blue-500 focus:outline-none focus:ring" href="/about">
+                        <a className="block w-full px-12 py-3 text-sm font-medium text-white border border-indigo-600 rounded sm:w-auto hover:bg-indigo-600 active:bg-indigo-500 focus:outline-none focus:ring" href="#contact">
                             Learn More
                         </a>
                     </div>

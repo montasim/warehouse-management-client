@@ -36,7 +36,7 @@ const Contact = () => {
                 transition
                 ease-in-out
                 m-0
-                focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInput7"
+                focus:text-gray-700 focus:bg-white focus:border-indigo-600 focus:outline-none" id="exampleInput7"
                                             placeholder="Name" />
                                     </div>
                                     <div className="form-group mb-6">
@@ -53,7 +53,7 @@ const Contact = () => {
                 transition
                 ease-in-out
                 m-0
-                focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInput8"
+                focus:text-gray-700 focus:bg-white focus:border-indigo-600 focus:outline-none" id="exampleInput8"
                                             placeholder="Email address" />
                                     </div>
                                     <div className="form-group mb-6">
@@ -72,14 +72,14 @@ const Contact = () => {
                 transition
                 ease-in-out
                 m-0
-                focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
+                focus:text-gray-700 focus:bg-white focus:border-indigo-600 focus:outline-none
               " id="exampleFormControlTextarea13" rows="3" placeholder="Message"></textarea>
                                     </div>
                                     <button type="submit" className="
               w-full
               px-6
               py-2.5
-              bg-blue-600
+              bg-indigo-600
               text-white
               font-medium
               text-xs
@@ -87,9 +87,9 @@ const Contact = () => {
               uppercase
               rounded
               shadow-md
-              hover:bg-blue-700 hover:shadow-lg
-              focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0
-              active:bg-blue-800 active:shadow-lg
+              hover:bg-indigo-700 hover:shadow-lg
+              focus:bg-indigo-700 focus:shadow-lg focus:outline-none focus:ring-0
+              active:bg-indigo-800 active:shadow-lg
               transition
               duration-150
               ease-in-out">Send</button>
@@ -100,7 +100,7 @@ const Contact = () => {
                                     <div className="mb-12 grow-0 shrink-0 basis-auto w-full md:w-6/12 px-3 lg:px-6">
                                         <div className="flex items-start">
                                             <div className="shrink-0">
-                                                <div className="p-4 bg-blue-600 rounded-md shadow-md w-14 h-14 flex items-center justify-center">
+                                                <div className="p-4 bg-indigo-600 rounded-md shadow-md w-14 h-14 flex items-center justify-center">
                                                     <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="headset" className="w-5 text-white"
                                                         role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                         <path fill="currentColor"
@@ -119,7 +119,7 @@ const Contact = () => {
                                     <div className="mb-12 grow-0 shrink-0 basis-auto w-full md:w-6/12 px-3 lg:px-6">
                                         <div className="flex items-start">
                                             <div className="shrink-0">
-                                                <div className="p-4 bg-blue-600 rounded-md shadow-md w-14 h-14 flex items-center justify-center">
+                                                <div className="p-4 bg-indigo-600 rounded-md shadow-md w-14 h-14 flex items-center justify-center">
                                                     <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="dollar-sign"
                                                         className="w-3 text-white" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 288 512">
                                                         <path fill="currentColor"
@@ -138,7 +138,7 @@ const Contact = () => {
                                     <div className="mb-12 md:mb-0 grow-0 shrink-0 basis-auto w-full md:w-6/12 px-3 lg:px-6">
                                         <div className="flex align-start">
                                             <div className="shrink-0">
-                                                <div className="p-4 bg-blue-600 rounded-md shadow-md w-14 h-14 flex items-center justify-center">
+                                                <div className="p-4 bg-indigo-600 rounded-md shadow-md w-14 h-14 flex items-center justify-center">
                                                     <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="newspaper"
                                                         className="w-5 text-white" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
                                                         <path fill="currentColor"
@@ -157,7 +157,7 @@ const Contact = () => {
                                     <div className="grow-0 shrink-0 basis-auto w-full md:w-6/12 px-3 lg:px-6">
                                         <div className="flex align-start">
                                             <div className="shrink-0">
-                                                <div className="p-4 bg-blue-600 rounded-md shadow-md w-14 h-14 flex items-center justify-center">
+                                                <div className="p-4 bg-indigo-600 rounded-md shadow-md w-14 h-14 flex items-center justify-center">
                                                     <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bug" className="w-5 text-white"
                                                         role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                         <path fill="currentColor"

@@ -79,7 +79,7 @@ const Register = () => {
                             <div className="mb-6">
                                 <input
                                     type="text"
-                                    className="form-control block w-full px-4 py-2 text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                                    className="form-control block w-full px-4 py-2 text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-indigo-600 focus:outline-none"
                                     id="formEmail" name='email' autoComplete="on"
                                     placeholder="Email address"
                                 />
@@ -88,7 +88,7 @@ const Register = () => {
                             <div className="mb-6">
                                 <input
                                     type="password"
-                                    className="form-control block w-full px-4 py-2 text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                                    className="form-control block w-full px-4 py-2 text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-indigo-600 focus:outline-none"
                                     id="formPassword" name='password' autoComplete="on"
                                     placeholder="Password"
                                 />
@@ -97,7 +97,7 @@ const Register = () => {
                             <div className="mb-6">
                                 <input
                                     type="password"
-                                    className="form-control block w-full px-4 py-2 text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                                    className="form-control block w-full px-4 py-2 text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-indigo-600 focus:outline-none"
                                     id="formConfirmPassword" name='confirmPassword' autoComplete="on"
                                     placeholder="Confirm Password"
                                 />
@@ -107,21 +107,21 @@ const Register = () => {
                                 <div className="form-group form-check">
                                     <input onClick={() => setAgree(!agree)}
                                         type="checkbox"
-                                        className="form-check-input appearance-none h-4 w-4 border border-red-600 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
+                                        className="form-check-input appearance-none h-4 w-4 border border-red-600 rounded-sm bg-white checked:bg-indigo-600 checked:border-indigo-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
                                         id="exampleCheck2" name='terms'
                                     />
                                     <label className={`form-check-label inline-block ${!agree ? 'text-red-600' : 'text-grey-800'}`} htmlFor="exampleCheck2"
                                     >Agree to our terms & condition</label
                                     >
                                 </div>
-                                <Link to="/forgot-password" className="text-blue-700">Forgot password?</Link>
+                                <Link to="/forgot-password" className="text-indigo-700">Forgot password?</Link>
                             </div>
 
                             <div className="text-center lg:text-left">
                                 <p className='mb-4 text-red-600'>{formError}</p>
                                 <button
                                     type="submit"
-                                    className="button inline-block px-7 py-3 bg-blue-600 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+                                    className="button inline-block px-7 py-3 bg-indigo-600 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-indigo-700 hover:shadow-lg focus:bg-indigo-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-indigo-800 active:shadow-lg transition duration-150 ease-in-out"
                                 >
                                     Register
                                 </button>
@@ -129,9 +129,9 @@ const Register = () => {
                                     Already have an account?
                                     <Link
                                         to="/login"
-                                        className="text-red-600 hover:text-red-700 focus:text-red-700 transition duration-200 ease-in-out"
-                                    > Login</Link
-                                    >
+                                        className="text-indigo-500 hover:text-indigo-600 focus:text-red-700 transition duration-200 ease-in-out"
+                                    > Login
+                                    </Link>
                                 </p>
                             </div>
                         </form>

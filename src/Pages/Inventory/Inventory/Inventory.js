@@ -68,7 +68,7 @@ const Inventory = () => {
     return (
         <div className='d-block mx-auto p-12'>
             <div className='mb-4 p-4 flex justify-between items-center'>
-                <button onClick={() => navigate('/inventory')} type="button" className="flex items-center px-6 py-2.5 bg-gray-800 text-white font-semibold text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-600 hover:text-white hover:shadow-lg focus:bg-gray-900 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-900 active:shadow-lg transition duration-150 ease-in-out">
+                <button onClick={() => navigate('/inventory')} type="button" className="flex items-center px-6 py-2.5 bg-indigo-600 text-white font-semibold text-xs leading-tight uppercase rounded-full shadow-md transition duration-150 ease-in-out">
                     <RiCheckboxMultipleBlankLine className='mr-3 text-xl' />
                     Manage Inventories
                 </button>
@@ -130,7 +130,7 @@ const Inventory = () => {
                                         </div>
                                     </div>
                                     <button onClick={() => deliver(stock - 1)} type="button"
-                                        className="inline-block px-7 py-3 bg-gray-800 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-gray-900 hover:shadow-lg focus:bg-gray-900 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-900 active:shadow-lg transition duration-150 ease-in-out">
+                                        className="inline-block px-7 py-3 bg-indigo-600 text-white font-medium text-sm leading-snug uppercase rounded shadow-md focus:shadow-lg focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
                                         Delivered
                                     </button>
                                 </div>
@@ -157,24 +157,21 @@ const Inventory = () => {
         transition
         ease-in-out
         m-0
-        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="stock"
+        focus:text-indigo-600 focus:bg-white focus:border-indigo-600 focus:outline-none" id="stock"
                             placeholder="Add Stock Quantity" name='stock' />
                     </div>
                     <button type='submit' className="
       w-full
       px-6
       py-2.5
-      bg-gray-600
+      bg-indigo-600
       text-white
       font-medium
       text-xs
       leading-tight
       uppercase
       rounded
-      shadow-lg
-      hover:bg-orange-200 hover:text-gray-800 hover:shadow-lg
-      focus:bg-orange-200 focus:shadow-lg focus:outline-none focus:ring-0
-      active:bg-orange-200 active:shadow-lg
+      shadow-lg active:shadow-lg
       transition
       duration-150
       ease-in-out">Update Stock</button>

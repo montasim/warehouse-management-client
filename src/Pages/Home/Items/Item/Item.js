@@ -3,51 +3,61 @@ import { useNavigate } from 'react-router-dom';
 import { AiOutlineStock } from 'react-icons/ai';
 
 const Item = ({ item }) => {
-    const { _id, category, name, description, supplierName, price, stock, ratings, ratingsCount, img, shipping, quantity } = item;
+    const { _id, name, description, supplierName, price, stock, img } = item;
     const navigate = useNavigate();
 
-    const naviagateToItems = _id => {
-        navigate(`/inventory/${_id}`);
-    }
-
     return (
-        <div className="mb-6 lg:mb-0">
-            <div className="relative block bg-white rounded-lg shadow-lg">
-                <div className="flex">
-                    <div
-                        className="relative overflow-hidden bg-no-repeat bg-cover relative overflow-hidden bg-no-repeat bg-cover shadow-lg rounded-lg mx-4 -mt-4"
-                        data-mdb-ripple="true" data-mdb-ripple-color="light">
-                        <img src={img} className="w-full" />
-                        <a href="#!">
-                            <div
-                                className="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out"
-                                style={{ backgroundColor: "rgba(251, 251, 251, 0.15)" }}></div>
-                        </a>
-                    </div>
+        <div
+            className="relative block mx-auto border border-gray-100 rounded-xl w-5/6"
+        >
+            <button
+                type="button"
+                name="wishlist"
+                className="absolute p-2 text-white bg-indigo-600 rounded-full right-4 top-4"
+            >
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                </svg>
+            </button>
+
+            <img
+                loading="lazy"
+                alt="Build Your Own Drone"
+                className="object-contain w-full"
+                src={img}
+            />
+
+            <div className="p-6">
+                <div className='flex justify-between'>
+                    <p className="text-xl font-medium text-gray-600">
+                        $ {price}
+                    </p>
+                    <p className="text-xl font-medium text-gray-600">
+                        Q {stock}
+                    </p>
                 </div>
-                <div className="p-6">
-                    <h5 className="font-bold text-lg mb-3">{name}</h5>
-                    <div className="text-gray-500 mb-4 flex justify-between">
-                        <p className='text-lg text-black'><span className='text-2xl'>$</span>{price}</p>
-                        <p className='text-xl text-black'> <span className='text-black mr-1'>Qty:</span>{stock}</p>
-                    </div>
-                    <p className="text-gray-500 mb-4">
-                        <small>
-                            <a href="" className="text-gray-900"><span className='font-semibold'>Supplier:</span> {supplierName}</a>
-                        </small>
-                    </p>
-                    <p className="mb-4 pb-2">
-                        {description}
-                    </p>
-                    <button onClick={() => naviagateToItems(_id)} data-mdb-ripple="true" data-mdb-ripple-color="light"
-                        className="block mx-auto px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out flex justify-center items-center">
-                        <AiOutlineStock className='mr-3 text-lg' />
+
+                <h5 className="mt-1 text-lg font-bold">
+                    {name.length > 25 ? name.slice(0, 22) + ' ...' : name}
+                </h5>
+
+                <h6 className='text-lg my-2'>{supplierName}</h6>
+
+                <p>{description.length > 75 ? description.slice(0, 70) + ' ...' : description}</p>
+
+                <button onClick={() => navigate(`/inventory/${_id}`)}
+                    name="add"
+                    type="button"
+                    className="flex items-center justify-center w-full px-4 py-2 mt-6 bg-indigo-600 rounded-lg"
+                >
+                    <span className="text-sm text-white font-medium">
                         Update Stock
-                    </button>
-                    <p className="text-gray-500 mt-4">
-                        <small>Added <u>13.01.2022</u></small>
-                    </p>
-                </div>
+                    </span>
+
+                    <AiOutlineStock className='ml-3 text-xl text-white' />
+                </button>
+
+                <h6 className='mt-4 text-center text-xs'>Added on: 10/02/2022</h6>
             </div>
         </div>
     );
