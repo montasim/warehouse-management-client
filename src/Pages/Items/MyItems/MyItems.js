@@ -12,14 +12,6 @@ const MyItems = () => {
     const navigate = useNavigate();
     const [user] = useAuthState(auth);
 
-    let email;
-
-    if (user !== null) {
-        user.providerData.forEach((profile) => {
-            email = profile?.email;
-        });
-    }
-
     useEffect(() => {
         const getMyItems = async () => {
             const email = user?.email;
