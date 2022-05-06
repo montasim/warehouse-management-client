@@ -9,8 +9,8 @@ const useToken = (user) => {
             const email = user?.user?.email
             if (email) {
                 const { data } = await axios.post('https://posdash-server.herokuapp.com/login', { email });
-                setToken(data.accessToken);
-                localStorage.setItem('accessToken', data.accessToken);
+                setToken(data);
+                localStorage.setItem('accessToken', data);
             }
         }
         getToken();
