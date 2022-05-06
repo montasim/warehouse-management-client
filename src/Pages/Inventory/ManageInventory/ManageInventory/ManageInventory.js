@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { RiAddBoxFill } from 'react-icons/ri';
 import Product from '../Product/Product';
+import SearchItems from '../../../../Components/SearchItems/SearchItems';
 
 const ManageInventory = () => {
     const [products, setProducts] = useState([]);
@@ -20,30 +21,7 @@ const ManageInventory = () => {
                     <RiAddBoxFill className='mr-3 text-xl' />
                     Add New Item
                 </button>
-                <div className="xl:w-96">
-                    <input
-                        type="search"
-                        className="
-        form-control
-        block
-        w-full
-        px-3
-        py-1.5
-        text-base
-        font-normal
-        text-gray-700
-        bg-white bg-clip-padding
-        border border-solid border-gray-300
-        rounded
-        transition
-        ease-in-out
-        m-0
-        focus:text-gray-700 focus:bg-white focus:border-blue-400 focus:outline-none
-      "
-                        id="exampleSearch"
-                        placeholder="Search here..."
-                    />
-                </div>
+                <SearchItems />
             </div>
             <div className="flex flex-col">
                 <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">

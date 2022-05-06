@@ -2,6 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { RiCheckboxMultipleBlankLine } from 'react-icons/ri';
+import SearchItems from '../../../Components/SearchItems/SearchItems';
 
 const AddItem = () => {
     const navigate = useNavigate();
@@ -41,30 +42,7 @@ const AddItem = () => {
                     <RiCheckboxMultipleBlankLine className='mr-3 text-xl' />
                     Manage Inventories
                 </button>
-                <div className="xl:w-96">
-                    <input
-                        type="search"
-                        className="
-        form-control
-        block
-        w-full
-        px-3
-        py-1.5
-        text-base
-        font-normal
-        text-gray-700
-        bg-white bg-clip-padding
-        border border-solid border-gray-300
-        rounded
-        transition
-        ease-in-out
-        m-0
-        focus:text-gray-700 focus:bg-white focus:border-blue-400 focus:outline-none
-      "
-                        id="exampleSearch"
-                        placeholder="Search here..."
-                    />
-                </div>
+                <SearchItems />
             </div>
 
             <div className="block p-6 rounded-lg shadow-lg bg-white max-w-md mx-auto">
