@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useSignInWithFacebook, useSignInWithGithub, useSignInWithGoogle, useSignInWithTwitter } from 'react-firebase-hooks/auth';
 import { toast } from 'react-toastify';
 import auth from '../../Hooks/Firebase.Init';
@@ -27,16 +27,18 @@ const SocialMediaLogin = () => {
 
     const [token] = useToken(googleUser || githubUser);
 
-    if (googleError || githubError) {
-        toast(googleError?.message);
-    }
-    if (googleLoading || githubLoading) {
-        return <Loading />;
-    }
-    if (token) {
-        toast('Welcome Back');
-        navigate(from, { replace: true });
-    }
+    useEffect(() => {
+        if (googleError || githubError) {
+            toast(googleError?.message);
+        }
+        if (googleLoading || githubLoading) {
+            return <Loading />;
+        }
+        if (token) {
+            toast('Welcome Back');
+            navigate(from, { replace: true });
+        }
+    }, []);
 
     return (
         <>
