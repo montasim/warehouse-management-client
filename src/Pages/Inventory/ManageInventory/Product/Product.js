@@ -29,7 +29,7 @@ const Product = ({ index, product }) => {
                 .then(res => res.json())
                 .then(data => {
                     if (data.deletedCount > 0) {
-                        toast(`Deleted Successfully: ${_id}`);
+                        toast(`Deleted Successfully: ${name}`);
                     }
                 })
         }
@@ -74,8 +74,8 @@ const Product = ({ index, product }) => {
             </td>
             <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap flex">
                 <AiFillEdit onClick={() => navigate(`/inventory/${_id}`)} className='text-2xl text-blue-400 mr-3' />
-                <AiFillDelete onClick={() => itemDelete(_id)} className='text-2xl text-red-400 mr-3' />
                 <AiFillPlusSquare onClick={() => addMyItems(_id)} className='text-2xl text-orange-400 mr-3' />
+                <AiFillDelete onClick={() => itemDelete(_id)} className='text-2xl text-red-400 mr-3' />
             </td>
         </tr>
     );
