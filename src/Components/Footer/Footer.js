@@ -89,16 +89,16 @@ const Footer = () => {
                             Products
                         </h6>
                         <p className="mb-4">
-                            <a target="_blank" href="https://github.com/montasim/genius-car-services" className="text-gray-600">Genius Car</a>
+                            <a target="_blank" rel='noreferrer' href="https://github.com/montasim/genius-car-services" className="text-gray-600">Genius Car</a>
                         </p>
                         <p className="mb-4">
-                            <a target="_blank" href="https://github.com/montasim/ema-john-simple" className="text-gray-600">Ema John</a>
+                            <a target="_blank" rel='noreferrer' href="https://github.com/montasim/ema-john-simple" className="text-gray-600">Ema John</a>
                         </p>
                         <p className="mb-4">
-                            <a target="_blank" href="https://github.com/montasim/phone-hunter" className="text-gray-600">Phone Hunter</a>
+                            <a target="_blank" rel='noreferrer' href="https://github.com/montasim/phone-hunter" className="text-gray-600">Phone Hunter</a>
                         </p>
                         <p>
-                            <a target="_blank" href="https://github.com/montasim/convention-center" className="text-gray-600">Convention Center</a>
+                            <a target="_blank" rel='noreferrer' href="https://github.com/montasim/convention-center" className="text-gray-600">Convention Center</a>
                         </p>
                     </div>
                     <div className="">
