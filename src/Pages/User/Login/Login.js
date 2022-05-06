@@ -75,7 +75,7 @@ const Login = () => {
                                 <input
                                     type="text"
                                     className="form-control block w-full px-4 py-2 text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-                                    id="formEmail" name='email'
+                                    id="formEmail" name='email' autoComplete="on"
                                     placeholder="Email address"
                                 />
                             </div>
@@ -84,7 +84,7 @@ const Login = () => {
                                 <input
                                     type="password"
                                     className="form-control block w-full px-4 py-2 text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-                                    id="formPassword" name='password'
+                                    id="formPassword" name='password' autoComplete="on"
                                     placeholder="Password"
                                 />
                             </div>

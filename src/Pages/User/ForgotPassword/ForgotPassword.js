@@ -55,7 +55,7 @@ const ForgotPassword = () => {
         transition
         ease-in-out
         m-0
-        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="formEmail" name='email' placeholder="Email address" />
+        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="formEmail" name='email' autoComplete="on" placeholder="Email address" />
                 </div>
 
                 <p className='mb-4 text-red-600'>{formError}</p>
