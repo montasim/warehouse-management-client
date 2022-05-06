@@ -29,23 +29,35 @@ const Inventory = () => {
     const update = (event) => {
         event.preventDefault();
 
-        const stock = parseInt(event.target.stock.value) + parseInt(oldStock);
-        const newStock = { stock };
+        const userStock = parseInt(event.target.stock.value);
 
-        // update data to server
-        fetch(`https://posdash-server.herokuapp.com/inventory/${_id?.id}`, {
-            method: 'PUT',
-            headers: {
-                'content-type': 'application/json'
-            },
-            body: JSON.stringify(newStock)
-        })
-            .then(res => res.json())
-            .then(data => {
-                toast(`${name}'s Stock Updated Successfully`);
-            });
+        if (userStock > 0) {
+            const stock = userStock + parseInt(oldStock);
+            const newStock = { stock };
 
-        event.target.reset();
+            // update data to server
+            fetch(`https://posdash-server.herokuapp.com/inventory/${_id?.id}`, {
+                method: 'PUT',
+                headers: {
+                    'content-type': 'application/json'
+                },
+                body: JSON.stringify(newStock)
+            })
+                .then(res => res.json())
+                .then(data => {
+                    toast(
+                        <div className='flex'>
+                            <img className='w-20' src={img} alt="" />
+                            <p className='ml-4'>{name}'s stock increased {userStock}.</p>
+                        </div>
+                    );
+                });
+
+            event.target.reset();
+        }
+        else {
+            toast('Invalid stock input');
+        }
     }
 
     const deliver = (stock) => {
@@ -61,7 +73,12 @@ const Inventory = () => {
         })
             .then(res => res.json())
             .then(data => {
-                toast(`${name}'s Stock Updated Successfully`);
+                toast(
+                    <div className='flex'>
+                        <img className='w-20' src={img} alt="" />
+                        <p className='ml-4'>{name}'s stock decreased 1.</p>
+                    </div>
+                );
             });
     }
 

@@ -30,7 +30,12 @@ const AddItem = () => {
         })
             .then(res => res.json())
             .then(data => {
-                toast(`${name} Added Successfully`);
+                toast(
+                    <div className='flex'>
+                        <img className='w-20' src={img} alt="" />
+                        <p className='ml-4'>{name} added to inventory.</p>
+                    </div>
+                );
             });
 
     }

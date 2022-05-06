@@ -3,7 +3,7 @@ import { toast } from 'react-toastify';
 import { AiFillDelete } from 'react-icons/ai';
 
 const MyProducts = ({ index, product }) => {
-    const { _id, name, supplierName, price, stock } = product;
+    const { _id, name, category, supplierName, img, price, stock, shipping: shipping = 0 } = product;
 
     const deleteMyItems = _id => {
         const confirm = window.confirm('Are You Sure?');
@@ -16,7 +16,12 @@ const MyProducts = ({ index, product }) => {
                 .then(res => res.json())
                 .then(data => {
                     if (data.deletedCount > 0) {
-                        toast(`Deleted Successfully: ${name}`);
+                        toast(
+                            <div className='flex'>
+                                <img className='w-20' src={img} alt="" />
+                                <p className='ml-4'>{name} deleted from my items.</p>
+                            </div>
+                        );
                     }
                 })
         }
@@ -25,8 +30,14 @@ const MyProducts = ({ index, product }) => {
     return (
         <tr className="border-b hover:bg-indigo-100 hover:text-grey-700">
             <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">{index + 1}</td>
+            <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                <img className='rounded-md w-16 lg:w-20' src={img} alt="" />
+            </td>
             <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
                 {name}
+            </td>
+            <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                {category}
             </td>
             <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
                 {supplierName}
@@ -38,9 +49,12 @@ const MyProducts = ({ index, product }) => {
                 {stock}
             </td>
             <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                {shipping}
+            </td>
+            <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
                 $ {stock * price}
             </td>
-            <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap flex">
+            <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
                 <AiFillDelete onClick={() => deleteMyItems(_id)} className='text-2xl text-red-500 mr-3' />
             </td>
         </tr>
