@@ -33,6 +33,7 @@ const Header = () => {
     const logOut = () => {
         if (window.confirm("Are You Sure?") === true) {
             signOut(auth);
+            navigate('/');
             toast('See You Soon');
         } else {
 
