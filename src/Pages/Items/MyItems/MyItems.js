@@ -4,9 +4,12 @@ import MyProducts from './MyProducts/MyProducts';
 import { RiAddBoxFill } from 'react-icons/ri';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../../Hooks/Firebase.Init';
+import { signOut } from 'firebase/auth';
+import axiosPrivate from '../../../API/axiosPrivate';
 
 const MyItems = () => {
     const [products, setProducts] = useState([]);
+    const [myItems, setMyItems] = useState([]);
     const navigate = useNavigate();
     const [user] = useAuthState(auth);
 
@@ -18,10 +21,27 @@ const MyItems = () => {
         });
     }
 
+    fetch(`https://posdash-server.herokuapp.com/my-items?email=${email}`)
+        .then(res => res.json())
+        .then(data => setProducts(data));
+
     useEffect(() => {
-        fetch(`https://posdash-server.herokuapp.com/my-items?email=${email}`)
-            .then(res => res.json())
-            .then(data => setProducts(data));
+        const getMyItems = async () => {
+            const email = user?.email;
+            const url = `https://posdash-server.herokuapp.com/my-items?email=${email}`;
+            try {
+                const { data } = await axiosPrivate.get(url);
+                setMyItems(data);
+            }
+            catch (error) {
+                console.log(error.message);
+                if (error.response.status === 401 || error.response.status === 403) {
+                    signOut(auth);
+                    navigate('/login')
+                }
+            }
+        }
+        getMyItems();
     }, [products]);
 
     return (

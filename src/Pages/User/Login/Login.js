@@ -5,6 +5,7 @@ import { toast } from 'react-toastify';
 import Loading from '../../../Components/Loading/Loading';
 import SocialMediaLogin from '../../../Components/SocialMediaLogin/SocialMediaLogin';
 import auth from '../../../Hooks/Firebase.Init';
+import useToken from '../../../Hooks/useToken';
 import loginPic from '../../../Media/Gif/login.gif';
 
 const Login = () => {
@@ -19,13 +20,15 @@ const Login = () => {
         loginError,
     ] = useSignInWithEmailAndPassword(auth);
 
-    const login = event => {
+    const [token] = useToken(user);
+
+    const login = async event => {
         event.preventDefault();
 
         const email = event.target.email.value;
         const password = event.target.password.value;
 
-        signInWithEmailAndPassword(email, password);
+        await signInWithEmailAndPassword(email, password);
 
         toast('Welcome Back');
     }
@@ -36,7 +39,7 @@ const Login = () => {
     if (loginLoading) {
         return <Loading />;
     }
-    if (user) {
+    if (token) {
         navigate(from, { replace: true });
     }
 

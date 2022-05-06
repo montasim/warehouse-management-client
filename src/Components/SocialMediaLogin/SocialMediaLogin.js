@@ -5,6 +5,7 @@ import auth from '../../Hooks/Firebase.Init';
 import { BsGoogle, BsFacebook, BsGithub, BsTwitter } from 'react-icons/bs';
 import { useLocation, useNavigate } from 'react-router-dom';
 import Loading from '../Loading/Loading';
+import useToken from '../../Hooks/useToken';
 
 const SocialMediaLogin = () => {
     const navigate = useNavigate();
@@ -24,13 +25,15 @@ const SocialMediaLogin = () => {
         githubError
     ] = useSignInWithGithub(auth);
 
+    const [token] = useToken(googleUser || githubUser);
+
     if (googleError || githubError) {
         toast(googleError?.message);
     }
     if (googleLoading || githubLoading) {
         return <Loading />;
     }
-    if (googleUser || githubUser) {
+    if (token) {
         toast('Welcome Back');
         navigate(from, { replace: true });
     }
