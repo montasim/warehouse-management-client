@@ -7,166 +7,144 @@ const Footer = () => {
     const year = date.getFullYear();
 
     return (
-        <footer className="text-center lg:text-left bg-gray-100 text-gray-600">
-            <div className="flex justify-center items-center lg:justify-between p-6 border-b border-gray-300">
-                <div className="mr-12 hidden lg:block">
-                    <span>Get connected with us on social networks:</span>
-                </div>
-                <div className="flex justify-center">
-                    <a href="https://www.facebook.com/montasimmamun/" className="mr-6 text-gray-600">
-                        <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f"
-                            className="w-2.5" role="img" xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 320 512">
-                            <path fill="currentColor"
-                                d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
-                            </path>
-                        </svg>
-                    </a>
-                    <a href="https://twitter.com/montasimmamun" className="mr-6 text-gray-600">
-                        <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter"
-                            className="w-4" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path fill="currentColor"
-                                d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
-                            </path>
-                        </svg>
-                    </a>
-                    <a href="mailto:montasimmamun@gmail.com" className="mr-6 text-gray-600">
-                        <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="google"
-                            className="w-3.5" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512">
-                            <path fill="currentColor"
-                                d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z">
-                            </path>
-                        </svg>
-                    </a>
-                    <a href="https://www.instagram.com/montasim/" className="mr-6 text-gray-600">
-                        <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram"
-                            className="w-3.5" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                            <path fill="currentColor"
-                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
-                            </path>
-                        </svg>
-                    </a>
-                    <a href="https://www.linkedin.com/in/montasim" className="mr-6 text-gray-600">
-                        <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin-in"
-                            className="w-3.5" role="img" xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 448 512">
-                            <path fill="currentColor"
-                                d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
-                            </path>
-                        </svg>
-                    </a>
-                    <a href="https://github.com/montasim" className="text-gray-600">
-                        <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github"
-                            className="w-4" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
-                            <path fill="currentColor"
-                                d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
-                            </path>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-            <div className="mx-6 py-10 text-center md:text-left">
-                <div className="grid grid-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <div className="">
-                        <h6 className="
-            uppercase
-            font-semibold
-            mb-4
-            flex
-            items-center
-            justify-center
-            md:justify-start
-          ">
-                            <img className='w-4 mr-8' src={logo} alt="" />
-                            POSData Inventory/Warehouse Management System
-                        </h6>
-                        <p>
-                            Manage your inventory from a dashboard. Manage, add, delete items from this dashboard. Sign in using social media.
-                        </p>
+        <footer className="bg-gray-900">
+            <div className="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
+                <div className="lg:flex lg:gap-8">
+                    <div>
+                        <span className="block w-12 h-8">
+                            <img src={logo} alt="" />
+                        </span>
                     </div>
-                    <div className="">
-                        <h6 className="uppercase font-semibold mb-4 flex justify-center md:justify-start">
-                            Products
-                        </h6>
-                        <p className="mb-4">
-                            <a target="_blank" rel='noreferrer' href="https://github.com/montasim/genius-car-services" className="text-gray-600">Genius Car</a>
-                        </p>
-                        <p className="mb-4">
-                            <a target="_blank" rel='noreferrer' href="https://github.com/montasim/ema-john-simple" className="text-gray-600">Ema John</a>
-                        </p>
-                        <p className="mb-4">
-                            <a target="_blank" rel='noreferrer' href="https://github.com/montasim/phone-hunter" className="text-gray-600">Phone Hunter</a>
-                        </p>
-                        <p>
-                            <a target="_blank" rel='noreferrer' href="https://github.com/montasim/convention-center" className="text-gray-600">Convention Center</a>
-                        </p>
-                    </div>
-                    <div className="">
-                        <h6 className="uppercase font-semibold mb-4 flex justify-center md:justify-start">
-                            Useful links
-                        </h6>
-                        <p className="mb-4">
-                            <Link to="/add-item" className="text-gray-600">Add Item</Link>
-                        </p>
-                        <p className="mb-4">
-                            <Link to="/inventory" className="text-gray-600">Manage Items</Link>
-                        </p>
-                        <p className="mb-4">
-                            <Link to="/my-items" className="text-gray-600">My Items</Link>
-                        </p>
-                        <p>
-                            <Link to="/blog" className="text-gray-600">Blog</Link>
-                        </p>
-                    </div>
-                    <div className="">
-                        <h6 className="uppercase font-semibold mb-4 flex justify-center md:justify-start">
-                            Contact
-                        </h6>
-                        <p className="flex items-center justify-center md:justify-start mb-4">
-                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="home"
-                                className="w-4 mr-4" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                <path fill="currentColor"
-                                    d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z">
-                                </path>
-                            </svg>
-                            Rangpur, Bangladesh
-                        </p>
-                        <p className="flex items-center justify-center md:justify-start mb-4">
-                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope"
-                                className="w-4 mr-4" role="img" xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 512 512">
-                                <path fill="currentColor"
-                                    d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z">
-                                </path>
-                            </svg>
-                            info@posdash.com
-                        </p>
-                        <p className="flex items-center justify-center md:justify-start mb-4">
-                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="phone"
-                                className="w-4 mr-4" role="img" xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 512 512">
-                                <path fill="currentColor"
-                                    d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z">
-                                </path>
-                            </svg>
-                            + 01 234 567 88
-                        </p>
-                        <p className="flex items-center justify-center md:justify-start">
-                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="print"
-                                className="w-4 mr-4" role="img" xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 512 512">
-                                <path fill="currentColor"
-                                    d="M448 192V77.25c0-8.49-3.37-16.62-9.37-22.63L393.37 9.37c-6-6-14.14-9.37-22.63-9.37H96C78.33 0 64 14.33 64 32v160c-35.35 0-64 28.65-64 64v112c0 8.84 7.16 16 16 16h48v96c0 17.67 14.33 32 32 32h320c17.67 0 32-14.33 32-32v-96h48c8.84 0 16-7.16 16-16V256c0-35.35-28.65-64-64-64zm-64 256H128v-96h256v96zm0-224H128V64h192v48c0 8.84 7.16 16 16 16h48v96zm48 72c-13.25 0-24-10.75-24-24 0-13.26 10.75-24 24-24s24 10.74 24 24c0 13.25-10.75 24-24 24z">
-                                </path>
-                            </svg>
-                            + 01 234 567 89
-                        </p>
+
+                    <div className="grid grid-cols-2 gap-8 mt-8 lg:mt-0 lg:grid-cols-5 lg:gap-y-16">
+                        <div className="col-span-2">
+                            <div>
+                                <h2 className="text-2xl font-bold text-white">
+                                    Get the latest news!
+                                </h2>
+
+                                <p className="mt-6 text-gray-400">
+                                    World class inventory management system awaits to fulfill your needs. Still not sure how to get started? Fell free to give it a try.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="col-span-2 lg:col-span-3 lg:flex lg:items-end">
+                            <form className="w-full text-white">
+                                <label htmlFor="email" className="sr-only"> Email </label>
+
+                                <div className="p-2 border sm:flex sm:items-center border-white/10">
+                                    <input className="w-full h-8 p-3 text-sm font-medium tracking-widest placeholder-gray-400 uppercase bg-transparent border-none" type="email" id="email" placeholder="Enter your email" />
+
+                                    <button className="w-full h-12 px-6 py-3 mt-1 text-sm font-bold tracking-wide uppercase bg-blue-700 sm:ml-4 sm:flex-shrink-0 sm:w-auto sm:mt-0" type="submit">
+                                        Sign Up
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div className="col-span-2 pt-6 border-t sm:col-span-1 border-white/10">
+                            <p className="font-bold text-white"> Services </p>
+
+                            <nav className="flex flex-col mt-6 space-y-4 text-sm text-gray-300">
+                                <Link className="inline-block" to="https://github.com/montasim/genius-car-services"> Genius Car </Link>
+                                <Link className="inline-block" to="https://github.com/montasim/ema-john-simple"> Ema John </Link>
+                                <Link className="inline-block" to="https://github.com/montasim/phone-hunter"> Phone Hunter </Link>
+                                <Link className="inline-block" to="https://github.com/montasim/convention-center"> Convention Center </Link>
+                            </nav>
+                        </div>
+
+                        <div className="col-span-2 pt-6 border-t sm:col-span-1 border-white/10">
+                            <p className="font-bold text-white"> Company </p>
+
+                            <nav className="flex flex-col mt-6 space-y-4 text-sm text-gray-300">
+                                <Link className="inline-block" to=""> About </Link>
+                                <Link className="inline-block" to=""> Meet the Team </Link>
+                                <Link className="inline-block" to=""> History </Link>
+                                <Link className="inline-block" to=""> Careers </Link>
+                            </nav>
+                        </div>
+
+                        <div className="col-span-2 pt-6 border-t sm:col-span-1 border-white/10">
+                            <p className="font-bold text-white"> Helpful Links </p>
+
+                            <nav className="flex flex-col mt-6 space-y-4 text-sm text-gray-300">
+                                <Link className="inline-block" to=""> Contact </Link>
+                                <Link className="inline-block" to=""> FAQs </Link>
+                                <Link className="inline-block" to=""> Live Chat </Link>
+                                <Link className="inline-block" to=""> Blog </Link>
+                            </nav>
+                        </div>
+
+                        <div className="col-span-2 pt-6 border-t sm:col-span-1 border-white/10">
+                            <p className="font-bold text-white"> Legal </p>
+
+                            <nav className="flex flex-col mt-6 space-y-4 text-sm text-gray-300">
+                                <Link className="inline-block" to=""> Accessibility </Link>
+                                <Link className="inline-block" to=""> Returns Policy </Link>
+                                <Link className="inline-block" to=""> Refund Policy </Link>
+                                <Link className="inline-block" to=""> Hiring Statistics </Link>
+                            </nav>
+                        </div>
+
+                        <div className="col-span-2 pt-6 border-t sm:col-span-1 border-white/10">
+                            <p className="font-bold text-white"> Downloads </p>
+
+                            <nav className="flex flex-col mt-6 space-y-4 text-sm text-gray-300">
+                                <Link className="inline-block" to=""> Marketing Calendar </Link>
+                                <Link className="inline-block" to=""> SEO Infographics </Link>
+                            </nav>
+                        </div>
+
+                        <div className="flex col-span-2 space-x-4 text-gray-500 lg:col-span-5">
+                            <Link className="hover:opacity-75" to="https://www.facebook.com/montasimmamun/" target="_blank" rel="noreferrer">
+                                <span className="sr-only"> Facebook </span>
+
+                                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path fillRule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clipRule="evenodd" />
+                                </svg>
+                            </Link>
+
+                            <Link className="hover:opacity-75" to="https://www.instagram.com/montasim/" target="_blank" rel="noreferrer">
+                                <span className="sr-only"> Instagram </span>
+
+                                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path fillRule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clipRule="evenodd" />
+                                </svg>
+                            </Link>
+
+                            <Link className="hover:opacity-75" to="https://twitter.com/montasimmamun" target="_blank" rel="noreferrer">
+                                <span className="sr-only"> Twitter </span>
+
+                                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                                </svg>
+                            </Link>
+
+                            <Link className="hover:opacity-75" to="https://github.com/montasim" target="_blank" rel="noreferrer">
+                                <span className="sr-only"> GitHub </span>
+
+                                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path fillRule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clipRule="evenodd" />
+                                </svg>
+                            </Link>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div className="text-center p-6 bg-gray-200">
-                <span>&copy; {year} Copyright: </span>
-                <Link className="text-gray-600 font-semibold" to="https://github.com/montasim">POSDash</Link>
+
+                <div className="pt-8 mt-12 border-t border-white/10">
+                    <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
+                        <p className="text-xs text-center text-gray-400 lg:text-left">
+                            Copyright &copy; {year}. POSDash. All rights reserved.
+                        </p>
+
+                        <nav className="flex justify-center space-x-4 text-xs text-gray-400 lg:justify-end">
+                            <Link to=""> Terms & Conditions </Link>
+                            <Link to=""> Privacy Policy </Link>
+                            <Link to=""> Cookies </Link>
+                        </nav>
+                    </div>
+                </div>
             </div>
         </footer>
     );

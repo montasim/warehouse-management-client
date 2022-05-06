@@ -6,6 +6,6 @@ module.exports = {
     extend: {},
   },
   plugins: [
-    require('tw-elements/dist/plugin')
+    require('tw-elements/dist/plugin', '@tailwindcss/forms')
   ],
 }
