@@ -2,16 +2,27 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { AiFillDelete, AiFillEdit, AiFillPlusSquare } from 'react-icons/ai';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from '../../../../Hooks/Firebase.Init';
 
 const Product = ({ index, product }) => {
     const { _id, name, category, supplierName, img, description, price, stock } = product;
     const navigate = useNavigate();
+    const [user] = useAuthState(auth);
+
+    let email;
+
+    if (user !== null) {
+        user.providerData.forEach((profile) => {
+            email = profile?.email;
+        });
+    }
 
     const itemDelete = _id => {
         const confirm = window.confirm('Are You Sure?');
 
         if (confirm) {
-            const url = `https://posdash-server.herokuapp.com/inventory/${_id}`;
+            const url = `https://posdash-server.herokuapp.com/${_id}`;
             fetch(url, {
                 method: 'DELETE'
             })
@@ -26,7 +37,7 @@ const Product = ({ index, product }) => {
 
     const addMyItems = () => {
 
-        const item = { name, category, supplierName, img, description, price, stock };
+        const item = { name, category, supplierName, img, description, price, stock, email };
 
         // send data to server
         fetch('https://posdash-server.herokuapp.com/add-my-items', {

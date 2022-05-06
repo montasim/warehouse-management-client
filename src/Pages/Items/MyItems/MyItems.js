@@ -2,13 +2,24 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import MyProducts from './MyProducts/MyProducts';
 import { RiAddBoxFill } from 'react-icons/ri';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from '../../../Hooks/Firebase.Init';
 
 const MyItems = () => {
     const [products, setProducts] = useState([]);
     const navigate = useNavigate();
+    const [user] = useAuthState(auth);
+
+    let email;
+
+    if (user !== null) {
+        user.providerData.forEach((profile) => {
+            email = profile?.email;
+        });
+    }
 
     useEffect(() => {
-        fetch('https://posdash-server.herokuapp.com/my-items')
+        fetch(`https://posdash-server.herokuapp.com/my-items?email=${email}`)
             .then(res => res.json())
             .then(data => setProducts(data));
     }, [products]);
