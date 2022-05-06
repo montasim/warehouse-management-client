@@ -8,7 +8,6 @@ import { signOut } from 'firebase/auth';
 import axiosPrivate from '../../../API/axiosPrivate';
 
 const MyItems = () => {
-    const [products, setProducts] = useState([]);
     const [myItems, setMyItems] = useState([]);
     const navigate = useNavigate();
     const [user] = useAuthState(auth);
@@ -20,10 +19,6 @@ const MyItems = () => {
             email = profile?.email;
         });
     }
-
-    fetch(`https://posdash-server.herokuapp.com/my-items?email=${email}`)
-        .then(res => res.json())
-        .then(data => setProducts(data));
 
     useEffect(() => {
         const getMyItems = async () => {
@@ -42,7 +37,7 @@ const MyItems = () => {
             }
         }
         getMyItems();
-    }, [products]);
+    }, [myItems]);
 
     return (
         <div className='mx-10 mt-32 mb-10'>
@@ -108,7 +103,7 @@ const MyItems = () => {
                                 </thead>
                                 <tbody>
                                     {
-                                        products.map((product, index) => <MyProducts key={index} product={product} index={index} />)
+                                        myItems.map((product, index) => <MyProducts key={index} product={product} index={index} />)
                                     }
                                 </tbody>
                             </table>
