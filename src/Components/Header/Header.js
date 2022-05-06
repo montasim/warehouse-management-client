@@ -19,13 +19,13 @@ const Header = () => {
     const auth = getAuth();
     const [user] = useAuthState(auth);
 
-    let userEmail, userImage;
+    let email, userImage;
 
     if (user !== null) {
         user.providerData.forEach((profile) => {
-            const splitEmail = profile?.uid.split('@');
+            const splitEmail = profile?.email.split('@');
 
-            userEmail = splitEmail[0];
+            email = splitEmail[0];
             userImage = profile?.photoURL;
         });
     }
@@ -110,7 +110,7 @@ const Header = () => {
                                                 <img className="rounded-full w-9 h-9 max-w-none" alt="A"
                                                     src={userImage || maleUser} />
                                                 <span className="flex items-center px-3 py-2">
-                                                    {userEmail}
+                                                    {email}
                                                 </span>
                                             </span>
                                         </Link>
