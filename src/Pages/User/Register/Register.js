@@ -21,8 +21,6 @@ const Register = () => {
     const register = async event => {
         event.preventDefault();
 
-        const firstName = event.target.firstName.value;
-        const lastName = event.target.lastName.value;
         const email = event.target.email.value;
         const password = event.target.password.value;
         const confirmPassword = event.target.confirmPassword.value;
@@ -76,26 +74,6 @@ const Register = () => {
                                 className="flex items-center my-4 before:flex-1 before:border-t before:border-gray-300 before:mt-0.5 after:flex-1 after:border-t after:border-gray-300 after:mt-0.5"
                             >
                                 <p className="text-center font-semibold mx-4 mb-0">Or</p>
-                            </div>
-
-                            <div className='mb-6 flex gap-4'>
-                                <div className="w-1/2">
-                                    <input
-                                        type="text"
-                                        className="form-control block w-full px-4 py-2 text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-                                        id="formFirstName" name='firstName' autoComplete="on"
-                                        placeholder="First Name"
-                                    />
-                                </div>
-
-                                <div className="w-1/2">
-                                    <input
-                                        type="text"
-                                        className="form-control block w-full px-4 py-2 text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-                                        id="formLastName" name='lastName' autoComplete="on"
-                                        placeholder="Last Name"
-                                    />
-                                </div>
                             </div>
 
                             <div className="mb-6">
