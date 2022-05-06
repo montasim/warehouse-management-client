@@ -2,112 +2,123 @@ import React from 'react';
 
 const Blog = () => {
     return (
-        <div className="accordion accordion-flush m-24" id="accordionFlushExample">
-            <div className="accordion-item border-t-0 border-l-0 border-r-0 rounded-none bg-white border border-gray-200">
-                <h2 className="accordion-header mb-0" id="flush-headingOne">
-                    <button className="accordion-button
-    relative
-    flex
-    items-center
-    w-full
-    py-4
-    px-5
-    text-base text-gray-800 text-left
-    bg-white
-    border-0
-    rounded-none
-    transition
-    focus:outline-none" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
-                        aria-expanded="false" aria-controls="flush-collapseOne">
+        <section class="space-y-4 mt-32 mb-20 lg:mx-8 sm:mx-4">
+            <details class="p-6 border-l-4 border-blue-400 bg-gray-50 group" open>
+                <summary class="flex items-center justify-between cursor-pointer">
+                    <h5 class="text-lg font-medium text-gray-900">
                         1. What is the difference between JavaScript and NodeJS?
-                    </button>
-                </h2>
-                <div id="flush-collapseOne" className="accordion-collapse border-0 collapse show"
-                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                    <div className="accordion-body py-4 px-5">JavaScript is normally used for client-side for a web application. Whereas Node JS mainly used for accessing or running server-side operation. JavaScript can run multiples web engine like Spider monkey (FireFox), JavaScript Core (Safari), V8 (Google Chrome). Node JS only support the Google Chrome V8 engine. JavaScript is the upgraded version of ECMA script that uses Chrome's V8 engine written in C++. Nodejs is written in C, C++ and Javascript. </div>
-                </div>
-            </div>
-            <div className="accordion-item border-l-0 border-r-0 rounded-none bg-white border border-gray-200">
-                <h2 className="accordion-header mb-0" id="flush-headingTwo">
-                    <button className="accordion-button
-    collapsed
-    relative
-    flex
-    items-center
-    w-full
-    py-4
-    px-5
-    text-base text-gray-800 text-left
-    bg-white
-    border-0
-    rounded-none
-    transition
-    focus:outline-none" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
-                        aria-expanded="false" aria-controls="flush-collapseTwo">
+                    </h5>
+
+                    <span
+                        class="flex-shrink-0 ml-1.5 p-1.5 text-gray-900 bg-white rounded-full sm:p-3"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="flex-shrink-0 w-5 h-5 transition duration-300 group-open:-rotate-45"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
+                                clip-rule="evenodd"
+                            />
+                        </svg>
+                    </span>
+                </summary>
+
+                <p class="mt-4 leading-relaxed text-gray-700">
+                    JavaScript is normally used for client-side for a web application. Whereas Node JS mainly used for accessing or running server-side operation. JavaScript can run multiples web engine like Spider monkey (FireFox), JavaScript Core (Safari), V8 (Google Chrome). Node JS only support the Google Chrome V8 engine. JavaScript is the upgraded version of ECMA script that uses Chrome's V8 engine written in C++. Nodejs is written in C, C++ and Javascript.
+                </p>
+            </details>
+
+            <details class="p-6 border-l-4 border-orange-400 bg-gray-50 group">
+                <summary class="flex items-center justify-between cursor-pointer">
+                    <h5 class="text-lg font-medium text-gray-900">
                         2. What is the differences between SQL and NoSQL databases?
-                    </button>
-                </h2>
-                <div id="flush-collapseTwo" className="accordion-collapse border-0 collapse" aria-labelledby="flush-headingTwo"
-                    data-bs-parent="#accordionFlushExample">
-                    <div className="accordion-body py-4 px-5">SQL databases are relational database, NoSQL databases are non-relational database. SQL databases are table-based, while NoSQL databases are document based. SQL databases are better for multi-row transactions, while NoSQL is better for unstructured data like documents or JSON. SQL databases are vertically scalable. This means that you can increase the load on a single server by increasing things like RAM, CPU or SSD. But on the other hand NoSQL databases are horizontally scalable. This means that you handle more traffic by sharding, or adding more servers in your NoSQL database. </div>
-                </div>
-            </div>
-            <div className="accordion-item border-l-0 border-r-0 border-b-0 rounded-none bg-white border border-gray-200">
-                <h2 className="accordion-header mb-0" id="flush-headingThree">
-                    <button className="accordion-button
-    collapsed
-    relative
-    flex
-    items-center
-    w-full
-    py-4
-    px-5
-    text-base text-gray-800 text-left
-    bg-white
-    border-0
-    rounded-none
-    transition
-    focus:outline-none" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
-                        aria-expanded="false" aria-controls="flush-collapseThree">
+                    </h5>
+
+                    <span
+                        class="flex-shrink-0 ml-1.5 p-1.5 text-gray-900 bg-white rounded-full sm:p-3"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="flex-shrink-0 w-5 h-5 transition duration-300 group-open:-rotate-45"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
+                                clip-rule="evenodd"
+                            />
+                        </svg>
+                    </span>
+                </summary>
+
+                <p class="mt-4 leading-relaxed text-gray-700">
+                    SQL databases are relational database, NoSQL databases are non-relational database. SQL databases are table-based, while NoSQL databases are document based. SQL databases are better for multi-row transactions, while NoSQL is better for unstructured data like documents or JSON. SQL databases are vertically scalable. This means that you can increase the load on a single server by increasing things like RAM, CPU or SSD. But on the other hand NoSQL databases are horizontally scalable. This means that you handle more traffic by sharding, or adding more servers in your NoSQL database.
+                </p>
+            </details>
+
+            <details class="p-6 border-l-4 border-gray-400 bg-gray-50 group">
+                <summary class="flex items-center justify-between cursor-pointer">
+                    <h5 class="text-lg font-medium text-gray-900">
                         3. When should you use NodeJS and when should you use MongoDB?
-                    </button>
-                </h2>
-                <div id="flush-collapseThree" className="accordion-collapse collapse" aria-labelledby="flush-headingThree"
-                    data-bs-parent="#accordionFlushExample">
-                    <div className="accordion-body py-4 px-5">NodeJS is mainly used for server-side or back-end of an application. Whereas MongoDB is NoSQl database which is mainly used as an database. If I need to write a server-side application I will use NodeJs. And if I need to store data for an application I will use MongoDB.</div>
-                </div>
-            </div>
-            <div className="accordion-item border-l-0 border-r-0 border-b-0 rounded-none bg-white border border-gray-200">
-                <h2 className="accordion-header mb-0" id="flush-headingFour">
-                    <button className="accordion-button
-    collapsed
-    relative
-    flex
-    items-center
-    w-full
-    py-4
-    px-5
-    text-base text-gray-800 text-left
-    bg-white
-    border-0
-    rounded-none
-    transition
-    focus:outline-none" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour"
-                        aria-expanded="false" aria-controls="flush-collapseFour">
+                    </h5>
+
+                    <span
+                        class="flex-shrink-0 ml-1.5 p-1.5 text-gray-900 bg-white rounded-full sm:p-3"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="flex-shrink-0 w-5 h-5 transition duration-300 group-open:-rotate-45"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
+                                clip-rule="evenodd"
+                            />
+                        </svg>
+                    </span>
+                </summary>
+
+                <p class="mt-4 leading-relaxed text-gray-700">
+                    NodeJS is mainly used for server-side or back-end of an application. Whereas MongoDB is NoSQl database which is mainly used as an database. If I need to write a server-side application I will use NodeJs. And if I need to store data for an application I will use MongoDB.
+                </p>
+            </details>
+
+            <details class="p-6 border-l-4 border-green-400 bg-gray-50 group">
+                <summary class="flex items-center justify-between cursor-pointer">
+                    <h5 class="text-lg font-medium text-gray-900">
                         4. What is the purpose of JWT and how does it work?
-                    </button>
-                </h2>
-                <div id="flush-collapseFour" className="accordion-collapse collapse" aria-labelledby="flush-headingFour"
-                    data-bs-parent="#accordionFlushExample">
-                    <div className="accordion-body py-4 px-5">JSON Web Token (JWT) is way for securely transmitting information between server and client as a JSON object. JWT is used for authorization and securely information exchange.
+                    </h5>
 
-                        <br />
+                    <span
+                        class="flex-shrink-0 ml-1.5 p-1.5 text-gray-900 bg-white rounded-full sm:p-3"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="flex-shrink-0 w-5 h-5 transition duration-300 group-open:-rotate-45"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
+                                clip-rule="evenodd"
+                            />
+                        </svg>
+                    </span>
+                </summary>
 
-                        When a user login successfully, a JWT token is send to server. Server checks the token with previously stored token. If both token matches JWT verifies the authentic user. If tokens do not match JWT logout user.
-                    </div>
-                </div>
-            </div>
-        </div>
+                <p class="mt-4 leading-relaxed text-gray-700">
+                    JSON Web Token (JWT) is way for securely transmitting information between server and client as a JSON object. JWT is used for authorization and securely information exchange.
+                </p>
+            </details>
+        </section>
     );
 };
 
