@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import logo from '../../Media/Logo/logo.png';
 import { AiOutlineHome, AiOutlineUser } from 'react-icons/ai';
@@ -13,11 +13,34 @@ import { getAuth, signOut } from 'firebase/auth';
 import { toast } from 'react-toastify';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import maleUser from '../../Media/Image/maleUser.png';
+import axiosPrivate from '../../API/axiosPrivate';
 
 const Header = () => {
     const navigate = useNavigate();
     const auth = getAuth();
     const [user] = useAuthState(auth);
+    const [myItems, setMyItems] = useState([]);
+    const [products, setProducts] = useState([]);
+
+    useEffect(() => {
+        fetch('https://posdash-server.herokuapp.com/inventory')
+            .then(res => res.json())
+            .then(data => setProducts(data));
+    }, [products]);
+
+    useEffect(() => {
+        const getMyItems = async () => {
+            const email = user?.email;
+            const url = `https://posdash-server.herokuapp.com/my-items?email=${email}`;
+            try {
+                const { data } = await axiosPrivate.get(url);
+                setMyItems(data);
+            }
+            catch (error) {
+            }
+        }
+        getMyItems();
+    }, [myItems]);
 
     let email, userImage;
 
@@ -93,13 +116,13 @@ const Header = () => {
                                 <li className="m-3">
                                     <Link className="nav-link text-gray-500 hover:bg-indigo-200 hover:px-4 hover:py-1.5 hover:rounded-full hover:text-gray-700 focus:text-gray-700 p-0 flex items-center" to="/inventory">
                                         <RiCheckboxMultipleBlankLine className='mr-2 text-xl text-indigo-600' />
-                                        Manage Items
+                                        Manage Items <sup className='text-red-400 text-md text-bold'>{products.length}</sup>
                                     </Link>
                                 </li>
                                 <li className="m-3">
                                     <Link className="nav-link text-gray-500 hover:bg-indigo-200 hover:px-4 hover:py-1.5 hover:rounded-full hover:text-gray-700 focus:text-gray-700 p-0 flex items-center" to="/my-items">
                                         <RiProductHuntLine className='mr-2 text-xl text-indigo-600' />
-                                        My Items
+                                        My Items <sup className='text-red-400 text-md text-bold'>{myItems.length}</sup>
                                     </Link>
                                 </li>
                                 <li className="m-3">
