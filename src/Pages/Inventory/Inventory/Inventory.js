@@ -125,7 +125,7 @@ const Inventory = () => {
                                         <div className="w-full lg:w-6/12 xl:w-4/12 mb-4">
                                             <p className="flex items-center justify-center md:justify-start">
                                                 <MdOutlineLocalShipping className='mr-3' />
-                                                Shipped: {shipping}
+                                                Sold: {shipping}
                                             </p>
                                         </div>
                                     </div>
