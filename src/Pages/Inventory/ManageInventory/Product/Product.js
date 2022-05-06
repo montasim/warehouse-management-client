@@ -22,7 +22,7 @@ const Product = ({ index, product }) => {
         const confirm = window.confirm('Are You Sure?');
 
         if (confirm) {
-            const url = `https://posdash-server.herokuapp.com/${_id}`;
+            const url = `https://posdash-server.herokuapp.com/inventory/${_id}`;
             fetch(url, {
                 method: 'DELETE'
             })
