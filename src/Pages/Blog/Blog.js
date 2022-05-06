@@ -3,7 +3,7 @@ import React from 'react';
 const Blog = () => {
     return (
         <section class="space-y-4 mt-32 mb-20 lg:mx-8 sm:mx-4">
-            <details class="p-6 border-l-4 border-blue-400 bg-gray-50 group" open>
+            <details class="p-6 border-l-4 border-blue-400 bg-gray-50 shadow-md group" open>
                 <summary class="flex items-center justify-between cursor-pointer">
                     <h5 class="text-lg font-medium text-gray-900">
                         1. What is the difference between JavaScript and NodeJS?
@@ -32,7 +32,7 @@ const Blog = () => {
                 </p>
             </details>
 
-            <details class="p-6 border-l-4 border-orange-400 bg-gray-50 group">
+            <details class="p-6 border-l-4 border-orange-400 bg-gray-50 shadow-md group">
                 <summary class="flex items-center justify-between cursor-pointer">
                     <h5 class="text-lg font-medium text-gray-900">
                         2. What is the differences between SQL and NoSQL databases?
@@ -61,7 +61,7 @@ const Blog = () => {
                 </p>
             </details>
 
-            <details class="p-6 border-l-4 border-gray-400 bg-gray-50 group">
+            <details class="p-6 border-l-4 border-gray-400 bg-gray-50 shadow-md group">
                 <summary class="flex items-center justify-between cursor-pointer">
                     <h5 class="text-lg font-medium text-gray-900">
                         3. When should you use NodeJS and when should you use MongoDB?
@@ -90,7 +90,7 @@ const Blog = () => {
                 </p>
             </details>
 
-            <details class="p-6 border-l-4 border-green-400 bg-gray-50 group">
+            <details class="p-6 border-l-4 border-green-400 bg-gray-50 shadow-md group">
                 <summary class="flex items-center justify-between cursor-pointer">
                     <h5 class="text-lg font-medium text-gray-900">
                         4. What is the purpose of JWT and how does it work?
