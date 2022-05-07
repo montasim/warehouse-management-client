@@ -30,7 +30,7 @@ const Login = () => {
 
         await signInWithEmailAndPassword(email, password);
 
-        toast('Welcome Back');
+        toast(`Welcome Back ${email}`);
     }
 
     if (loginError) {
