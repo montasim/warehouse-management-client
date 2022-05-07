@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { useSignInWithGithub, useSignInWithGoogle } from 'react-firebase-hooks/auth';
+import { useAuthState, useSignInWithGithub, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import { toast } from 'react-toastify';
 import auth from '../../Hooks/Firebase.Init';
 import { BsGoogle, BsGithub } from 'react-icons/bs';
@@ -26,6 +26,17 @@ const SocialMediaLogin = () => {
     ] = useSignInWithGithub(auth);
 
     const [token] = useToken(googleUser || githubUser);
+    const [user] = useAuthState(auth);
+
+    let email;
+
+    if (user !== null) {
+        user.providerData.forEach((profile) => {
+            const splitEmail = profile?.email.split('@');
+
+            email = splitEmail[0];
+        });
+    }
 
     useEffect(() => {
         if (googleError || githubError) {
@@ -35,7 +46,7 @@ const SocialMediaLogin = () => {
             return <Loading />;
         }
         if (token) {
-            toast('Welcome Back');
+            toast(`Welcome Back ${email}`);
             navigate(from, { replace: true });
         }
     }, []);
