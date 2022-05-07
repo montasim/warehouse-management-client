@@ -2,7 +2,7 @@ import React from 'react';
 
 const Banner = () => {
     return (
-        <section className="text-white bg-gray-900 mt-0">
+        <section className="text-white bg-gray-900">
             <div className="max-w-screen-xl px-4 py-20 mx-auto lg:items-center lg:flex">
                 <div className="max-w-3xl mx-auto text-center">
                     <h1 className="text-3xl font-extrabold text-transparent sm:text-5xl bg-clip-text bg-gradient-to-r from-green-300 via-indigo-600 to-orange-300">

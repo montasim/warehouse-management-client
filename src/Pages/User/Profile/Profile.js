@@ -2,7 +2,7 @@ import React from 'react';
 
 const Profile = () => {
     return (
-        <section className='sm:mx-2 lg:mx-8 my-12'>
+        <section className='sm:mx-2 lg:mx-8 mt-40 mb-12'>
             <div class="md:grid md:grid-cols-3 md:gap-6">
                 <div class="md:col-span-1">
                     <div class="px-4 sm:px-0">
