@@ -105,6 +105,12 @@ const Header = () => {
                                 Blog
                             </Link>
                         </li>
+                        <li className="m-3">
+                            <Link className="nav-link text-gray-500 hover:bg-indigo-200 hover:px-4 hover:py-1.5 hover:rounded-full hover:text-gray-700 focus:text-gray-700 p-0 flex items-center" to="/about">
+                                <SiMicrodotblog className='mr-2 text-xl text-indigo-600' />
+                                About
+                            </Link>
+                        </li>
                         {
                             user ? <>
                                 <li className="m-3">

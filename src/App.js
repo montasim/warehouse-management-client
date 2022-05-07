@@ -21,6 +21,7 @@ import RequireAuth from './Hooks/RequireAuth';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import ManageItems from './Pages/Items/ManageItems/ManageItems';
+import About from './Pages/About/About/About';
 AOS.init();
 
 function App() {
@@ -47,6 +48,7 @@ function App() {
         <Route path='/add-item' element={<AddItem />} />
         <Route path='/my-items' element={<MyItems />} />
         <Route path='/blog' element={<Blog />} />
+        <Route path='/about' element={<About />} />
         <Route path='/register' element={<Register />} />
         <Route path='/profile' element={<Profile />} />
         <Route path='/settings' element={<Settings />} />
