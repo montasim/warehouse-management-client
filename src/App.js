@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Header from './Components/Header/Header';
+import Offer from './Pages/Home/Offer/Offer';
 import Home from './Pages/Home/Home/Home';
 import Login from './Pages/User/Login/Login';
 import Register from './Pages/User/Register/Register';
@@ -27,6 +28,7 @@ function App() {
     <div data-aos="fade-down"
       data-aos-easing="linear"
       data-aos-duration="1500">
+      <Offer />
       <Header />
       <Routes>
         <Route path='/' element={<Home />} />
