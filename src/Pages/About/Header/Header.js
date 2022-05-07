@@ -1,4 +1,5 @@
 import React from 'react';
+import pic from '../../../Media/Image/img.jpg';
 
 const Header = () => {
     return (
@@ -26,7 +27,7 @@ const Header = () => {
 
             <div className="relative w-full h-64 sm:h-96 lg:w-1/2 lg:h-auto">
                 <img
-                    src="https://www.hyperui.dev/photos/women-2.jpeg"
+                    src={pic}
                     alt="Women smiling at college"
                     className="absolute inset-0 object-cover w-full h-full"
                 />
