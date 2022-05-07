@@ -1,4 +1,8 @@
 import React from 'react';
+import { BiDesktop } from 'react-icons/bi';
+import { FaReact, FaNodeJs } from 'react-icons/fa';
+import { MdSecurity } from 'react-icons/md';
+import { SiMongodb, SiHackthebox } from 'react-icons/si';
 
 const Speciality = () => {
     return (
@@ -8,7 +12,7 @@ const Speciality = () => {
                     <h2 class="text-3xl font-bold sm:text-4xl">My Specialty in Web Development</h2>
 
                     <p class="mt-4 text-gray-300">
-                        I am a computer science professionals with advance knowledge of full stack web development. I am a MERN stack web developer. I love problem solving and explore new technologies.
+                        I am a computer science professionals with advance knowledge of MERN stack web development. I love problem solving and explore new technologies.
                     </p>
                 </div>
 
@@ -17,24 +21,7 @@ const Speciality = () => {
                         class="block p-8 transition border border-gray-800 shadow-xl rounded-xl hover:shadow-indigo-500/10 hover:border-indigo-500/10"
                         href="/services/digital-campaigns"
                     >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="w-10 h-10 text-indigo-500"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                        >
-                            <path d="M12 14l9-5-9-5-9 5 9 5z" />
-                            <path
-                                d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
-                            />
-                            <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-                            />
-                        </svg>
+                        <BiDesktop className='text-indigo-500 text-4xl' />
 
                         <h3 class="mt-4 text-xl font-bold text-white">UI Design</h3>
 
@@ -47,24 +34,7 @@ const Speciality = () => {
                         class="block p-8 transition border border-gray-800 shadow-xl rounded-xl hover:shadow-indigo-500/10 hover:border-indigo-500/10"
                         href="/services/digital-campaigns"
                     >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="w-10 h-10 text-indigo-500"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                        >
-                            <path d="M12 14l9-5-9-5-9 5 9 5z" />
-                            <path
-                                d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
-                            />
-                            <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-                            />
-                        </svg>
+                        <SiHackthebox className='text-indigo-500 text-4xl' />
 
                         <h3 class="mt-4 text-xl font-bold text-white">UX Design</h3>
 
@@ -77,25 +47,7 @@ const Speciality = () => {
                         class="block p-8 transition border border-gray-800 shadow-xl rounded-xl hover:shadow-indigo-500/10 hover:border-indigo-500/10"
                         href="/services/digital-campaigns"
                     >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="w-10 h-10 text-indigo-500"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                        >
-                            <path d="M12 14l9-5-9-5-9 5 9 5z" />
-                            <path
-                                d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
-                            />
-                            <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-                            />
-                        </svg>
-
+                        <SiMongodb className='text-indigo-500 text-4xl' />
                         <h3 class="mt-4 text-xl font-bold text-white">MongoDB Database</h3>
 
                         <p class="mt-1 text-sm text-gray-300">
@@ -107,24 +59,7 @@ const Speciality = () => {
                         class="block p-8 transition border border-gray-800 shadow-xl rounded-xl hover:shadow-indigo-500/10 hover:border-indigo-500/10"
                         href="/services/digital-campaigns"
                     >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="w-10 h-10 text-indigo-500"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                        >
-                            <path d="M12 14l9-5-9-5-9 5 9 5z" />
-                            <path
-                                d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
-                            />
-                            <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-                            />
-                        </svg>
+                        <FaNodeJs className='text-indigo-500 text-4xl' />
 
                         <h3 class="mt-4 text-xl font-bold text-white">NodeJs Backend</h3>
 
@@ -137,24 +72,7 @@ const Speciality = () => {
                         class="block p-8 transition border border-gray-800 shadow-xl rounded-xl hover:shadow-indigo-500/10 hover:border-indigo-500/10"
                         href="/services/digital-campaigns"
                     >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="w-10 h-10 text-indigo-500"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                        >
-                            <path d="M12 14l9-5-9-5-9 5 9 5z" />
-                            <path
-                                d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
-                            />
-                            <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-                            />
-                        </svg>
+                        <FaReact className='text-indigo-500 text-4xl' />
 
                         <h3 class="mt-4 text-xl font-bold text-white">Popular frontend framework </h3>
 
@@ -167,24 +85,7 @@ const Speciality = () => {
                         class="block p-8 transition border border-gray-800 shadow-xl rounded-xl hover:shadow-indigo-500/10 hover:border-indigo-500/10"
                         href="/services/digital-campaigns"
                     >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="w-10 h-10 text-indigo-500"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                        >
-                            <path d="M12 14l9-5-9-5-9 5 9 5z" />
-                            <path
-                                d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
-                            />
-                            <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-                            />
-                        </svg>
+                        <MdSecurity className='text-indigo-500 text-4xl' />
 
                         <h3 class="mt-4 text-xl font-bold text-white">World class security</h3>
 
