@@ -34,10 +34,10 @@ const Footer = () => {
                                 <label htmlFor="email" className="sr-only"> Email </label>
 
                                 <div className="p-2 border sm:flex sm:items-center border-white/10">
-                                    <input className="w-full h-8 p-3 text-sm font-medium tracking-widest placeholder-gray-400 uppercase bg-transparent border-none" type="email" id="email" placeholder="Enter your email" />
+                                    <input className="w-full h-8 p-3 text-sm font-medium tracking-widest placeholder-gray-400 uppercase bg-transparent border-none" type="email" id="email" placeholder="Subscribe to newsletter" />
 
                                     <button className="w-full h-12 px-6 py-3 mt-1 text-sm font-bold tracking-wide uppercase bg-indigo-600 sm:ml-4 sm:flex-shrink-0 sm:w-auto sm:mt-0" type="submit">
-                                        Sign Up
+                                        Subscribe
                                     </button>
                                 </div>
                             </form>
