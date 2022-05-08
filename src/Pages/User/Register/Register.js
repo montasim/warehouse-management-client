@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../../Hooks/Firebase.Init';
 import { toast } from 'react-toastify';
@@ -9,6 +9,8 @@ import loginPic from '../../../Media/Gif/login.gif';
 
 const Register = () => {
     const navigate = useNavigate();
+    const location = useLocation();
+    const from = location.state?.from?.pathname || "/";
     const [agree, setAgree] = useState(false);
     const [formError, setFormError] = useState('');
     const [
@@ -45,7 +47,7 @@ const Register = () => {
         return <Loading />;
     }
     if (user) {
-        navigate('/');
+        navigate(from, { replace: true });
     }
 
     return (
