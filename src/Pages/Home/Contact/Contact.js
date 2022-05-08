@@ -1,6 +1,5 @@
 import React from 'react';
 import { AiFillContacts } from 'react-icons/ai';
-import contactPic from '../../../Media/Image/contact.jpg';
 
 const Contact = () => {
     return (
@@ -15,7 +14,7 @@ const Contact = () => {
             <section className="mb-32 text-gray-800">
 
                 <div className="relative overflow-hidden bg-no-repeat bg-cover"
-                    style={{ backgroundPosition: " 50%", backgroundImage: "url('https://img.freepik.com/free-vector/contact-us-concept-landing-page_52683-12860.jpg?t=st=1651871717~exp=1651872317~hmac=61b292263230254481f4cc40a19600913325053572441b3ef4044afea15b96c9&w=740')", height: "300px" }}>
+                    style={{ backgroundPosition: " 50%", backgroundImage: "url('https://i.ibb.co/2jv23dJ/contact.png')", height: "300px" }}>
                 </div>
                 <div className="container text-gray-800 px-4 md:px-12">
                     <div className="block rounded-lg shadow-lg py-10 md:py-12 px-2 md:px-6"
