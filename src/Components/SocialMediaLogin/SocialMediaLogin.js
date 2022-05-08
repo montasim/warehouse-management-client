@@ -45,11 +45,12 @@ const SocialMediaLogin = () => {
         if (googleLoading || githubLoading) {
             return <Loading />;
         }
-        if (token) {
-            toast(`Welcome Back ${email}`);
-            navigate(from, { replace: true });
-        }
     }, []);
+
+    if (token) {
+        toast(`Welcome Back ${email}`);
+        navigate(from, { replace: true });
+    }
 
     return (
         <>

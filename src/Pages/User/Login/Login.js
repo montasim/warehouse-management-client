@@ -21,16 +21,15 @@ const Login = () => {
     ] = useSignInWithEmailAndPassword(auth);
 
     const [token] = useToken(user);
+    let email;
 
     const login = async event => {
         event.preventDefault();
 
-        const email = event.target.email.value;
+        email = event.target.email.value;
         const password = event.target.password.value;
 
         await signInWithEmailAndPassword(email, password);
-
-        toast(`Welcome Back ${email}`);
     }
 
     if (loginError) {
@@ -39,7 +38,9 @@ const Login = () => {
     if (loginLoading) {
         return <Loading />;
     }
+
     if (token) {
+        toast('Welcome Back');
         navigate(from, { replace: true });
     }
 
