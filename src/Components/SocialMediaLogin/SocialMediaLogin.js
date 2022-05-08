@@ -38,14 +38,15 @@ const SocialMediaLogin = () => {
         });
     }
 
-    useEffect(() => {
-        if (googleError || githubError) {
-            toast(googleError?.message);
-        }
-        if (googleLoading || githubLoading) {
-            return <Loading />;
-        }
-    }, []);
+    if (googleError) {
+        toast(googleError?.message);
+    }
+    if (githubError) {
+        toast(githubError?.message);
+    }
+    if (googleLoading || githubLoading) {
+        return <Loading />;
+    }
 
     if (token) {
         toast(`Welcome Back ${email}`);
