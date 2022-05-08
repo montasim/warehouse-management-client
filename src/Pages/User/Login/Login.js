@@ -44,7 +44,7 @@ const Login = () => {
     }
 
     return (
-        <section className="h-screen mt-24">
+        <section className="h-screen mt-24 mb-8">
             <div className="px-6 h-full text-gray-800">
                 <div
                     className="flex xl:justify-center lg:justify-between justify-center items-center flex-wrap h-full g-6"
