@@ -12,12 +12,11 @@ const Login = () => {
     const navigate = useNavigate();
     const location = useLocation();
     const from = location.state?.from?.pathname || "/";
-    const [formError, setFormError] = useState('');
     const [
         signInWithEmailAndPassword,
         user,
-        loginLoading,
-        loginError,
+        loading,
+        error
     ] = useSignInWithEmailAndPassword(auth);
 
     const [token] = useToken(user);
@@ -32,10 +31,10 @@ const Login = () => {
         await signInWithEmailAndPassword(email, password);
     }
 
-    if (loginError) {
-        setFormError(loginError?.message);
+    if (error) {
+        toast(error?.message)
     }
-    if (loginLoading) {
+    if (loading) {
         return <Loading />;
     }
 
@@ -105,7 +104,6 @@ const Login = () => {
                             </div>
 
                             <div className="text-center lg:text-left">
-                                <p className='mb-4 text-red-600'>{formError}</p>
                                 <button
                                     type="submit"
                                     className="button inline-block px-7 py-3 bg-indigo-600 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-indigo-700 hover:shadow-lg focus:bg-indigo-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-indigo-800 active:shadow-lg transition duration-150 ease-in-out"
