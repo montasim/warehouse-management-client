@@ -1,4 +1,4 @@
-# POSDash - An Inventory/Warehouse Management System
+# POSDash - An Inventory/Warehouse Management System (Full-Stack)
 
 ## Description
 
