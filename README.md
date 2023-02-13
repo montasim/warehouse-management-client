@@ -55,31 +55,61 @@ POSDash is an inventory management system website. Here user can create an accou
 1. Client-side hosting: Firebase
 2. Server-side hosting: Heroku
 
+
 <br>
 <br>
 
-<!-- 𝙲𝚘𝚗𝚗𝚎𝚌𝚝 𝚆𝚒𝚝𝚑 𝙼𝚎  -->
-<h2 align="right"><b> 🔸 Ｆｉｎｄ Ｍｅ Ｏｎ Ｓｏｃｉａｌ Ｍｅｄｉａ  </b></h2>
+<!-- connect with me start -->
+<div align="center"> 
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&duration=1&pause=1000&repeat=false&width=410&lines=%F0%9F%93%AA+%F0%9D%97%99%F0%9D%97%98%F0%9D%97%98%F0%9D%97%9F+%F0%9D%97%99%F0%9D%97%A5%F0%9D%97%98%F0%9D%97%98+%F0%9D%97%A7%F0%9D%97%A2+%F0%9D%97%96%F0%9D%97%A2%F0%9D%97%A1%F0%9D%97%A7%F0%9D%97%94%F0%9D%97%96%F0%9D%97%A7+%F0%9D%97%A0%F0%9D%97%98+%F0%9D%97%94%F0%9D%97%A1%F0%9D%97%AC%F0%9D%97%A7%F0%9D%97%9C%F0%9D%97%A0%F0%9D%97%98" alt="Typing SVG" />
+</div>
 
-[//]: # "handshake gif"
-
-<img align="left" alt="handshake gif" src="https://github.com/montasim/montasim/blob/main/media/gif/handshaking.gif?raw=true" width="220px">
- 
-<br>
-<br>
 <br>
 
-<table align="right">
-    <thead>
-        <tr>
-            <th align="center"><a href="https://www.linkedin.com/in/montasim"><img align="center" alt="LinkedIn" width="35px" src="https://github.com/montasim/montasim/raw/main/media/icons/linkedin.svg"/></a></th>
-	        <th align="center"><a href="https://www.github.com/montasim"><img align="center" alt="Github - montasim" width="35px"   src="https://github.com/montasim/montasim/raw/main/media/icons/github.svg"/></a></th>
-            <th align="center"><a href="https://stackoverflow.com/users/10429621/coderaid"><img align="center" alt="Stackoverflow - coderaid" width="35px" src="https://github.com/montasim/montasim/raw/main/media/icons/stackoverflow.svg"/></a></th>
-            <th align="center"><a href="https://montasim-dev.web.app/"><img align="center" alt="Website - montasim-dev.web.app/" width="35px" src="https://github.com/montasim/montasim/raw/main/media/icons/web.svg"/></a></th>
-            <th align="center"><a href="mailto:montasimmamun@gmail.com"><img align="center" alt="Gmail - montasimmamun@gmail.com" width="35px" src="https://github.com/montasim/montasim/raw/main/media/icons/gmail.svg"/></a></th>
-            <th align="center"><a href="https://twitter.com/montasimmamun"><img align="center" alt="Twitter - montasim" width="35px" src="https://github.com/montasim/montasim/raw/main/media/icons/twitter.svg"/></a></th>
-            <th align="center"><a href="https://www.facebook.com/montasimmamun/"><img align="center" alt="Facebook - montasimmamun" width="35px" src="https://github.com/montasim/montasim/raw/main/media/icons/facebook.svg"/></a></th>
-        </tr>
-    </thead>
+<!-- social media links start -->
+<table align="center">
+  <thead align="center">
+      <tr>
+          <th>
+              <a href="https://www.linkedin.com/in/montasim">
+                  <img alt="linkedin icon" src="https://cdn.simpleicons.org/linkedin" width="35px">
+              </a>
+          </th>
+          <th>
+              <a href="https://www.github.com/montasim">
+                  <img alt="github icon" src="https://cdn.simpleicons.org/github/white" width="35px">
+              </a>
+          </th>
+          <th>
+              <a href="https://stackoverflow.com/users/20348607/montasim">
+                  <img alt="github icon" src="https://cdn.simpleicons.org/stackoverflow" width="35px">
+              </a>
+          </th>
+          <th>
+              <a href="https://montasim-dev.web.app/">
+                  <img alt="web icon" src="https://cdn.simpleicons.org/googlechrome" width="35px">
+              </a>
+          </th>
+          <th>
+              <a href="mailto:montasimmamun@gmail.com">
+                  <img alt="gmail icon" src="https://cdn.simpleicons.org/gmail" width="35px">
+              </a>
+          </th>
+          <th>
+              <a href="https://www.facebook.com/montasimmamun/">
+                  <img alt="facebook icon" src="https://cdn.simpleicons.org/facebook" width="35px">
+              </a>
+          </th>
+          <th>
+              <a href="https://twitter.com/montasimmamun">
+                  <img alt="facebook icon" src="https://cdn.simpleicons.org/twitter" width="35px">
+              </a>
+          </th>
+      </tr>
+  </thead>
 </table>
-<!-- end Connect With Me -->
+<!-- social media links end -->
+<!-- connect with me end -->
+
+<br>
+<br>
